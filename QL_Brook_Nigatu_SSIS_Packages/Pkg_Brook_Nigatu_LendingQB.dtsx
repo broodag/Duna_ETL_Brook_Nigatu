@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-K7PS7F9\brood"
   DTS:DTSID="{CF72F6B0-9190-4251-9F53-1474E0DA08FC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{815A230F-6D7E-4662-B296-CD1BD5054613}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{BC9EF081-E5E7-4CE2-B8B8-01277D8F2C44}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -24,20 +24,5 @@
 <Objects
   Version="8">
   <!--Each node below will contain properties that do not affect runtime behavior.-->
-  <Package
-    design-time-name="Package">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <AnnotationLayout
-          Text="One Change"
-          ParentId="Package"
-          FontInfo="{assembly:Null}"
-          Size="94.6666666666667,60"
-          Id="0812631b-b418-45c3-8277-5f8755d4f259"
-          TopLeft="91.249998640269,87.0999984425307" />
-      </GraphLayout>
-    </LayoutInfo>
-  </Package>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
