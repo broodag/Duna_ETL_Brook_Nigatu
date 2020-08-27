@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{DFEFEB84-A27B-452D-ACF3-F05908AC41FA}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{C1536CDB-DE03-4295-A25E-0477DD8DAC3C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -24,6 +24,24 @@
       DTS:ObjectName="varChannelDerivedColumn">
       <DTS:VariableValue
         DTS:DataType="8">(DT_STR, 100, 1252) ( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1000"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDT":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="9999"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHXR":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1001"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDA":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1002"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDB":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1003"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDC":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1004"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDD":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1005"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDE":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1006"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDF":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1007"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDG":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1008"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDH":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1009"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDI":"CHDZ")))))))))))</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{98F944DE-591D-4701-A907-628A3558F4C8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varFundedTier">
+      <DTS:VariableValue
+        DTS:DataType="8">(DT_I4)([Copy of FinallCreditScore]&gt;680?3:[Copy of FinallCreditScore]&gt;620?4:5)</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F3C046AD-BEB8-4BC3-B19A-95617666DB16}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varTest">
+      <DTS:VariableValue
+        DTS:DataType="8">12</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -3519,13 +3537,36 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_I4)#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FinallCreditScore]}</property>
+                          name="Expression">(DT_I4)(#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FinallCreditScore]} &gt; 680 ? 3 : #{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FinallCreditScore]} &gt; 620 ? 4 : 5)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_I4)[Copy of FinallCreditScore]</property>
+                          name="FriendlyExpression">(DT_I4)([Copy of FinallCreditScore] &gt; 680 ? 3 : [Copy of FinallCreditScore] &gt; 620 ? 4 : 5)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[FundedTierVariable]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="78"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[FundedTierVariable]"
+                      name="FundedTierVariable"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::varFundedTier]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::varFundedTier]</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
