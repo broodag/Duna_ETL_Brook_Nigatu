@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{C1536CDB-DE03-4295-A25E-0477DD8DAC3C}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{6B8A2CB9-3C17-4AFB-84A9-AD322857CC37}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -3453,18 +3453,12 @@
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Copy of OfficeID]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="Copy of OfficeID"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Copy of FinallCreditScore]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of FinallCreditScore"
-                      cachedPrecision="24"
-                      cachedScale="10"
-                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FinallCreditScore]" />
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Copy of Copy of LeadSource]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of Copy of LeadSource"
+                      lineageId="Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -3478,37 +3472,13 @@
                   synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Channel]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="100"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Channel]"
-                      name="Channel"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">(DT_STR,100,1252)([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1000" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDT" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "9999" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHXR" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1001" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDA" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1002" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDB" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1003" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDC" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1004" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDD" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1005" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDE" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1006" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDF" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1007" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDG" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1008" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDH" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1,4) == "1009" &amp;&amp; [RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OfficeID]},1) == "Z" ? "CHDI" : "CHDZ")))))))))))</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,100,1252)(SUBSTRING([Copy of OfficeID],1,4) == "1000" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDT" : (SUBSTRING([Copy of OfficeID],1,4) == "9999" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHXR" : (SUBSTRING([Copy of OfficeID],1,4) == "1001" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDA" : (SUBSTRING([Copy of OfficeID],1,4) == "1002" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDB" : (SUBSTRING([Copy of OfficeID],1,4) == "1003" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDC" : (SUBSTRING([Copy of OfficeID],1,4) == "1004" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDD" : (SUBSTRING([Copy of OfficeID],1,4) == "1005" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDE" : (SUBSTRING([Copy of OfficeID],1,4) == "1006" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDF" : (SUBSTRING([Copy of OfficeID],1,4) == "1007" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDG" : (SUBSTRING([Copy of OfficeID],1,4) == "1008" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDH" : (SUBSTRING([Copy of OfficeID],1,4) == "1009" &amp;&amp; RIGHT([Copy of OfficeID],1) == "Z" ? "CHDI" : "CHDZ")))))))))))</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ChannelVariable]"
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LoanChannel]"
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="1071"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ChannelVariable]"
-                      name="ChannelVariable"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LoanChannel]"
+                      name="LoanChannel"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -3525,35 +3495,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[FundedTier]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[FundedTier]"
-                      name="FundedTier"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">(DT_I4)(#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FinallCreditScore]} &gt; 680 ? 3 : #{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FinallCreditScore]} &gt; 620 ? 4 : 5)</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(DT_I4)([Copy of FinallCreditScore] &gt; 680 ? 3 : [Copy of FinallCreditScore] &gt; 620 ? 4 : 5)</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[FundedTierVariable]"
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Fundedtier]"
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="78"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[FundedTierVariable]"
-                      name="FundedTierVariable"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Fundedtier]"
+                      name="Fundedtier"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -3567,6 +3515,30 @@
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
                           name="FriendlyExpression">@[User::varFundedTier]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Derived Column 1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Derived Column 1]"
+                      name="Derived Column 1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,255,1252)([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Dunatek",1)))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,255,1252)(SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1)))</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -5545,6 +5517,10 @@
           Size="157.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Data Conversion"
           TopLeft="110.624998351559,61.7499988958239" />
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\Data Conversion 1"
+          TopLeft="83.7499987520277,139.749997501075" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Output]"
           TopLeft="148.374999934808,25.2333332635961">
@@ -5573,14 +5549,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="154.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Derived Column"
-          TopLeft="104.999998435378,220.999996048212" />
-        <NodeLayout
-          Size="166.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Data Conversion 1"
-          TopLeft="83.7499987520277,139.749997501075" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Data Conversion Output]"
           TopLeft="189.291665018226,104.416665562491">
@@ -5615,32 +5583,36 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="245.624996339902,213.849996176064" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Data Conversion Output1]"
           TopLeft="167.083332085361,182.416664167742">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="15.2499996833503,38.5833318804701"
+              EndConnector="155.874997587875,31.4333320083224"
               Start="0,0"
-              End="15.2499996833503,31.0833318804701">
+              End="155.874997587875,23.9333320083224">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.2916659402351" />
+                    End="0,11.7166660041612" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.2916659402351"
-                    Point2="0,19.2916659402351"
-                    Point3="4,19.2916659402351" />
+                    Point1="0,11.7166660041612"
+                    Point2="0,15.7166660041612"
+                    Point3="4,15.7166660041612" />
                   <mssgle:LineSegment
-                    End="11.2499996833503,19.2916659402351" />
+                    End="151.874997587875,15.7166660041612" />
                   <mssgle:CubicBezierSegment
-                    Point1="11.2499996833503,19.2916659402351"
-                    Point2="15.2499996833503,19.2916659402351"
-                    Point3="15.2499996833503,23.2916659402351" />
+                    Point1="151.874997587875,15.7166660041612"
+                    Point2="155.874997587875,15.7166660041612"
+                    Point3="155.874997587875,19.7166660041612" />
                   <mssgle:LineSegment
-                    End="15.2499996833503,31.0833318804701" />
+                    End="155.874997587875,23.9333320083224" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
