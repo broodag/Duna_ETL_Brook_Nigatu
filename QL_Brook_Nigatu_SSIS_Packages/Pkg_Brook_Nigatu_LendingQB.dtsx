@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{6B8A2CB9-3C17-4AFB-84A9-AD322857CC37}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{D43B2D7A-10EE-4DCD-9F8F-0623EB085E9B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -33,6 +33,15 @@
       DTS:ObjectName="varFundedTier">
       <DTS:VariableValue
         DTS:DataType="8">(DT_I4)([Copy of FinallCreditScore]&gt;680?3:[Copy of FinallCreditScore]&gt;620?4:5)</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DAA32EBA-5B65-46C5-A2E7-1921919E0193}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varLeadSourceType">
+      <DTS:VariableValue
+        DTS:DataType="8">(DT_STR,255,1252)(SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1)))=="1"?"Dunatek": ISNULL([Copy of Copy of LeadSource] )?"Dunatek" :(SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],".com",1)))=="1"?"":"pppp"</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -3519,11 +3528,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Derived Column 1]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      length="255"
+                      length="10"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Derived Column 1]"
                       name="Derived Column 1"
                       truncationRowDisposition="FailComponent">
@@ -3532,13 +3540,36 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,255,1252)([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Dunatek",1)))</property>
+                          name="Expression">(DT_STR,255,1252)([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Dunatek",1))) == "1" ? "Dunatek" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"IBX",1))) == "1" ? "IBX" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Fusion",1))) == "1" ? "Fusion" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"LeadPint",1))) == "1" ? "Lead Point" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"HARP",1))) == "1" ? "HARP" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Bills",1))) == "1" ? "Bills" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"VA Loans",1))) == "1" ? "VA Loans" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Military",1))) == "1" ? "Military" : [ISNULL](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]}) ? "Dunatek" : "TTTT"</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,255,1252)(SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1)))</property>
+                          name="FriendlyExpression">(DT_STR,255,1252)(SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1))) == "1" ? "Dunatek" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"IBX",1))) == "1" ? "IBX" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Fusion",1))) == "1" ? "Fusion" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"LeadPint",1))) == "1" ? "Lead Point" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"HARP",1))) == "1" ? "HARP" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Bills",1))) == "1" ? "Bills" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"VA Loans",1))) == "1" ? "VA Loans" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Military",1))) == "1" ? "Military" : ISNULL([Copy of Copy of LeadSource]) ? "Dunatek" : "TTTT"</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Derived Column 2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="7"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Derived Column 2]"
+                      name="Derived Column 2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,255,1252)([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Dunatek",1))) == "1" ? "Dunatek" : [ISNULL](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]}) ? "Dunatek" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},".com",1))) == "1" ? "" : "pppp"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,255,1252)(SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1))) == "1" ? "Dunatek" : ISNULL([Copy of Copy of LeadSource]) ? "Dunatek" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],".com",1))) == "1" ? "" : "pppp"</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
