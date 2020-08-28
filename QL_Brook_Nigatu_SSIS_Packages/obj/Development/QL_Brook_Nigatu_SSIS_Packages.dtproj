@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-K7PS7F9</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAABXaUMxHx0e4hv1H6d1IdW77E711V9qEDDQUsKiqzdmFwAAAAAOgAAAAAIAACAAAAAy7Xhc05ULMpC9FB2u2HYru75+JDuFM4bFdE4xnsuxCZAAAABJQlLkyenYz2QdLvdm7arqL+2UyViWIHPdE/xhQelaxmxjJ2F5AKYG0zIGDg/6wKIGrTMril5C3HgUq3rYT15R9CBcfnYlEP/8f0OmBd4DWaf/STKyi7Ag6hJhqrhSWSan3/r40vTyH/FWpqJydnt+NxkXZIE1OesPY/COtHsvzfWK63I6He+I43DLEk1leEVAAAAALoCKkrbl5/vIgh6TGFfwHthrKIdjxt2iGJUD5r1Vd5/erWi6LzTeLHfUIB22BGPWc16XjkvBrHxXZV1paFGMiA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAAA5Q621DtgmOqjC9sS3Cqkim+zaiISXzKgyuIgitoh/4AAAAAAOgAAAAAIAACAAAAA9hhHn3i3zwLsXpHamAtWqx+Elw3Rkyf8leLJ2zIsM75AAAACagPpcYGktqNHnYT9TAOCK8t3ze/5lSBb50LhYyZ7ve+Tjie6iauTUOx5sg4oY0aN+semRZ67dbkVcMWGmeJrFwJWW6MGCEkvDommr8etpam5KC7vGSdIsTgmNurgVLeTl/ks74nSRnHkMI8wavYzk6zT17h5qOAK41jfJZ0Y8ZAuyIDV3pDSl6PD5jP3N1bdAAAAAtZ1v+Sz2+OEO0e2PIyBt/x6JUM0rOHzl9B5dE5i5tCMdRKhBLdVH9RQcCM/UZXhgPHAZh7CXk6sZB7LA1YpQ+w==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -78,7 +78,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0MzA5Mzg3MTAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQzMTgwMjcxOTExNzIwNiwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsZTU3NTc0OWYtNjBjZi0wMDAwLTQ3NWEtZGQyNGQzMzcwZjMzLGU1NzU3NDlmLTYwY2YtMDAwMC00NzVhLWRkMjRkMzM3MGYzMywsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxTZ0FtdmF3ZkJTeC8wVm44OW05WS9xZVZodDA5bkZWc3M1VTN0SVhNYzBPR29UaGgwZ3hzbzNjU2JsbHBkeHprSFJLSmhPUWgzRkVzNTljUmtXd0dlL0JFU0U5amNUM0RXS3ZIUDlRYVNjcUp2ODJnRTk2N0ZyMFlaRzVCdXdYdDdDUGRCalJkTWRXRkd6ZmtHSExMWEgvcC9EZEhaT2czMlJXazRWQytQNFg0QnJteDQ3UXNoR2xKZ25UcDc3VTBjS01qVG1na1FWWjBSMUJPakhBN3hGZktSWkRSREVVdzhZa2hQRWJ0d1FpR24ycTJKMTZsNDl4NjQvUThnQVNrRWI4QmlITENGWHd5ejlBdk1wN3BFc3JSSGNSVzZnQmwyaTBJU3J6RkR5S3JTdWgrdkR0cjNUWHl3em5qQUJWcHg4a0lRMjVacEVhWGk4ZFBDaHZCSXc9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0Mjg4MzI5MzAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQyOTY5NjkzNDIyMTM2NywwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsMTNhZDczOWYtZjAwYS0wMDAwLTU2YmQtNTYwNWU4MWFjM2VhLDEzYWQ3MzlmLWYwMGEtMDAwMC01NmJkLTU2MDVlODFhYzNlYSwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxoZS94ekNNYlN1NEpqblpGUS9lVHhKSDZOc0tTNzducys0ZmZUNGRUS3pZbUN1WEd5aXVnL1ViaUFoUUJLR0VLUDJ4YTV0cVhmNWNFL1k4SWRFYWo0SitybmZpbkkxaUEwaEhhbUtnNXZEcG9kbzFQbUFBbmlnaHhjbUhjYXhvemkwYzFob05hMXVyaW1sYVN4Znd3KzZObmQrVEhzZnIwaFV5MkU4R3FqUlkxSUc3OHRMSXFpb2RIcVExNnlpMlY3OHhzU2grU1FkMDBvSys3QnNzTjJoNHhRVnJuNUNuQllrNDduWXlHS2o3SW5pZ0pmRWsvYzhYL29UeWdQQjdtb3JyazhNY0RCVkZabi9jaWlCbk82c3oxZkY0R0RSVWc3WVEvdmdNWTY4enVBSVkyVjZid0g4YlczcDNGRnNpM0VkaTVsTGZ2VXFRbC80b3RyZjVQMXc9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -134,10 +134,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">16</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{193A484C-B754-4DE9-A2AA-FD8246276AE9}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{2397719E-5D25-4E78-AF49-02043D52F80C}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
