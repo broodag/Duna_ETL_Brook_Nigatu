@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{C7C1ACA0-C31A-4A53-BCE3-CA8E9FB495A2}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{3E74A34E-60C8-44F3-B5B9-55210F667D22}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3577,7 +3577,8 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LeadSourceType]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="255"
@@ -3589,13 +3590,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_WSTR,255)([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Dunatek",1))) == "1" ? "Dunatek" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"IBX",1))) == "1" ? "IBX" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Fusion",1))) == "1" ? "Fusion" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"LeadPint",1))) == "1" ? "Lead Point" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"HARP",1))) == "1" ? "HARP" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Bills",1))) == "1" ? "Bills" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"VA Loans",1))) == "1" ? "VA Loans" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Military",1))) == "1" ? "Military" : [ISNULL](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]}) ? "Dunatek" : [SUBSTRING]([REPLACE](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},".com",""),1,[LEN](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]}))</property>
+                          name="Expression">(DT_STR,255,1252)(([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Dunatek",1))) == "1" ? "Dunatek" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"IBX",1))) == "1" ? "IBX" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Fusion",1))) == "1" ? "Fusion" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"LeadPint",1))) == "1" ? "Lead Point" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"HARP",1))) == "1" ? "HARP" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Bills",1))) == "1" ? "Bills" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"VA Loans",1))) == "1" ? "VA Loans" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Military",1))) == "1" ? "Military" : [ISNULL](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]}) ? "Dunatek" : [SUBSTRING]([REPLACE](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},".com",""),1,[LEN](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]})))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_WSTR,255)(SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1))) == "1" ? "Dunatek" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"IBX",1))) == "1" ? "IBX" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Fusion",1))) == "1" ? "Fusion" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"LeadPint",1))) == "1" ? "Lead Point" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"HARP",1))) == "1" ? "HARP" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Bills",1))) == "1" ? "Bills" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"VA Loans",1))) == "1" ? "VA Loans" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Military",1))) == "1" ? "Military" : ISNULL([Copy of Copy of LeadSource]) ? "Dunatek" : SUBSTRING(REPLACE([Copy of Copy of LeadSource],".com",""),1,LEN([Copy of Copy of LeadSource]))</property>
+                          name="FriendlyExpression">(DT_STR,255,1252)((SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1))) == "1" ? "Dunatek" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"IBX",1))) == "1" ? "IBX" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Fusion",1))) == "1" ? "Fusion" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"LeadPint",1))) == "1" ? "Lead Point" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"HARP",1))) == "1" ? "HARP" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Bills",1))) == "1" ? "Bills" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"VA Loans",1))) == "1" ? "VA Loans" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Military",1))) == "1" ? "Military" : ISNULL([Copy of Copy of LeadSource]) ? "Dunatek" : SUBSTRING(REPLACE([Copy of Copy of LeadSource],".com",""),1,LEN([Copy of Copy of LeadSource])))</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -3603,7 +3604,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      length="101"
+                      length="100"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]"
                       name="LoanOfficerFirstName"
                       truncationRowDisposition="FailComponent">
@@ -3612,13 +3613,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[LEFT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]},[FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]}," ",1) - 1)</property>
+                          name="Expression">(DT_WSTR,100)[LEFT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]},[FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">LEFT([Copy of LoanOfficer],FINDSTRING([Copy of LoanOfficer]," ",1) - 1)</property>
+                          name="FriendlyExpression">(DT_WSTR,100)LEFT([Copy of LoanOfficer],FINDSTRING([Copy of LoanOfficer]," ",1) - 1)</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -3626,7 +3627,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      length="101"
+                      length="100"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]"
                       name="LoanOfficerLastName"
                       truncationRowDisposition="FailComponent">
@@ -3635,18 +3636,19 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]},[LEN](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]}) - [FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]}," ",1))</property>
+                          name="Expression">(DT_WSTR,100)[RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]},[LEN](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]}) - [FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LoanOfficer]}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">RIGHT([Copy of LoanOfficer],LEN([Copy of LoanOfficer]) - FINDSTRING([Copy of LoanOfficer]," ",1))</property>
+                          name="FriendlyExpression">(DT_WSTR,100)RIGHT([Copy of LoanOfficer],LEN([Copy of LoanOfficer]) - FINDSTRING([Copy of LoanOfficer]," ",1))</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[CloserFirstName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="128"
@@ -3658,18 +3660,19 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[LEFT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]},[FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]}," ",1) - 1)</property>
+                          name="Expression">(DT_STR,128,1252)[LEFT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]},[FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">LEFT([Copy of Closer_Name],FINDSTRING([Copy of Closer_Name]," ",1) - 1)</property>
+                          name="FriendlyExpression">(DT_STR,128,1252)LEFT([Copy of Closer_Name],FINDSTRING([Copy of Closer_Name]," ",1) - 1)</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[CloserLastName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="128"
@@ -3681,18 +3684,19 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]},[LEN](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]}) - [FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]}," ",1))</property>
+                          name="Expression">(DT_STR,128,1252)[RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]},[LEN](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]}) - [FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">RIGHT([Copy of Closer_Name],LEN([Copy of Closer_Name]) - FINDSTRING([Copy of Closer_Name]," ",1))</property>
+                          name="FriendlyExpression">(DT_STR,128,1252)RIGHT([Copy of Closer_Name],LEN([Copy of Closer_Name]) - FINDSTRING([Copy of Closer_Name]," ",1))</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ProcessorFirstName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="128"
@@ -3704,18 +3708,19 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[LEFT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]},[FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]}," ",1) - 1)</property>
+                          name="Expression">(DT_STR,128,1252)[LEFT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]},[FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">LEFT([Copy of Loan_Processor_Name],FINDSTRING([Copy of Loan_Processor_Name]," ",1) - 1)</property>
+                          name="FriendlyExpression">(DT_STR,128,1252)LEFT([Copy of Loan_Processor_Name],FINDSTRING([Copy of Loan_Processor_Name]," ",1) - 1)</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ProcessorLastName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="128"
@@ -3727,18 +3732,19 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]},[LEN](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]}) - [FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]}," ",1))</property>
+                          name="Expression">(DT_STR,128,1252)[RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]},[LEN](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]}) - [FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Loan_Processor_Name]}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">RIGHT([Copy of Loan_Processor_Name],LEN([Copy of Loan_Processor_Name]) - FINDSTRING([Copy of Loan_Processor_Name]," ",1))</property>
+                          name="FriendlyExpression">(DT_STR,128,1252)RIGHT([Copy of Loan_Processor_Name],LEN([Copy of Loan_Processor_Name]) - FINDSTRING([Copy of Loan_Processor_Name]," ",1))</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[UnderwriterFirstName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="128"
@@ -3750,18 +3756,19 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[LEFT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]},[FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]}," ",1) - 1)</property>
+                          name="Expression">(DT_STR,128,1252)[LEFT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]},[FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">LEFT([Copy of Underwriter_Name],FINDSTRING([Copy of Underwriter_Name]," ",1) - 1)</property>
+                          name="FriendlyExpression">(DT_STR,128,1252)LEFT([Copy of Underwriter_Name],FINDSTRING([Copy of Underwriter_Name]," ",1) - 1)</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[UnderwriterLastName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="128"
@@ -3773,13 +3780,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]},[LEN](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]}) - [FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]}," ",1))</property>
+                          name="Expression">(DT_STR,128,1252)[RIGHT](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]},[LEN](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]}) - [FINDSTRING](#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Underwriter_Name]}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">RIGHT([Copy of Underwriter_Name],LEN([Copy of Underwriter_Name]) - FINDSTRING([Copy of Underwriter_Name]," ",1))</property>
+                          name="FriendlyExpression">(DT_STR,128,1252)RIGHT([Copy of Underwriter_Name],LEN([Copy of Underwriter_Name]) - FINDSTRING([Copy of Underwriter_Name]," ",1))</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -5720,7 +5727,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[QL_TEST]</property>
+                  name="OpenRowset">[QL_Test]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -7274,7 +7281,8 @@
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Fundedtier]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LeadSourceType]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="255"
                       cachedName="LeadSourceType"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
@@ -7282,55 +7290,61 @@
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficerFirstName]"
                       cachedDataType="wstr"
-                      cachedLength="101"
+                      cachedLength="100"
                       cachedName="LoanOfficerFirstName"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFirstName]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficerLastName]"
                       cachedDataType="wstr"
-                      cachedLength="101"
+                      cachedLength="100"
                       cachedName="LoanOfficerLastName"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CloserFirstName]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="128"
                       cachedName="CloserFirstName"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[CloserFirstName]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CloserLastName]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="128"
                       cachedName="CloserLastName"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[CloserLastName]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProcessorFirstName]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="128"
                       cachedName="ProcessorFirstName"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ProcessorFirstName]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProcessorLastName]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="128"
                       cachedName="ProcessorLastName"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[ProcessorLastName]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnderwriterFirstName]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="128"
                       cachedName="UnderwriterFirstName"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[UnderwriterFirstName]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnderwriterLastName]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="128"
                       cachedName="UnderwriterLastName"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
@@ -8380,47 +8394,54 @@
                       name="Fundedtier" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="255"
                       name="LeadSourceType" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFirstName]"
                       dataType="wstr"
-                      length="101"
+                      length="100"
                       name="LoanOfficerFirstName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                       dataType="wstr"
-                      length="101"
+                      length="100"
                       name="LoanOfficerLastName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="128"
                       name="CloserFirstName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="128"
                       name="CloserLastName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="128"
                       name="ProcessorFirstName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="128"
                       name="ProcessorLastName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="128"
                       name="UnderwriterFirstName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="128"
                       name="UnderwriterLastName" />
                   </externalMetadataColumns>
@@ -8682,33 +8703,33 @@
         <NodeLayout
           Size="172,42.6666666666667"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="416.66666045785,233.999995815754" />
+          TopLeft="410.416660550982,361.833326863249" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="234.041665483887,240.383329416414">
+          TopLeft="156.708332150554,261.716662749748">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="182.624994973962,14.949999732673"
+              EndConnector="339.708328400428,100.116664113502"
               Start="0,0"
-              End="175.124994973962,14.949999732673">
+              End="339.708328400428,92.6166641135015">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="87.3124974869812,0" />
+                    End="0,46.0583320567508" />
                   <mssgle:CubicBezierSegment
-                    Point1="87.3124974869812,0"
-                    Point2="91.3124974869812,0"
-                    Point3="91.3124974869812,4" />
+                    Point1="0,46.0583320567508"
+                    Point2="0,50.0583320567508"
+                    Point3="4,50.0583320567508" />
                   <mssgle:LineSegment
-                    End="91.3124974869812,10.949999732673" />
+                    End="335.708328400428,50.0583320567508" />
                   <mssgle:CubicBezierSegment
-                    Point1="91.3124974869812,10.949999732673"
-                    Point2="91.3124974869812,14.949999732673"
-                    Point3="95.3124974869812,14.949999732673" />
+                    Point1="335.708328400428,50.0583320567508"
+                    Point2="339.708328400428,50.0583320567508"
+                    Point3="339.708328400428,54.0583320567508" />
                   <mssgle:LineSegment
-                    End="175.124994973962,14.949999732673" />
+                    End="339.708328400428,92.6166641135015" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
