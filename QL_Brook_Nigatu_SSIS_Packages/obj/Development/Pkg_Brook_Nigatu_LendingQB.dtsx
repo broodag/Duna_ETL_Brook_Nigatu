@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{D7DC0D58-C4E5-4A8C-A1E1-CD1ECAE64BFF}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{21DEE602-268D-4F98-80BC-B8AE1F1E0811}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,26 +24,6 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=.;Initial Catalog=Practice;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.QLSSISLOG]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{B2A4F072-C8EF-45C7-86CD-6518F268CD00}"
-      DTS:ObjectName="LocalHost.QLSSISLOG">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;Initial Catalog=QLSSISLOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.STGQL]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{9CE431AF-7648-4E2D-83C5-6F3C69C6013A}"
-      DTS:ObjectName="LocalHost.STGQL">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -74,6 +54,33 @@
       DTS:ObjectName="varLeadSourceType">
       <DTS:VariableValue
         DTS:DataType="8">(DT_STR,255,1252)(SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1))) == "1" ? "Dunatek" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"IBX",1))) == "1" ? "IBX" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Fusion",1))) == "1" ? "Fusion" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"LeadPint",1))) == "1" ? "Lead Point" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"HARP",1))) == "1" ? "HARP" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Bills",1))) == "1" ? "Bills" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"VA Loans",1))) == "1" ? "VA Loans" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Military",1))) == "1" ? "Military" : ISNULL([Copy of Copy of LeadSource]) ? "Dunatek" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],".com",1))) == "1" ? "" :"TTTT"</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2DD9146C-6D03-4379-A6D2-784CCAC01A6F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varPackageName">
+      <DTS:VariableValue
+        DTS:DataType="8">Pkg_Brook_Nigatu_LendingQB</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7B2FBC8D-674F-431E-B313-36FDDAD78E84}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varRowCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{ABD7862C-6CBC-4A48-9146-61A949EFE0D8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSourceName">
+      <DTS:VariableValue
+        DTS:DataType="8">LendingQB</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -151,39 +158,45 @@
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{B2A4F072-C8EF-45C7-86CD-6518F268CD00}"
-                  SQLTask:SqlStatementSource="INSERT INTO QL_Brook_Nigatu_ETL_Log(&#xA;      [PackageName]&#xA;      ,[SourceName]&#xA;      ,[Runtime]&#xA;      ,[RunBy]&#xA;      ,[NumberOfRowsIncerted]&#xA;      ,[LastModifiedDate])&#xA;  VALUES(?,?,?,?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  SQLTask:SqlStatementSource="INSERT INTO QL_Brook_Nigatu_ETL_Log(&#xA;      [PackageID]&#xA;      ,[PackageName]&#xA;      ,[SourceName]&#xA;      ,[Runtime]&#xA;      ,[RunBy]&#xA;      ,[NumberOfRowsIncerted]&#xA;      ,[LastModifiedDate])&#xA;  VALUES(?,?,?,?,?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ParameterBinding
                     SQLTask:ParameterName="0"
-                    SQLTask:DtsVariableName="System::PackageName"
+                    SQLTask:DtsVariableName="System::PackageID"
                     SQLTask:ParameterDirection="Input"
-                    SQLTask:DataType="129"
+                    SQLTask:DataType="131"
                     SQLTask:ParameterSize="-1" />
                   <SQLTask:ParameterBinding
                     SQLTask:ParameterName="1"
-                    SQLTask:DtsVariableName="System::SourceName"
+                    SQLTask:DtsVariableName="User::varPackageName"
                     SQLTask:ParameterDirection="Input"
                     SQLTask:DataType="129"
                     SQLTask:ParameterSize="-1" />
                   <SQLTask:ParameterBinding
                     SQLTask:ParameterName="2"
+                    SQLTask:DtsVariableName="User::varSourceName"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="3"
                     SQLTask:DtsVariableName="System::StartTime"
                     SQLTask:ParameterDirection="Input"
                     SQLTask:DataType="7"
                     SQLTask:ParameterSize="-1" />
                   <SQLTask:ParameterBinding
-                    SQLTask:ParameterName="3"
+                    SQLTask:ParameterName="4"
                     SQLTask:DtsVariableName="System::MachineName"
                     SQLTask:ParameterDirection="Input"
                     SQLTask:DataType="129"
                     SQLTask:ParameterSize="-1" />
                   <SQLTask:ParameterBinding
-                    SQLTask:ParameterName="4"
-                    SQLTask:DtsVariableName="User::varTest"
+                    SQLTask:ParameterName="5"
+                    SQLTask:DtsVariableName="User::varRowCount"
                     SQLTask:ParameterDirection="Input"
-                    SQLTask:DataType="130"
+                    SQLTask:DataType="20"
                     SQLTask:ParameterSize="-1" />
                   <SQLTask:ParameterBinding
-                    SQLTask:ParameterName="5"
+                    SQLTask:ParameterName="6"
                     SQLTask:DtsVariableName="System::StartTime"
                     SQLTask:ParameterDirection="Input"
                     SQLTask:DataType="7"
@@ -8595,6 +8608,35 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Data Flow Task\Row Count"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::varRowCount</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Row Count.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Row Count.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Data Flow Task\Row Count.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
@@ -8609,7 +8651,7 @@
               startId="Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task\Row Count.Inputs[Row Count Input 1]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
             <path
@@ -8617,6 +8659,11 @@
               endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
               name="Output"
               startId="Package\Data Flow Task\OData Source.Outputs[Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Row Count Output 1]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Row Count Output 1"
+              startId="Package\Data Flow Task\Row Count.Outputs[Row Count Output 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -8767,74 +8814,6 @@
           Id="Package\Data Flow Task\Data Conversion 1"
           TopLeft="306.874995427206,173.549996896684" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Output]"
-          TopLeft="333.874996097759,56.9666664109629">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="27.916666350017,38.5833318804699"
-              Start="0,0"
-              End="27.916666350017,31.0833318804699">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.291665940235" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.291665940235"
-                    Point2="0,19.291665940235"
-                    Point3="4,19.291665940235" />
-                  <mssgle:LineSegment
-                    End="23.916666350017,19.291665940235" />
-                  <mssgle:CubicBezierSegment
-                    Point1="23.916666350017,19.291665940235"
-                    Point2="27.916666350017,19.291665940235"
-                    Point3="27.916666350017,23.291665940235" />
-                  <mssgle:LineSegment
-                    End="27.916666350017,31.0833318804699" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="401.708328499769,290.31666223834">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="158.249997771035,52.0166649735966"
-              Start="0,0"
-              End="158.249997771035,44.5166649735966">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.0083324867983" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.0083324867983"
-                    Point2="0,26.0083324867983"
-                    Point3="4,26.0083324867983" />
-                  <mssgle:LineSegment
-                    End="154.249997771035,26.0083324867983" />
-                  <mssgle:CubicBezierSegment
-                    Point1="154.249997771035,26.0083324867983"
-                    Point2="158.249997771035,26.0083324867983"
-                    Point3="158.249997771035,30.0083324867983" />
-                  <mssgle:LineSegment
-                    End="158.249997771035,44.5166649735966" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow Task.Paths[Data Conversion Output1]"
           TopLeft="390.208328760539,216.21666356335">
           <EdgeLayout.Curve>
@@ -8894,6 +8873,100 @@
                     Point3="28.4166663127639,21.6666659692921" />
                   <mssgle:LineSegment
                     End="28.4166663127639,27.8333319385842" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Output]"
+          TopLeft="333.874996097759,56.966666410963">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.9166663500167,38.5833318804698"
+              Start="0,0"
+              End="27.9166663500167,31.0833318804698">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.2916659402349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.2916659402349"
+                    Point2="0,19.2916659402349"
+                    Point3="4,19.2916659402349" />
+                  <mssgle:LineSegment
+                    End="23.9166663500167,19.2916659402349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.9166663500167,19.2916659402349"
+                    Point2="27.9166663500167,19.2916659402349"
+                    Point3="27.9166663500167,23.2916659402349" />
+                  <mssgle:LineSegment
+                    End="27.9166663500167,31.0833318804698" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\Row Count"
+          TopLeft="259.821424699788,340.785708191991" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="401.708328499769,290.31666223834">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-76.2202371333149,50.4690459536514"
+              Start="0,0"
+              End="-76.2202371333149,42.9690459536514">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.2345229768257" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.2345229768257"
+                    Point2="0,25.2345229768257"
+                    Point3="-4,25.2345229768257" />
+                  <mssgle:LineSegment
+                    End="-72.2202371333149,25.2345229768257" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-72.2202371333149,25.2345229768257"
+                    Point2="-76.2202371333149,25.2345229768257"
+                    Point3="-76.2202371333149,29.2345229768257" />
+                  <mssgle:LineSegment
+                    End="-76.2202371333149,42.9690459536514" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Row Count Output 1]"
+          TopLeft="391.154758033121,362.892851035297">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="82.803568237683,0"
+              Start="0,0"
+              End="75.303568237683,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="75.303568237683,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
