@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{21DEE602-268D-4F98-80BC-B8AE1F1E0811}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{32BEB37B-8DB6-44B0-9A46-9AFE6088BC1E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,12 +30,30 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{371A833E-2874-4C9D-8121-DD19621F6782}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varBody">
+      <DTS:VariableValue
+        DTS:DataType="8">this depends on the type of notification. Check ETL notification below</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{5409191E-B351-4AB3-B2E7-00467346B590}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varChannelDerivedColumn">
       <DTS:VariableValue
         DTS:DataType="8">(DT_STR, 100, 1252) ( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1000"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDT":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="9999"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHXR":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1001"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDA":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1002"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDB":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1003"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDC":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1004"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDD":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1005"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDE":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1006"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDF":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1007"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDG":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1008"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDH":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1009"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDI":"CHDZ")))))))))))</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E7036C5A-281E-4553-872B-A7758246AEAC}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varFromEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">gletlteam@gmail.com</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -66,12 +84,39 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{317B55A0-FA74-4CE6-836D-41A0D16DB99A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varPassword">
+      <DTS:VariableValue
+        DTS:DataType="8">datapull123@1</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{7B2FBC8D-674F-431E-B313-36FDDAD78E84}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varRowCount">
       <DTS:VariableValue
         DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9FC5712C-DC57-4F4A-9433-4F9CE9347698}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSmtpClint">
+      <DTS:VariableValue
+        DTS:DataType="8">smtp.gmail.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E24E079D-DE32-4C7E-86A0-E0B85F493C45}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSmtpServer">
+      <DTS:VariableValue
+        DTS:DataType="8">587</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -84,12 +129,39 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{788D72A1-04B4-4BF8-BDF8-04613A9F59A1}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSubject">
+      <DTS:VariableValue
+        DTS:DataType="8">this depends on the type of notification. Ceck ETL Notification below</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{F3C046AD-BEB8-4BC3-B19A-95617666DB16}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varTest">
       <DTS:VariableValue
         DTS:DataType="8">12</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{86375EE1-BDA7-4DB8-9412-70C8D302EC78}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="varTimeStamp">
+      <DTS:VariableValue
+        DTS:DataType="7">8/30/2020 5:23:55 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FD4268E0-933D-41E5-9A8C-EBEA5BAC535D}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varToEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">gletlteam@gmail.com</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
