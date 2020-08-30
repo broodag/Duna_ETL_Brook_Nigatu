@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{21DEE602-268D-4F98-80BC-B8AE1F1E0811}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{F6FE6E50-86FA-4529-9A50-3F79A2F4FBC5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,12 +30,30 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{371A833E-2874-4C9D-8121-DD19621F6782}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varBody">
+      <DTS:VariableValue
+        DTS:DataType="8">this depends on the type of notification. Check ETL notification below</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{5409191E-B351-4AB3-B2E7-00467346B590}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varChannelDerivedColumn">
       <DTS:VariableValue
         DTS:DataType="8">(DT_STR, 100, 1252) ( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1000"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDT":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="9999"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHXR":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1001"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDA":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1002"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDB":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1003"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDC":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1004"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDD":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1005"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDE":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1006"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDF":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1007"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDG":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1008"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDH":( SUBSTRING( [Copy of OfficeID] , 1, 4)=="1009"&amp;&amp; RIGHT( [Copy of OfficeID] , 1)=="Z" ?"CHDI":"CHDZ")))))))))))</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E7036C5A-281E-4553-872B-A7758246AEAC}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varFromEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">gletlteam@gmail.com</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -66,12 +84,39 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{317B55A0-FA74-4CE6-836D-41A0D16DB99A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varPassword">
+      <DTS:VariableValue
+        DTS:DataType="8">datapull123@1</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{7B2FBC8D-674F-431E-B313-36FDDAD78E84}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varRowCount">
       <DTS:VariableValue
         DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9FC5712C-DC57-4F4A-9433-4F9CE9347698}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSmtpClint">
+      <DTS:VariableValue
+        DTS:DataType="8">smtp.gmail.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E24E079D-DE32-4C7E-86A0-E0B85F493C45}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSmtpServer">
+      <DTS:VariableValue
+        DTS:DataType="8">587</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -84,12 +129,41 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{788D72A1-04B4-4BF8-BDF8-04613A9F59A1}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSubject">
+      <DTS:VariableValue
+        DTS:DataType="8">this depends on the type of notification. Ceck ETL Notification below</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{F3C046AD-BEB8-4BC3-B19A-95617666DB16}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varTest">
       <DTS:VariableValue
         DTS:DataType="8">12</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{86375EE1-BDA7-4DB8-9412-70C8D302EC78}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varTimeStamp">
+      <DTS:VariableValue
+        DTS:DataType="7">8/30/2020 5:40:16 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FD4268E0-933D-41E5-9A8C-EBEA5BAC535D}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varToEmail">
+      <DTS:VariableValue
+        DTS:DataType="8">gletlteam@gmail.com</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -3920,6 +3994,76 @@
                           name="FriendlyExpression">(DT_STR,128,1252)RIGHT([Copy of Underwriter_Name],LEN([Copy of Underwriter_Name]) - FINDSTRING([Copy of Underwriter_Name]," ",1))</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LoadDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LoadDate]"
+                      name="LoadDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Loadby]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="128"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Loadby]"
+                      name="Loadby"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,128,1252)@[System::UserName]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,128,1252)@[System::UserName]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[SourceName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="128"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[SourceName]"
+                      name="SourceName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,128,1252)@[User::varSourceName]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,128,1252)@[User::varSourceName]</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -5858,7 +6002,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[OLE DB Destination]</property>
+                  name="OpenRowset">[Ql_Test1]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -7480,6 +7624,28 @@
                       cachedName="UnderwriterLastName"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[UnderwriterLastName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoadDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LoadDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[LoadDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Loadby]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="Loadby"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Loadby]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Loadby]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SourceName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="SourceName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[SourceName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -8576,10 +8742,21 @@
                       length="128"
                       name="UnderwriterLastName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Derived Column 1]"
-                      dataType="wstr"
-                      length="7"
-                      name="Derived Column 1" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
+                      dataType="dbTimeStamp"
+                      name="LoadDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Loadby]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Loadby" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="SourceName" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -8798,10 +8975,6 @@
           Id="Package\Data Flow Task\OData Source"
           TopLeft="261.874996097759,14.2999997442963" />
         <NodeLayout
-          Size="172,42.6666666666667"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="473.958326270804,342.333327211936" />
-        <NodeLayout
           Size="154.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Derived Column"
           TopLeft="324.374995166436,247.649995571673" />
@@ -8953,20 +9126,36 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="539.999991953373,366.599993444681" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Row Count Output 1]"
-          TopLeft="391.154758033121,362.892851035297">
+          TopLeft="391.154758033121,362.119041525324">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="82.803568237683,0"
+              EndConnector="148.845233920252,25.8142852526902"
               Start="0,0"
-              End="75.303568237683,0">
+              End="141.345233920252,25.8142852526902">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="75.303568237683,0" />
+                    End="70.422616960126,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="70.422616960126,0"
+                    Point2="74.422616960126,0"
+                    Point3="74.422616960126,4" />
+                  <mssgle:LineSegment
+                    End="74.422616960126,21.8142852526902" />
+                  <mssgle:CubicBezierSegment
+                    Point1="74.422616960126,21.8142852526902"
+                    Point2="74.422616960126,25.8142852526902"
+                    Point3="78.422616960126,25.8142852526902" />
+                  <mssgle:LineSegment
+                    End="141.345233920252,25.8142852526902" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8978,6 +9167,18 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Data Flow Task.EventHandlers[OnPostExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="210.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task.EventHandlers[OnPostExecute]\Execute SQL Task_ErrorLog"
+          TopLeft="216,102" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
@@ -8991,17 +9192,5 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package\Data Flow Task.EventHandlers[OnPostExecute]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="210.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task.EventHandlers[OnPostExecute]\Execute SQL Task_ErrorLog"
-          TopLeft="216,102" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
