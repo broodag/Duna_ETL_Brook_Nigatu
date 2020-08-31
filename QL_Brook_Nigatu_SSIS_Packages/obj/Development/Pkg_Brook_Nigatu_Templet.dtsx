@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Brook_Nigatu_Templet"
   DTS:PackageType="5"
-  DTS:VersionBuild="61"
-  DTS:VersionGUID="{E62D36F9-D20B-4228-A7B5-63B5EB42E51E}">
+  DTS:VersionBuild="62"
+  DTS:VersionGUID="{A295FCAC-6501-4A70-987F-2EF5BE3EB846}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -154,7 +154,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">8/31/2020 4:39:26 PM</DTS:VariableValue>
+        DTS:DataType="7">8/31/2020 4:55:11 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -275,14 +275,35 @@
                   Language="CSharp"
                   ReadOnlyVariables="User::varBody,User::varFromEmail,User::varPassword,User::varSmtpClint,User::varSmtpServerPort,User::varSubject,User::varToEmail">
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -685,35 +706,14 @@ namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1011,14 +1011,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                   Language="CSharp"
                   ReadOnlyVariables="User::varBody,User::varFromEmail,User::varPassword,User::varSmtpClint,User::varSmtpServerPort,User::varSubject,User::varToEmail">
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1421,35 +1442,14 @@ namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -8913,7 +8913,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Row Count"
-          TopLeft="259.821424699788,340.785708191991" />
+          TopLeft="114.508926865113,251.41070979014" />
         <NodeLayout
           Size="144,42.6666666666667"
           Id="Package\Data Flow Task\OData Source"
@@ -8921,45 +8921,45 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="154.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Derived Column"
-          TopLeft="324.374995166436,247.649995571673" />
+          TopLeft="78.2812488335186,174.52499687925" />
         <NodeLayout
           Size="157.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Data Conversion"
-          TopLeft="283.124995781109,95.5499982914328" />
+          TopLeft="92.4999986216428,72.7999986982345" />
         <NodeLayout
           Size="166.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Data Conversion 1"
-          TopLeft="306.874995427206,173.549996896684" />
+          TopLeft="300.624995520338,106.924998088032" />
         <NodeLayout
           Size="172,42.6666666666667"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="598.74999107793,375.69999328196" />
+          TopLeft="361.249994616956,223.762495998814" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Row Count Output 1]"
-          TopLeft="391.154758033121,362.119041525324">
+          TopLeft="245.842260198446,272.744043123474">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="207.595233044809,34.9142850899694"
+              EndConnector="115.407734418509,-27.6482137913263"
               Start="0,0"
-              End="200.095233044809,34.9142850899694">
+              End="107.907734418509,-27.6482137913263">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="99.7976165224044,0" />
+                    End="53.7038672092547,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="99.7976165224044,0"
-                    Point2="103.797616522404,0"
-                    Point3="103.797616522404,4" />
+                    Point1="53.7038672092547,0"
+                    Point2="57.7038672092547,0"
+                    Point3="57.7038672092547,-4" />
                   <mssgle:LineSegment
-                    End="103.797616522404,30.9142850899694" />
+                    End="57.7038672092547,-23.6482137913263" />
                   <mssgle:CubicBezierSegment
-                    Point1="103.797616522404,30.9142850899694"
-                    Point2="103.797616522404,34.9142850899694"
-                    Point3="107.797616522404,34.9142850899694" />
+                    Point1="57.7038672092547,-23.6482137913263"
+                    Point2="57.7038672092547,-27.6482137913263"
+                    Point3="61.7038672092547,-27.6482137913263" />
                   <mssgle:LineSegment
-                    End="200.095233044809,34.9142850899694" />
+                    End="107.907734418509,-27.6482137913263" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8970,30 +8970,24 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Output]"
-          TopLeft="333.874996097759,56.966666410963">
+          TopLeft="261.874996097759,35.6333330776296">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="27.9166663500167,38.5833318804698"
+              EndConnector="-90.7083308094495,37.1666656206049"
               Start="0,0"
-              End="27.9166663500167,31.0833318804698">
+              End="-90.7083308094495,29.6666656206049">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.2916659402349" />
+                    End="-86.7083308094495,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.2916659402349"
-                    Point2="0,19.2916659402349"
-                    Point3="4,19.2916659402349" />
+                    Point1="-86.7083308094495,0"
+                    Point2="-90.7083308094495,0"
+                    Point3="-90.7083308094495,4" />
                   <mssgle:LineSegment
-                    End="23.9166663500167,19.2916659402349" />
-                  <mssgle:CubicBezierSegment
-                    Point1="23.9166663500167,19.2916659402349"
-                    Point2="27.9166663500167,19.2916659402349"
-                    Point3="27.9166663500167,23.2916659402349" />
-                  <mssgle:LineSegment
-                    End="27.9166663500167,31.0833318804698" />
+                    End="-90.7083308094495,29.6666656206049" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9004,30 +8998,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="401.708328499769,290.31666223834">
+          TopLeft="155.614582166852,217.191663545916">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-76.2202371333149,50.4690459536514"
+              EndConnector="24.5610113649278,34.219046244224"
               Start="0,0"
-              End="-76.2202371333149,42.9690459536514">
+              End="24.5610113649278,26.719046244224">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.2345229768257" />
+                    End="0,13.109523122112" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.2345229768257"
-                    Point2="0,25.2345229768257"
-                    Point3="-4,25.2345229768257" />
+                    Point1="0,13.109523122112"
+                    Point2="0,17.109523122112"
+                    Point3="4,17.109523122112" />
                   <mssgle:LineSegment
-                    End="-72.2202371333149,25.2345229768257" />
+                    End="20.5610113649278,17.109523122112" />
                   <mssgle:CubicBezierSegment
-                    Point1="-72.2202371333149,25.2345229768257"
-                    Point2="-76.2202371333149,25.2345229768257"
-                    Point3="-76.2202371333149,29.2345229768257" />
+                    Point1="20.5610113649278,17.109523122112"
+                    Point2="24.5610113649278,17.109523122112"
+                    Point3="24.5610113649278,21.109523122112" />
                   <mssgle:LineSegment
-                    End="-76.2202371333149,42.9690459536514" />
+                    End="24.5610113649278,26.719046244224" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9038,30 +9032,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Data Conversion Output1]"
-          TopLeft="390.208328760539,216.21666356335">
+          TopLeft="383.958328853672,149.591664754698">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="11.4999997392298,31.4333320083227"
+              EndConnector="-228.34374668682,24.9333321245514"
               Start="0,0"
-              End="11.4999997392298,23.9333320083227">
+              End="-228.34374668682,17.4333321245514">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.7166660041614" />
+                    End="0,8.46666606227568" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.7166660041614"
-                    Point2="0,15.7166660041614"
-                    Point3="4,15.7166660041614" />
+                    Point1="0,8.46666606227568"
+                    Point2="0,12.4666660622757"
+                    Point3="-4,12.4666660622757" />
                   <mssgle:LineSegment
-                    End="7.49999973922985,15.7166660041614" />
+                    End="-224.34374668682,12.4666660622757" />
                   <mssgle:CubicBezierSegment
-                    Point1="7.49999973922985,15.7166660041614"
-                    Point2="11.4999997392298,15.7166660041614"
-                    Point3="11.4999997392298,19.7166660041614" />
+                    Point1="-224.34374668682,12.4666660622757"
+                    Point2="-228.34374668682,12.4666660622757"
+                    Point3="-228.34374668682,16.4666660622757" />
                   <mssgle:LineSegment
-                    End="11.4999997392298,23.9333320083227" />
+                    End="-228.34374668682,17.4333321245514" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9072,30 +9066,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Data Conversion Output]"
-          TopLeft="361.791662447775,138.2166649581">
+          TopLeft="249.833331954976,94.1333320315678">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="28.4166663127639,35.3333319385842"
+              EndConnector="50.791663565362,34.1249993897973"
               Start="0,0"
-              End="28.4166663127639,27.8333319385842">
+              End="43.291663565362,34.1249993897973">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13.6666659692921" />
+                    End="21.395831782681,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,13.6666659692921"
-                    Point2="0,17.6666659692921"
-                    Point3="4,17.6666659692921" />
+                    Point1="21.395831782681,0"
+                    Point2="25.395831782681,0"
+                    Point3="25.395831782681,4" />
                   <mssgle:LineSegment
-                    End="24.4166663127639,17.6666659692921" />
+                    End="25.395831782681,30.1249993897973" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.4166663127639,17.6666659692921"
-                    Point2="28.4166663127639,17.6666659692921"
-                    Point3="28.4166663127639,21.6666659692921" />
+                    Point1="25.395831782681,30.1249993897973"
+                    Point2="25.395831782681,34.1249993897973"
+                    Point3="29.395831782681,34.1249993897973" />
                   <mssgle:LineSegment
-                    End="28.4166663127639,27.8333319385842" />
+                    End="43.291663565362,34.1249993897973" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
