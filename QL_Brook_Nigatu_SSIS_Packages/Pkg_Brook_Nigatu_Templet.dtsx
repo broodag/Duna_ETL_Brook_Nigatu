@@ -1,25 +1,25 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="8/10/2020 7:37:38 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-K7PS7F9"
   DTS:CreatorName="DESKTOP-K7PS7F9\brood"
-  DTS:DTSID="{CF72F6B0-9190-4251-9F53-1474E0DA08FC}"
+  DTS:DTSID="{41CA037C-077A-4308-A0A2-56B570E3C82C}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Pkg_Brook_Nigatu_Templet"
   DTS:PackageType="5"
-  DTS:VersionBuild="60"
-  DTS:VersionGUID="{4E7AFBB5-CA61-43EF-B646-F4E39622BE7C}">
+  DTS:VersionBuild="61"
+  DTS:VersionGUID="{E62D36F9-D20B-4228-A7B5-63B5EB42E51E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.Practice]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{A63AC152-F52B-4E11-AE4B-C8DCDF2CD87A}"
+      DTS:DTSID="{25691666-5AA7-4D57-A345-DBFF687481EB}"
       DTS:ObjectName="LocalHost.Practice">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -30,7 +30,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{371A833E-2874-4C9D-8121-DD19621F6782}"
+      DTS:DTSID="{0AFF2ED4-0195-47B9-BA3D-52998D290830}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varBody">
@@ -39,7 +39,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{5409191E-B351-4AB3-B2E7-00467346B590}"
+      DTS:DTSID="{C10898A4-BF5B-4961-A73A-993A711878FD}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varChannelDerivedColumn">
@@ -48,7 +48,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E7036C5A-281E-4553-872B-A7758246AEAC}"
+      DTS:DTSID="{B462629E-8887-48B6-9B8B-745BD23C4858}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varFromEmail">
@@ -57,7 +57,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{98F944DE-591D-4701-A907-628A3558F4C8}"
+      DTS:DTSID="{FD08DFC2-E77C-4BD3-8BD6-FEEC30596F01}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varFundedTier">
@@ -66,7 +66,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{DAA32EBA-5B65-46C5-A2E7-1921919E0193}"
+      DTS:DTSID="{C1B26159-ADE4-4616-9B3E-1D1B839CBD43}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varLeadSourceType">
@@ -75,7 +75,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2DD9146C-6D03-4379-A6D2-784CCAC01A6F}"
+      DTS:DTSID="{EE340ACD-658B-4693-B51E-12DA071FB860}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varPackageName">
@@ -84,7 +84,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{317B55A0-FA74-4CE6-836D-41A0D16DB99A}"
+      DTS:DTSID="{41514B70-31EF-4160-9ABF-FB467D7BDB9B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varPassword">
@@ -93,7 +93,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7B2FBC8D-674F-431E-B313-36FDDAD78E84}"
+      DTS:DTSID="{9F26550C-D4CC-4EC6-98DE-432CCAEBECDD}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varRowCount">
@@ -102,7 +102,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9FC5712C-DC57-4F4A-9433-4F9CE9347698}"
+      DTS:DTSID="{03A54425-D401-4B45-8A60-82DDA91011EA}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpClint">
@@ -111,7 +111,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{FEEA2A4C-494C-4697-B64E-1D09CA4C93B2}"
+      DTS:DTSID="{663854F7-73BD-481F-A5DC-28C01C4D5DA6}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpServerPort">
@@ -120,7 +120,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{ABD7862C-6CBC-4A48-9146-61A949EFE0D8}"
+      DTS:DTSID="{04DEB608-5083-4153-9BD4-0909BBEECDDE}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSourceName">
@@ -129,7 +129,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{788D72A1-04B4-4BF8-BDF8-04613A9F59A1}"
+      DTS:DTSID="{EBEC41D9-95DC-4947-A391-D200A1A09891}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSubject">
@@ -138,7 +138,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F3C046AD-BEB8-4BC3-B19A-95617666DB16}"
+      DTS:DTSID="{18160D2A-95A1-4A61-851E-55309B111AE9}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varTest">
@@ -147,18 +147,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{86375EE1-BDA7-4DB8-9412-70C8D302EC78}"
+      DTS:DTSID="{731E3BD5-6DF5-4D45-90A5-A701FEF946A8}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">8/31/2020 4:39:26 PM</DTS:VariableValue>
+        DTS:DataType="7">8/31/2020 4:31:32 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{FD4268E0-933D-41E5-9A8C-EBEA5BAC535D}"
+      DTS:DTSID="{439DEC30-465D-4CF5-92C4-4C463E2EAF76}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varToEmail">
@@ -171,7 +171,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{D22A8947-EC73-4ACC-A4B9-D8DE4D924134}"
+      DTS:DTSID="{49510A12-37FA-41FF-8DDD-F76B08A62223}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -181,7 +181,7 @@
         <DTS:EventHandler
           DTS:refId="Package\Data Flow Task.EventHandlers[OnError]"
           DTS:CreationName="OnError"
-          DTS:DTSID="{475CBA02-0D4B-4D3E-A94F-BB81B90CEED2}"
+          DTS:DTSID="{C7081345-AB14-4382-AF08-627918CF8C8B}"
           DTS:EventID="0"
           DTS:EventName="OnError"
           DTS:LocaleID="-1">
@@ -189,7 +189,7 @@
             <DTS:Variable
               DTS:CreationName=""
               DTS:Description="The propagate property of the event"
-              DTS:DTSID="{FA80D0E8-C722-4FA3-92B0-AEF84FB2F4B7}"
+              DTS:DTSID="{95813025-869D-4C08-B561-A9C97EBE63DB}"
               DTS:IncludeInDebugDump="6789"
               DTS:Namespace="System"
               DTS:ObjectName="Propagate">
@@ -202,7 +202,7 @@
               DTS:refId="Package\Data Flow Task.EventHandlers[OnError]\Execute SQL Task"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
-              DTS:DTSID="{E32EA7AA-3A0F-4DA0-B63A-036FDB3ECD9D}"
+              DTS:DTSID="{36EB8C14-9B81-4CC0-9190-4BB8C603CCCD}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Execute SQL Task"
@@ -262,7 +262,7 @@
               DTS:CreationName="Microsoft.ScriptTask"
               DTS:Description="Script Task"
               DTS:Disabled="True"
-              DTS:DTSID="{76C473FA-039E-47FA-A327-D798C97DBF43}"
+              DTS:DTSID="{0866B79A-F161-45CC-9C41-BB4378F4B4B4}"
               DTS:ExecutableType="Microsoft.ScriptTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Script Task">
@@ -917,7 +917,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <DTS:EventHandler
           DTS:refId="Package\Data Flow Task.EventHandlers[OnPostExecute]"
           DTS:CreationName="OnPostExecute"
-          DTS:DTSID="{5A75D645-A733-42C8-B09A-6DCB52DB158B}"
+          DTS:DTSID="{86F9E245-8C10-4115-A9FF-64982D348903}"
           DTS:EventID="487"
           DTS:EventName="OnPostExecute"
           DTS:LocaleID="-1">
@@ -925,7 +925,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <DTS:Variable
               DTS:CreationName=""
               DTS:Description="The propagate property of the event"
-              DTS:DTSID="{E0A54FA3-19C9-422D-A65E-7805B54296DB}"
+              DTS:DTSID="{09651176-CE5A-4AD6-B670-4B8449055946}"
               DTS:IncludeInDebugDump="6789"
               DTS:Namespace="System"
               DTS:ObjectName="Propagate">
@@ -938,7 +938,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               DTS:refId="Package\Data Flow Task.EventHandlers[OnPostExecute]\Execute SQL Task_ErrorLog"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
-              DTS:DTSID="{F6C7D496-C8EE-45C8-89A3-3235D770F788}"
+              DTS:DTSID="{90D26599-22CC-4E49-A27E-B41DE7EB2366}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Execute SQL Task_ErrorLog"
@@ -998,7 +998,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               DTS:CreationName="Microsoft.ScriptTask"
               DTS:Description="Script Task"
               DTS:Disabled="True"
-              DTS:DTSID="{951b1c4d-38cf-43f7-b4a9-7bef61b74da6}"
+              DTS:DTSID="{540A6E37-4C73-4ECD-9A14-E351F269C6F8}"
               DTS:ExecutableType="Microsoft.ScriptTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Script Task">
@@ -8789,7 +8789,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{11412206-6933-412C-BBCE-36434AD7245D}"
+      DTS:DTSID="{B0251AF1-6E71-4B16-9085-F169226882C9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
@@ -8798,7 +8798,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A63AC152-F52B-4E11-AE4B-C8DCDF2CD87A}"
+          SQLTask:Connection="{25691666-5AA7-4D57-A345-DBFF687481EB}"
           SQLTask:SqlStatementSource="USE STGQL&#xA;GO &#xA;  DELETE FROM [dbo].[Stg_Brook_Nigatu_QL] where SourceName ='LendingQB' " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -8807,7 +8807,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{84CECD2C-F6D5-4955-B900-5081F0B31D2B}"
+      DTS:DTSID="{D03B6F35-A7C2-4CEF-B955-ECE85ECF1DB3}"
       DTS:From="Package\Execute SQL Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -8817,7 +8817,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnPostExecute]"
       DTS:CreationName="OnPostExecute"
-      DTS:DTSID="{5FD231FD-F962-4BFA-94FE-CE88B12FC109}"
+      DTS:DTSID="{DC7BF1D8-8971-47FB-A107-64FF6D72850E}"
       DTS:EventID="1074890460"
       DTS:EventName="OnPostExecute"
       DTS:LocaleID="-1">
@@ -8825,7 +8825,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{1CA9BD84-E5AE-42A3-B0F3-491CC0D30A8E}"
+          DTS:DTSID="{D320DFB9-75FD-4ACC-BAF3-282814051E48}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
