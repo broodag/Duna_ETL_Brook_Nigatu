@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-K7PS7F9</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAADNdHpZqhhq0sIt2FXrzPiQScguU3Ji8MxwhgpAUMKYFgAAAAAOgAAAAAIAACAAAAC2FWafmsRZLR16yV9eZfznJEKHWBUxSJKeMxdKRgCzd5AAAAAO3OmjA+jR2cKI0I54xOuGEwJeYMYHKF1RYCHIx+aDcRGUBcZygG36/awZClkB1VkI2W/1P6Dq70TIsX00iPSCCdZcuoXUfPPtr+iqV7dUIwbbcSIRZHEBprE3J3vsalFgyAvw46oe1huIDZXP8rPLciLekh8c/yQZ0csg4gBOLp/9inU8XEM09sJ/9eFbOR5AAAAArcaC8dIEJbLFbIJ4ahKLf4Hi9EfQeMY/UVOV0dS2NMskuWbIpVW+WEFh22YwgzOofz/YTW0lVkeXnsIVcBQg9g==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAADX65XFpNKhzSVAUir0bfld4f2DR45x0Q9qAvQYtLh8ygAAAAAOgAAAAAIAACAAAAC+yfNsnvCsF3U3ARTGupq7Nz07tz/1IWW8Xbj0GpZoAZAAAABvZ14xGaXeEecsk/D/6eErKUTzobHlSjEkvL7YSOziaibTBVGHqqdBGMxZagMrGGMKtnlIIj9CGjsl+DJ2B3WiYChBvcUE+U6HEbxK6aya8KoW7mSWm8tU+uxfHoXyiYekTb5mEH0ByyTAw5BDdcSdJQZyW5y9+sYUFqaOsTSDXkUT+ZSGGKJlu/naBfrgniFAAAAAKUjjhLnC3mJv2i3znZe43Tfl9Yhs6rM5/fa4BnbuvikJQQrQgGmRX4FR3byUSHCmK2uH2+Z3duSkRlj3/bGfDQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -80,7 +80,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0MzIwNDQ5NTAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQzMjkwODk1NzYxMTg1OCwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsNjVkZjc0OWYtMjA5Ni0wMDAwLTQ3NWEtZGRjMjc1Yjg2NGQzLDY1ZGY3NDlmLTIwOTYtMDAwMC00NzVhLWRkYzI3NWI4NjRkMywsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxjOGhZWUEwZ2dwNzdXWU5rS3cxOGRvanZoRGhIdEV0NkpBRGwrRUdmcENPR2grYmdKVHN5cVMwZFMyVzFrdkxma1hWaUZaamE0M3lJMjRXMlV3QjZGcFFkOEp0NU9FMWtiZ3pydXpENDE4MWV1SE9maUNpSUNzN3IvYXdMck9SSGFpVU80UDdEcnBvYUtEaTN0blZHTXYzS0hPYnd4NzZXNVBlRG1TYXVaNitXR1U3MkpiUDJPclh0alZrWmFoOHYzTWRkRVVuMjhIOVhzam1WUFlaVmFXUFVYeGE3WlJRUTgySjlVb2ZLeVd0ellQRjVxSGYvV0srV2dFTG5jTWE3SFJVa2JtQXJCUElYUGdYdVVtdXdNSGJyMHhlVC9yemFsU3VwTUFrTjRLRjJETlozVHdKSDNQZ2Z2aUJyTlJ6dXNTeVhrM3VOQVo4U2taYVpnY3U0Rnc9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0MzMxMTY0OTAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQzMzk4MDQ5NDYyODQyNywwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsOTY0NTc1OWYtNzAyOS0wMDAwLTYzZDAtY2QyNTMwNGQ4NGI0LDk2NDU3NTlmLTcwMjktMDAwMC02M2QwLWNkMjUzMDRkODRiNCwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxhaHZtMlBJSWpBdjdxQm5Nd2pYeDRzdHhrNVhubUJ5RDlQcEI5VGIrd0pnbmhqdElvY3BTNVNBQ0ZxNWNxQ2x1cXQwNDBWOVRHSFJBVzk1STFxbG13NjRVYWVSTHoyRzBWLzRIVlNZS2tJTFRaSm9UR0ZOc0lTM1RXY3NQMXpnelorbVlvVW1ydUpIekxnYjBSWTNzSjl3S2MvNmFTK1JOU1dTa0xJWHQ0blJBWWdOREViN213a1YzYlVwek5sY3lKMW9HY1JISGsrTnRPY3R5M1ZJMHRiMVlJci9KRCtJbkMyTXZOWDhoRys1ZlZIYkxSbUNSdnhVdUpubXE0c3ZEV1V1YkkrTWpMNVhkajJXaU4vVjVuc2ozWDBqbSsweitWYktVMUdqSWo2dTdxN1hxKzVKdFg5K09YQmI3OEJGRllmRnluVmVWaldCQys3dmVidnBCb3c9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -372,10 +372,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">34</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">45</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9810FD55-17A9-4B0E-AE5C-5A556C617D07}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{B9129B2B-2588-4531-86EC-1E6BA616840C}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -498,6 +498,96 @@
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.SMTP Connection Manager.ConnectByProxy">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.SMTP Connection Manager.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">SmtpServer=DUNA;UseWindowsAuthentication=True;EnableSsl=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.SMTP Connection Manager.EnableSsl">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.SMTP Connection Manager.SmtpServer">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">DUNA</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.SMTP Connection Manager.TargetServerVersion">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">150</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.SMTP Connection Manager.UseWindowsAuthentication">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
