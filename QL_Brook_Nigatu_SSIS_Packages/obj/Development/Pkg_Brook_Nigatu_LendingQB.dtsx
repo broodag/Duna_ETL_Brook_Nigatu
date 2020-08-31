@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="54"
-  DTS:VersionGUID="{FA84518C-56FB-49F0-8755-DE471903A9E6}">
+  DTS:VersionBuild="57"
+  DTS:VersionGUID="{E938A5E9-9398-4FAC-804E-D9302907193B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -154,7 +154,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">8/31/2020 11:54:05 AM</DTS:VariableValue>
+        DTS:DataType="7">8/31/2020 12:17:38 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -275,14 +275,35 @@
                   Language="CSharp"
                   ReadOnlyVariables="User::varBody,User::varFromEmail,User::varPassword,User::varSmtpClint,User::varSmtpServerPort,User::varSubject,User::varToEmail">
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -685,35 +706,14 @@ namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1011,14 +1011,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                   Language="CSharp"
                   ReadOnlyVariables="User::varBody,User::varFromEmail,User::varPassword,User::varSmtpClint,User::varSmtpServerPort,User::varSubject,User::varToEmail">
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1421,35 +1442,14 @@ namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -5165,13 +5165,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,255,1252)(DT_WSTR,255)(([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Dunatek",1))) &gt; "0" ? "Dunatek" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"IBX",1))) &gt; "0" ? "IBX" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Fusion",1))) &gt; "0" ? "Fusion" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"LeadPint",1))) &gt; "0" ? "Lead Point" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"HARP",1))) &gt; "0" ? "HARP" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Bills",1))) &gt; "0" ? "Bills" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"VA Loans",1))) &gt; "0" ? "VA Loans" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Military",1))) &gt; "0" ? "Military" : [ISNULL](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]}) ? "Dunatek" : ([SUBSTRING]([REPLACE](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},".com",""),1,[LEN](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]}))))</property>
+                          name="Expression">(DT_STR,255,1252)(DT_WSTR,255)(([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Dunatek",1))) &gt; "0" ? "Dunatek" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"IBX",1))) &gt; "0" ? "IBX" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Fusion",1))) &gt; "0" ? "Fusion" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"LeadPint",1))) &gt; "0" ? "Lead Point" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"HARP",1))) &gt; "0" ? "HARP" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Bills",1))) &gt; "0" ? "Bills" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"VA Loans",1))) &gt; "0" ? "VA Loans" : ([SUBSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},1,[FINDSTRING](#{Package\Data Flow Task\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of Copy of LeadSource]},"Military",1))) &gt; "0" ? "Military" : "Dunatek")</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,255,1252)(DT_WSTR,255)((SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1))) &gt; "0" ? "Dunatek" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"IBX",1))) &gt; "0" ? "IBX" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Fusion",1))) &gt; "0" ? "Fusion" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"LeadPint",1))) &gt; "0" ? "Lead Point" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"HARP",1))) &gt; "0" ? "HARP" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Bills",1))) &gt; "0" ? "Bills" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"VA Loans",1))) &gt; "0" ? "VA Loans" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Military",1))) &gt; "0" ? "Military" : ISNULL([Copy of Copy of LeadSource]) ? "Dunatek" : (SUBSTRING(REPLACE([Copy of Copy of LeadSource],".com",""),1,LEN([Copy of Copy of LeadSource]))))</property>
+                          name="FriendlyExpression">(DT_STR,255,1252)(DT_WSTR,255)((SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Dunatek",1))) &gt; "0" ? "Dunatek" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"IBX",1))) &gt; "0" ? "IBX" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Fusion",1))) &gt; "0" ? "Fusion" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"LeadPint",1))) &gt; "0" ? "Lead Point" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"HARP",1))) &gt; "0" ? "HARP" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Bills",1))) &gt; "0" ? "Bills" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"VA Loans",1))) &gt; "0" ? "VA Loans" : (SUBSTRING([Copy of Copy of LeadSource],1,FINDSTRING([Copy of Copy of LeadSource],"Military",1))) &gt; "0" ? "Military" : "Dunatek")</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -8911,6 +8911,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\Row Count"
+          TopLeft="259.821424699788,340.785708191991" />
+        <NodeLayout
           Size="144,42.6666666666667"
           Id="Package\Data Flow Task\OData Source"
           TopLeft="261.874996097759,14.2999997442963" />
@@ -8926,6 +8930,112 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Size="166.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Data Conversion 1"
           TopLeft="306.874995427206,173.549996896684" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="598.74999107793,375.69999328196" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Row Count Output 1]"
+          TopLeft="391.154758033121,362.119041525324">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="207.595233044809,34.9142850899694"
+              Start="0,0"
+              End="200.095233044809,34.9142850899694">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="99.7976165224044,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="99.7976165224044,0"
+                    Point2="103.797616522404,0"
+                    Point3="103.797616522404,4" />
+                  <mssgle:LineSegment
+                    End="103.797616522404,30.9142850899694" />
+                  <mssgle:CubicBezierSegment
+                    Point1="103.797616522404,30.9142850899694"
+                    Point2="103.797616522404,34.9142850899694"
+                    Point3="107.797616522404,34.9142850899694" />
+                  <mssgle:LineSegment
+                    End="200.095233044809,34.9142850899694" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Output]"
+          TopLeft="333.874996097759,56.966666410963">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.9166663500167,38.5833318804698"
+              Start="0,0"
+              End="27.9166663500167,31.0833318804698">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.2916659402349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.2916659402349"
+                    Point2="0,19.2916659402349"
+                    Point3="4,19.2916659402349" />
+                  <mssgle:LineSegment
+                    End="23.9166663500167,19.2916659402349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.9166663500167,19.2916659402349"
+                    Point2="27.9166663500167,19.2916659402349"
+                    Point3="27.9166663500167,23.2916659402349" />
+                  <mssgle:LineSegment
+                    End="27.9166663500167,31.0833318804698" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="401.708328499769,290.31666223834">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-76.2202371333149,50.4690459536514"
+              Start="0,0"
+              End="-76.2202371333149,42.9690459536514">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.2345229768257" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.2345229768257"
+                    Point2="0,25.2345229768257"
+                    Point3="-4,25.2345229768257" />
+                  <mssgle:LineSegment
+                    End="-72.2202371333149,25.2345229768257" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-72.2202371333149,25.2345229768257"
+                    Point2="-76.2202371333149,25.2345229768257"
+                    Point3="-76.2202371333149,29.2345229768257" />
+                  <mssgle:LineSegment
+                    End="-76.2202371333149,42.9690459536514" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Data Conversion Output1]"
           TopLeft="390.208328760539,216.21666356335">
@@ -8986,116 +9096,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                     Point3="28.4166663127639,21.6666659692921" />
                   <mssgle:LineSegment
                     End="28.4166663127639,27.8333319385842" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Output]"
-          TopLeft="333.874996097759,56.966666410963">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="27.9166663500167,38.5833318804698"
-              Start="0,0"
-              End="27.9166663500167,31.0833318804698">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.2916659402349" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.2916659402349"
-                    Point2="0,19.2916659402349"
-                    Point3="4,19.2916659402349" />
-                  <mssgle:LineSegment
-                    End="23.9166663500167,19.2916659402349" />
-                  <mssgle:CubicBezierSegment
-                    Point1="23.9166663500167,19.2916659402349"
-                    Point2="27.9166663500167,19.2916659402349"
-                    Point3="27.9166663500167,23.2916659402349" />
-                  <mssgle:LineSegment
-                    End="27.9166663500167,31.0833318804698" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="131.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\Row Count"
-          TopLeft="259.821424699788,340.785708191991" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="401.708328499769,290.31666223834">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-76.2202371333149,50.4690459536514"
-              Start="0,0"
-              End="-76.2202371333149,42.9690459536514">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.2345229768257" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.2345229768257"
-                    Point2="0,25.2345229768257"
-                    Point3="-4,25.2345229768257" />
-                  <mssgle:LineSegment
-                    End="-72.2202371333149,25.2345229768257" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-72.2202371333149,25.2345229768257"
-                    Point2="-76.2202371333149,25.2345229768257"
-                    Point3="-76.2202371333149,29.2345229768257" />
-                  <mssgle:LineSegment
-                    End="-76.2202371333149,42.9690459536514" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="172,42.6666666666667"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="598.74999107793,375.69999328196" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Row Count Output 1]"
-          TopLeft="391.154758033121,362.119041525324">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="207.595233044809,34.9142850899694"
-              Start="0,0"
-              End="200.095233044809,34.9142850899694">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="99.7976165224044,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="99.7976165224044,0"
-                    Point2="103.797616522404,0"
-                    Point3="103.797616522404,4" />
-                  <mssgle:LineSegment
-                    End="103.797616522404,30.9142850899694" />
-                  <mssgle:CubicBezierSegment
-                    Point1="103.797616522404,30.9142850899694"
-                    Point2="103.797616522404,34.9142850899694"
-                    Point3="107.797616522404,34.9142850899694" />
-                  <mssgle:LineSegment
-                    End="200.095233044809,34.9142850899694" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
