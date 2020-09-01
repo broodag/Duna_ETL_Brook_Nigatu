@@ -26,12 +26,12 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-K7PS7F9</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAAA9OZs1vc2YTwb2J8Ve7ff2EQUt69TMXGBkz6FKHw8rIwAAAAAOgAAAAAIAACAAAADYDtK5eKbWJjhkSDfhfsEHIhcE1c2qPUrAdXQPHi4TL5AAAAA7hWk5ci3B+/PqTC7xzeqxaw2zFOlyeAnvkOIg/4GdkxF7RZF63rXWxccxjqmzQRKy49h0Ts0P1uZEMJRZE+0AP8VJUhnyferS+TzzlW2r+wVpGYb3cVGhdpnQjNrQNj+tCNEsw1PB5OUK7vOV4ZnT2jj7EqqOhHUwV2fhuqMGZdcaY/0cZT8v6uCRiSCSc4xAAAAAqK4ErzhhoBY20jLfk0SfCIhEWmiwB5Iuufd5Zsk2kYYAxeD5pOht5SnycdLZahK6j0KGj9l5X1UWyB0HC0M5rQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAAAvSeUxJdESuVOm4A9jf+9aFivJZ/mjqg/bVtACx2Z2ewAAAAAOgAAAAAIAACAAAADeliqPGZhS++KaRVVbEuPKCc2AmtRQqZFnN7aBCTn7Y5AAAACpDtseWTHDs8uOUNnhZET4rUkNo9VRDZoGNhrhUYWuVaa+8+yweIVH2ErD21sWXKgTH5KQhSgbLgUPqtPrqFU96U+AkzyZ1tPH+VLl1XzJ03AGpA1ZwahsWHR41UkQhCwILcFvV2ZVAp/F/ZVYxOzitDVAA/2tP+SuostBCtotfy9RVjAEen8nJ085SIqcWAZAAAAApHD8ZJwuSJUceIK/yCR9Md1k6l0Pl8vQCNZPPJekyy81QCcC+owQLJX55iKuL7O63pPLKfnYBXQGb7wDvSVznw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
+          <SSIS:Package SSIS:Name="Pkg_Brook_Nigatu_Templet 1.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Brook_Nigatu_LendingQB.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Pkg_Brook_Nigatu_Templet.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="LendingQB.conmgr" />
@@ -81,7 +81,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0MzM3OTU4NDAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQzNDY1OTg0Mzk4MDIzNCwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsNWY4Njc1OWYtMDBkMi0wMDAwLTQ3MTItYzU3YzdmNDFhMDAxLDVmODY3NTlmLTAwZDItMDAwMC00NzEyLWM1N2M3ZjQxYTAwMSwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxJNEtVZVNLNTFsSlpjNHVhUXVlNmd4RFNtbS9CakJUQXB3bTJiL0dFdGlVbXk1cjBuU0VHY05KMVJhOEVRcjZZSCswM2dZVXBwQTBSSUtZK3RUK2dPb3BUM0JTcVhjVkU1aHU2YW9JMk1Yakd4UGVJbEpnSDlUbzBiNzVuYTNhaVdwckluZDd4Y2ZXc3BPdW1veE83a291ZUdZMzY3N1NyOFVwMkpVYkY0dDFpUy84UWlScXZVVVlMU3JSeHo4VzdvU2x0L29UYmkzbGJrV3FNejZyaER5b0c4OWsvNUhja2tqbktzK3RicXNZMTNsbFA3eGZXRzFCMmhSL21YQS9ZVFlRS3VIVnBzTFpZMWFUSWt6Y0MvYzRTQ3ZMR2JBT1ZKa3hodi9qeXRreHZ1RjB5Y2lXVHBvM2JBckpURnV2a010Y3JBSTVzeXV6N1VpTk1BS2dSemc9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0MzQxMDg1NDAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQzNDk3MjU1MjM5ODE2OSwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsMzJhNDc1OWYtMDAzZi0wMDAwLTU0YmYtNzg0ODMxZmI4NmY4LDMyYTQ3NTlmLTAwM2YtMDAwMC01NGJmLTc4NDgzMWZiODZmOCwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxwNTUxaElkUDUvRUQ5V2NXbE13eUUxK1JUcW1ZeDU1RVk1Q1VLaGVUWXJTcHlNMm1oRDl0VW5OSHN6NEVadG5DMHgzMktCV0VESXhPTndLTXpuSHhZWTdHbjNQWlphRWtoUFpqUWtrb3NuMDZLWmM1TlNsTnBQeVpkN2FzeURVU0ZFcmV0N2tvcDRBWWlkWGl0dTlLRUZNS0FMaW9SYng3SURGNmdsUVhqSTVETFhDWVhuOE93NG1XeGpHaE5lVEJ5S2c0N002dnZRVU41NVlCTnBjMzBEQmNGcjB5ZWpYS2xMSmJtMk5XaDhPWU9xR3lGWG9YanhRZEdTSE1sUm9ac2k3WXYvb0ovRjBpRXZMNDNpL2JpV1NLOHh0SU92bkNESWZXYlFBWjJQQmhObjNWbkRIRnpzWVpCemVVaUNDTXNzQ1ZqT29nTDdTTzNJS01OVmJkbXc9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -367,16 +367,16 @@
             </SSIS:Parameter>
           </SSIS:ProjectConnectionParameters>
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Pkg_Brook_Nigatu_LendingQB.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Pkg_Brook_Nigatu_Templet 1.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{CF72F6B0-9190-4251-9F53-1474E0DA08FC}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{8327919C-5384-4B32-9952-14BA28CA4C5B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_Templet</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">60</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">66</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{4E7AFBB5-CA61-43EF-B646-F4E39622BE7C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{5E05CB8D-76C4-47BD-9C62-D5499BE11E2B}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -503,16 +503,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Pkg_Brook_Nigatu_Templet.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Pkg_Brook_Nigatu_LendingQB.dtsx">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">{41CA037C-077A-4308-A0A2-56B570E3C82C}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_Templet</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">61</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">66</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{E62D36F9-D20B-4228-A7B5-63B5EB42E51E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{EBCB8AEE-4DD3-4BFA-94C6-B491B67C7380}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

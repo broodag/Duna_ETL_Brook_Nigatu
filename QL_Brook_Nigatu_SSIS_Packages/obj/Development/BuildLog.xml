@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Brook_Nigatu_SSIS_Packages</Name>
-    <LastWriteTime>2020-08-31T20:39:23.5028815Z</LastWriteTime>
+    <LastWriteTime>2020-09-01T05:14:28.5982003Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Pkg_Brook_Nigatu_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-09-01T00:41:48.1378558Z</LastWriteTime>
+      <Name>Pkg_Brook_Nigatu_Templet 1.dtsx</Name>
+      <LastWriteTime>2020-09-01T05:12:24.7237073Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Pkg_Brook_Nigatu_Templet.dtsx</Name>
-      <LastWriteTime>2020-09-01T05:00:30.200974Z</LastWriteTime>
+      <Name>Pkg_Brook_Nigatu_LendingQB.dtsx</Name>
+      <LastWriteTime>2020-09-01T05:11:18.0473107Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
