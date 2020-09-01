@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="62"
-  DTS:VersionGUID="{D6B021EA-2436-48B2-873D-47C3EA06F047}">
+  DTS:VersionBuild="63"
+  DTS:VersionGUID="{C62AB8AB-34C9-479F-8CCC-CE678559371C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -154,7 +154,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">8/31/2020 5:00:20 PM</DTS:VariableValue>
+        DTS:DataType="7">8/31/2020 8:41:48 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -261,7 +261,6 @@
               DTS:refId="Package\Data Flow Task.EventHandlers[OnError]\Script Task"
               DTS:CreationName="Microsoft.ScriptTask"
               DTS:Description="Script Task"
-              DTS:Disabled="True"
               DTS:DTSID="{76C473FA-039E-47FA-A327-D798C97DBF43}"
               DTS:ExecutableType="Microsoft.ScriptTask"
               DTS:LocaleID="-1"

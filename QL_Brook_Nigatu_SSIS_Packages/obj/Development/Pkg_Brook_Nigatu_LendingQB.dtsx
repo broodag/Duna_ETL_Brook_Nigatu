@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="61"
-  DTS:VersionGUID="{F4CB15DF-9B19-483B-9430-EC78B447DBA0}">
+  DTS:VersionBuild="63"
+  DTS:VersionGUID="{C62AB8AB-34C9-479F-8CCC-CE678559371C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -154,7 +154,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">8/31/2020 4:55:11 PM</DTS:VariableValue>
+        DTS:DataType="7">8/31/2020 8:41:51 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -261,7 +261,6 @@
               DTS:refId="Package\Data Flow Task.EventHandlers[OnError]\Script Task"
               DTS:CreationName="Microsoft.ScriptTask"
               DTS:Description="Script Task"
-              DTS:Disabled="True"
               DTS:DTSID="{76C473FA-039E-47FA-A327-D798C97DBF43}"
               DTS:ExecutableType="Microsoft.ScriptTask"
               DTS:LocaleID="-1"
@@ -8799,7 +8798,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{A63AC152-F52B-4E11-AE4B-C8DCDF2CD87A}"
-          SQLTask:SqlStatementSource="USE STGQL&#xA;GO &#xA;  DELETE FROM [dbo].[Stg_Brook_Nigatu_QL] where SourceName ='LendingQB' " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="USE STGQL&#xA;GO &#xA;  DELETE FROM [dbo].[Stg_Brook_Nigatu_QL] where SourceName ='SharePoint' " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
