@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-K7PS7F9</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAADyUnofaLu9MjqCGvU2O+iEQuHahDg/RmCYgdfhUHEwQQAAAAAOgAAAAAIAACAAAADO5S94tOHkye8sFl0N3gCmECbHkZ29Q0BE0Frn3aicpZAAAACJANuFXcV6vUit21mtcKi3hixVCZIwRh6XiiylnQRiUWc0iW/R8c9QSHJR59nMnD6DtriUxW/jJ0SN3tA+52T12rRi/x1XxuC24Mqe4ZLjquKUfEN4MVwi6Rt7Ky7w0Jtk4soIJv7/B50RBCE4+o5yCxoI6a1eXmoBRuXW+aJbCGbbjp9hsvTBKOFllkjhWY9AAAAAYoeue0Bj3x8CZtgNa5sR6txApYeqBS7QbdzU7h8Fzxj5bjJZEOzVwXgzUnKHbpOaZZdG2oQ6t8Lt8eARfwdd5Q==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAABJ0DVtSOgbm67ZTVi4bvIuSuzCPhGxGu2ig864DbxXVwAAAAAOgAAAAAIAACAAAAD+j0y89pVdSxqSbTQPCZmLiHvdEG8zMxuUkF/mTqywgpAAAAAFIAgFhHNDdORoSrKvV6z+BwdtmzpKThefOVhD50L+nk77eNeyrz0T6mBKFf3G9xK72qNyj2eORe1l3Y2t5ewcux3KQRnjgXh4IoX9LCB3HMsawedi/QTW/jeTduyHh9bWmA9qUSzf37ElF4cf0kFZNYzQd5OmZc3F7pfDY7qnJmLSZBn309e5tQXKfcHHKVJAAAAA/6K7O5vmmoW1YGu0e3wlVHAOyhuRzWwB3KfovrapHoTpzYbDQt4fFSPESvJIhtsJOWGNpTw3HOdVCxpDhgdS0w==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -373,10 +373,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_Templet</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">148</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">147</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{CF042389-1C5C-45F3-8B11-560BC799C69B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{519D9E5F-D552-418D-833D-227340163C45}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -545,8 +545,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -754,8 +752,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -797,10 +793,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_LendingQB</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">153</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">157</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{05B713F9-4B86-4951-856E-EDAF295C6537}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{556296DE-D4D6-45D4-8369-C84410FB57AD}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
