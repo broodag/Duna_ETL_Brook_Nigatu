@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-K7PS7F9"
   DTS:CreatorName="DESKTOP-K7PS7F9\brood"
-  DTS:DTSID="{B49428C8-42E9-4ACB-B3F7-9E6D1A22E8E7}"
+  DTS:DTSID="{D32358E6-44F7-46BB-A833-627BA689F3F3}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Brook_Nigatu_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="157"
-  DTS:VersionGUID="{556296DE-D4D6-45D4-8369-C84410FB57AD}">
+  DTS:VersionBuild="220"
+  DTS:VersionGUID="{F377086A-6679-4FA4-A97E-3486D0B364D1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B6483BDC-4F88-4BAD-A2B4-80741446B373}"
+      DTS:DTSID="{C9C64A6B-3C05-45BE-999B-A9F48A9BE76F}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MortgageInsuranceCompanyID"
-              DTS:DTSID="{BAD6B2E8-134D-499A-A179-401E0D59E668}"
+              DTS:DTSID="{B8098E11-5CFD-4038-8F76-DBC754B094C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MortgageInsuranceCompany"
-              DTS:DTSID="{2D2DFE11-CDC0-4721-A410-EBC37C9E27BE}"
+              DTS:DTSID="{D91F4AF8-0D74-4D8B-881F-99130610E31F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Insurance_Company"
-              DTS:DTSID="{C1C30303-AABD-48FC-BA11-E9C4A4181EA6}"
+              DTS:DTSID="{0D9D298F-54C2-4128-AEBF-D30118DB0E6F}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -66,7 +66,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.Practice]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{CF45BAD2-BD8C-4E4A-9C72-13D14CB590FC}"
+      DTS:DTSID="{F1DBF2E0-D29E-4D3C-9E2B-6F213AC8BEFA}"
       DTS:ObjectName="LocalHost.Practice">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -77,7 +77,7 @@
       DTS:refId="Package.ConnectionManagers[SMTP Connection Manager]"
       DTS:CreationName="SMTP"
       DTS:Description="SMTP Connection Manager"
-      DTS:DTSID="{87DD1630-947B-4E1C-9153-31A72DFC749A}"
+      DTS:DTSID="{7E8C9239-46AA-443A-B31D-43D4892C8BF8}"
       DTS:ObjectName="SMTP Connection Manager">
       <DTS:ObjectData>
         <SmtpConnectionManager
@@ -86,10 +86,21 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="7"
+      DTS:DTSID="{DB25F863-98EF-4DF8-8FB4-EBD7108821A3}"
+      DTS:ObjectName="parMaxDate">
+      <DTS:Property
+        DTS:DataType="7"
+        DTS:Name="ParameterValue">1/1/1900 2:14:00 PM</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{868A6B7D-7860-4744-A6B3-AF7A4C288895}"
+      DTS:DTSID="{685CEC48-BC65-48CD-8982-7F83365438E2}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varBody">
@@ -99,7 +110,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{532A4F4F-8714-4F5F-B5AE-ECD99DCF6186}"
+      DTS:DTSID="{33DE1E2B-7316-4891-B2E7-B6F5314A0807}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varChannelDerivedColumn">
@@ -108,7 +119,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{5E5FBFC2-E6A3-4651-8C75-54825D160D0B}"
+      DTS:DTSID="{BDE93813-64D3-4F68-9CB6-BBC572E5AC98}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varFromEmail">
@@ -117,7 +128,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{8C654D16-AEA4-4924-9267-B71B80B106D6}"
+      DTS:DTSID="{1BB303EE-CD93-42CE-AE6A-68414B481214}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varFundedTier">
@@ -126,7 +137,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{544D11C6-E646-4E75-B730-101ADEF6CD12}"
+      DTS:DTSID="{A0166457-AE04-4567-8F30-1207FBC69D2F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varLeadSourceType">
@@ -135,7 +146,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{FB6E688B-AD41-4689-8172-913B8ACFD0EC}"
+      DTS:DTSID="{308A13E6-B639-4C06-914D-81A754CA7813}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varMaxDate">
+      <DTS:VariableValue
+        DTS:DataType="7">9/9/2020 3:12:00 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{140FE582-6D37-4691-BAFF-74330316F3EC}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varPackageName">
@@ -144,7 +164,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C6706A58-BA89-445D-A931-57FCB7B7F587}"
+      DTS:DTSID="{EC6E9FD1-2A69-46FE-AD27-9F9DC1161003}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varPassword">
@@ -153,7 +173,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0247B240-A027-4626-AC8D-1F9E86690643}"
+      DTS:DTSID="{F0E8BC89-030F-4CE1-9A74-A6BF5231C397}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varRowCount">
@@ -162,7 +182,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{FF95B695-D357-4CA5-B11D-902F1A094BAE}"
+      DTS:DTSID="{FB7A7E40-FF46-4388-A7A4-9BCDBE571A4C}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpClient">
@@ -171,7 +191,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C986C37F-E5E4-466F-B0DD-4513084D8BB7}"
+      DTS:DTSID="{9FD8DBFC-B9AE-406D-9C90-E84EF364A1D4}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpServerPort">
@@ -180,7 +200,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7FB7EC49-1E36-436B-809C-9C69B8EAB876}"
+      DTS:DTSID="{82D2B02E-F39F-4257-9D73-D5BC5217A83D}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSourceName">
@@ -189,36 +209,36 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A75F173A-ED6A-46C2-8D76-AD4023F7CFEB}"
+      DTS:DTSID="{C8828719-54F9-4061-BACF-DC7C893CB451}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSubject">
       <DTS:VariableValue
-        DTS:DataType="8">Quicken Loan ETL Error</DTS:VariableValue>
+        DTS:DataType="8">Quicken Loan ETL Error For LendingQB</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{682C530E-5141-4FEE-A261-E95ED94AE989}"
+      DTS:DTSID="{D1A68ED7-18D4-4532-A4A4-027B50E99DE6}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varTest">
       <DTS:VariableValue
-        DTS:DataType="8">12</DTS:VariableValue>
+        DTS:DataType="7">9/10/2020 7:54:00 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E52BE6B1-1579-41EA-B22F-5E9DFB82D945}"
+      DTS:DTSID="{8F7882EF-7339-4FEE-BBE1-FB2C83B18F6D}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/8/2020 2:49:34 AM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 5:00:22 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6534F1DB-0B88-4D23-8841-A8D785E41F59}"
+      DTS:DTSID="{92185D89-1E70-4E48-B26A-173FB3A84BC7}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varToEmail">
@@ -231,7 +251,7 @@
       DTS:refId="Package\DataFlowTaskSharePoint"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{B5A0E21D-D6B5-4CDB-8074-ECA0DBE38DD7}"
+      DTS:DTSID="{8FC489F7-90DB-4051-8B0C-3CC10E3C2D81}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="DataFlowTaskSharePoint"
@@ -241,7 +261,7 @@
         <DTS:EventHandler
           DTS:refId="Package\DataFlowTaskSharePoint.EventHandlers[OnError]"
           DTS:CreationName="OnError"
-          DTS:DTSID="{18E3566C-2033-422A-8EEE-23BFF1502EE7}"
+          DTS:DTSID="{80ED91C4-C31A-44ED-9F7F-42F108B0E14B}"
           DTS:EventID="0"
           DTS:EventName="OnError"
           DTS:LocaleID="-1">
@@ -249,7 +269,7 @@
             <DTS:Variable
               DTS:CreationName=""
               DTS:Description="The propagate property of the event"
-              DTS:DTSID="{F69E9276-B6F3-4128-A0BF-77AAA1C2BE11}"
+              DTS:DTSID="{8AFFCFEE-2F8D-4D24-A476-97B5FC2DA261}"
               DTS:IncludeInDebugDump="6789"
               DTS:Namespace="System"
               DTS:ObjectName="Propagate">
@@ -262,7 +282,7 @@
         <DTS:EventHandler
           DTS:refId="Package\DataFlowTaskSharePoint.EventHandlers[OnPostExecute]"
           DTS:CreationName="OnPostExecute"
-          DTS:DTSID="{92DBEE9F-AA0A-43F5-B169-84F649FCCE88}"
+          DTS:DTSID="{A2E70DBB-3426-46B6-B3BD-A68D1750533E}"
           DTS:EventID="487"
           DTS:EventName="OnPostExecute"
           DTS:LocaleID="-1">
@@ -270,7 +290,7 @@
             <DTS:Variable
               DTS:CreationName=""
               DTS:Description="The propagate property of the event"
-              DTS:DTSID="{8C5AB31F-6214-44A9-9317-F273A633E6C6}"
+              DTS:DTSID="{29B15473-FC06-47CB-9B13-57C0C231C907}"
               DTS:IncludeInDebugDump="6789"
               DTS:Namespace="System"
               DTS:ObjectName="Propagate">
@@ -285,6 +305,95 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\DataFlowTaskSharePoint\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DataFlowTaskSharePoint\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DataFlowTaskSharePoint\Conditional Split.Inputs[Conditional Split Input].Columns[LastModifiedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LastModifiedDate"
+                      lineageId="Package\DataFlowTaskSharePoint\OData Source.Outputs[Output].Columns[LastModifiedDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DataFlowTaskSharePoint\Conditional Split.Outputs[Case 1]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Case 1"
+                  synchronousInputId="Package\DataFlowTaskSharePoint\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\DataFlowTaskSharePoint\OData Source.Outputs[Output].Columns[LastModifiedDate]} &gt; @[User::varMaxDate]</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">LastModifiedDate &gt; @[User::varMaxDate]</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DataFlowTaskSharePoint\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\DataFlowTaskSharePoint\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DataFlowTaskSharePoint\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\DataFlowTaskSharePoint\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DataFlowTaskSharePoint\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DataFlowTaskSharePoint\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DataFlowTaskSharePoint\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DataFlowTaskSharePoint\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\DataFlowTaskSharePoint\CondSplitRemoveTest"
               componentClassID="Microsoft.ConditionalSplit"
@@ -372,6 +481,90 @@
                       refId="Package\DataFlowTaskSharePoint\CondSplitRemoveTest.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\DataFlowTaskSharePoint\CondSplitRemoveTest.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DataFlowTaskSharePoint\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DataFlowTaskSharePoint\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DataFlowTaskSharePoint\Derived Column.Inputs[Derived Column Input].Columns[Insurance_Company]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="Insurance_Company"
+                      lineageId="Package\DataFlowTaskSharePoint\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DataFlowTaskSharePoint\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Output].Columns[NewInsuranceCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="128"
+                      lineageId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Output].Columns[NewInsuranceCompany]"
+                      name="NewInsuranceCompany"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,128,1252)([ISNULL](#{Package\DataFlowTaskSharePoint\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]}) ? "Dunatek" : #{Package\DataFlowTaskSharePoint\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,128,1252)(ISNULL(Insurance_Company) ? "Dunatek" : Insurance_Company)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DataFlowTaskSharePoint\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1769,90 +1962,6 @@
                       refId="Package\DataFlowTaskSharePoint\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\DataFlowTaskSharePoint\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="DerivedColumnReplaceNull"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Inputs[Derived Column Input].Columns[Insurance_Company]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Insurance_Company"
-                      lineageId="Package\DataFlowTaskSharePoint\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Output].Columns[InsuranceCO]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="128"
-                      lineageId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Output].Columns[InsuranceCO]"
-                      name="InsuranceCO"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)([ISNULL](#{Package\DataFlowTaskSharePoint\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]}) ? "Dunatek" : #{Package\DataFlowTaskSharePoint\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]})</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,128,1252)(ISNULL(Insurance_Company) ? "Dunatek" : Insurance_Company)</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -11084,13 +11193,21 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\DataFlowTaskSharePoint\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
                       lineageId="Package\DataFlowTaskSharePoint\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanOfficer]" />
                     <inputColumn
-                      refId="Package\DataFlowTaskSharePoint\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[InsuranceCO]"
+                      refId="Package\DataFlowTaskSharePoint\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_MortgageInsuranceCompany]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
-                      cachedName="InsuranceCO"
+                      cachedName="DC_MortgageInsuranceCompany"
                       externalMetadataColumnId="Package\DataFlowTaskSharePoint\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
-                      lineageId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Output].Columns[InsuranceCO]" />
+                      lineageId="Package\DataFlowTaskSharePoint\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_MortgageInsuranceCompany]" />
+                    <inputColumn
+                      refId="Package\DataFlowTaskSharePoint\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NewInsuranceCompany]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="NewInsuranceCompany"
+                      externalMetadataColumnId="Package\DataFlowTaskSharePoint\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
+                      lineageId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Output].Columns[NewInsuranceCompany]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -11630,6 +11747,12 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="str"
                       length="100"
                       name="MarketSourceName" />
+                    <externalMetadataColumn
+                      refId="Package\DataFlowTaskSharePoint\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="InsuranceCompany" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -11691,22 +11814,27 @@ where [refTable].[MarketSourceCode] = ?</property>
           <paths>
             <path
               refId="Package\DataFlowTaskSharePoint.Paths[Case 1]"
+              endId="Package\DataFlowTaskSharePoint\CondSplitRemoveTest.Inputs[Conditional Split Input]"
+              name="Case 1"
+              startId="Package\DataFlowTaskSharePoint\Conditional Split.Outputs[Case 1]" />
+            <path
+              refId="Package\DataFlowTaskSharePoint.Paths[Case 11]"
               endId="Package\DataFlowTaskSharePoint\Derived Column 1.Inputs[Derived Column Input]"
               name="Case 1"
               startId="Package\DataFlowTaskSharePoint\CondSplitRemoveTest.Outputs[Case 1]" />
             <path
               refId="Package\DataFlowTaskSharePoint.Paths[Derived Column Output]"
-              endId="Package\DataFlowTaskSharePoint\Row Count.Inputs[Row Count Input 1]"
-              name="Derived Column Output"
-              startId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\DataFlowTaskSharePoint.Paths[Derived Column Output1]"
               endId="Package\DataFlowTaskSharePoint\MarketSourceLookup.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\DataFlowTaskSharePoint\Derived Column 1.Outputs[Derived Column Output]" />
             <path
+              refId="Package\DataFlowTaskSharePoint.Paths[Derived Column Output1]"
+              endId="Package\DataFlowTaskSharePoint\Row Count.Inputs[Row Count Input 1]"
+              name="Derived Column Output"
+              startId="Package\DataFlowTaskSharePoint\Derived Column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\DataFlowTaskSharePoint.Paths[Fuzzy Lookup Output]"
-              endId="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull.Inputs[Derived Column Input]"
+              endId="Package\DataFlowTaskSharePoint\Derived Column.Inputs[Derived Column Input]"
               name="Fuzzy Lookup Output"
               startId="Package\DataFlowTaskSharePoint\Fuzzy Lookup.Outputs[Fuzzy Lookup Output]" />
             <path
@@ -11716,7 +11844,7 @@ where [refTable].[MarketSourceCode] = ?</property>
               startId="Package\DataFlowTaskSharePoint\MarketSourceLookup.Outputs[Lookup Match Output]" />
             <path
               refId="Package\DataFlowTaskSharePoint.Paths[Output]"
-              endId="Package\DataFlowTaskSharePoint\CondSplitRemoveTest.Inputs[Conditional Split Input]"
+              endId="Package\DataFlowTaskSharePoint\Conditional Split.Inputs[Conditional Split Input]"
               name="Output"
               startId="Package\DataFlowTaskSharePoint\OData Source.Outputs[Output]" />
             <path
@@ -11729,10 +11857,28 @@ where [refTable].[MarketSourceCode] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{9735A9C9-A5BB-45FA-B5DA-55FEB946E2DB}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{9CE431AF-7648-4E2D-83C5-6F3C69C6013A}"
+          SQLTask:SqlStatementSource="if exists&#xA;(select 1&#xA;from [dbo].[Stg_Brook_Nigatu_QL]&#xA;where InsuranceCompany is null&#xA;)&#xA;Begin&#xA;Insert into [Practice].[dbo].[CrossWalk]([MortgageInsuranceCompany],[Insurance_Company])&#xA;select Distinct [MortgageInsuranceCompany],&#xA;  [MortgageInsuranceCompany] as [InsuranceCompany]&#xA;  from [dbo].[Stg_Brook_Nigatu_QL]&#xA;  where InsuranceCompany is null&#xA;  End" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Execute SQLTaskDeleteLendingQB"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{CA4ADBC5-D5A8-44B0-BB85-3A74FBD8BBF6}"
+      DTS:Disabled="True"
+      DTS:DTSID="{7F5C6DB6-518C-49F5-90C4-17EBE0065F10}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQLTaskDeleteLendingQB"
@@ -11741,7 +11887,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{CF45BAD2-BD8C-4E4A-9C72-13D14CB590FC}"
+          SQLTask:Connection="{F1DBF2E0-D29E-4D3C-9E2B-6F213AC8BEFA}"
           SQLTask:SqlStatementSource="USE STGQL&#xA;GO &#xA;  DELETE FROM [dbo].[Stg_Brook_Nigatu_QL] where SourceName ='LendingQB' " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -11750,17 +11896,25 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{C92F38F8-7B39-4622-9FB9-4A0B9C95D7F4}"
-      DTS:From="Package\Execute SQLTaskDeleteLendingQB"
+      DTS:DTSID="{AEEF2B1D-408E-45F0-8852-B8DA200ED41E}"
+      DTS:From="Package\DataFlowTaskSharePoint"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
+      DTS:To="Package\Execute SQL Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{7F1082F5-63EF-4286-8AEA-A9B509BBDE69}"
+      DTS:From="Package\Execute SQLTaskDeleteLendingQB"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
       DTS:To="Package\DataFlowTaskSharePoint" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{7F9EAC28-E13B-49D3-9B40-E0A8F95C3A96}"
+      DTS:DTSID="{1DA3C3C7-01DB-4EDA-93C5-25EECFE108AF}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -11768,7 +11922,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{CE87F826-03B1-40B7-B08F-517EFADB3D58}"
+          DTS:DTSID="{118DF57C-7D8E-4BB4-8B63-FBDC9014D1DA}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -11781,7 +11935,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{BAA44C4B-B690-46A9-933D-A09E1C2A0813}"
+          DTS:DTSID="{0FBBC896-FFC9-4AF5-ABC4-70B6EEC83178}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task"
@@ -11840,7 +11994,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Script Task"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{E45E82FB-9778-4DAC-B172-DC9D555CB982}"
+          DTS:DTSID="{0ADF927F-418C-48DD-ADAD-2A45276CB592}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task">
@@ -11853,14 +12007,35 @@ where [refTable].[MarketSourceCode] = ?</property>
               Language="CSharp"
               ReadOnlyVariables="System::ErrorCode,System::ErrorDescription,System::PackageName,System::StartTime,User::varFromEmail,User::varPassword,User::varSmtpClient,User::varSubject,User::varToEmail">
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -12260,35 +12435,14 @@ namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="ST_690883fe98234b0ca18b1add997af606.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -12519,7 +12673,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{A560AC07-6D20-4F00-939D-73EC47EE7EEA}"
+          DTS:DTSID="{9D7C9D7A-90D8-45A6-9F7C-9658CFB37D40}"
           DTS:From="Package.EventHandlers[OnError]\Execute SQL Task"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -12529,7 +12683,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnPostExecute]"
       DTS:CreationName="OnPostExecute"
-      DTS:DTSID="{76A2C11A-2DE2-40DF-9F7D-00723BDBD585}"
+      DTS:DTSID="{86166087-EE9A-46AB-A453-D5F357AD897B}"
       DTS:EventID="1074890460"
       DTS:EventName="OnPostExecute"
       DTS:LocaleID="-1">
@@ -12537,7 +12691,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{A912D57C-97C6-4198-AADF-A42B98105C69}"
+          DTS:DTSID="{84E03D30-F2EE-4286-9DC1-48CCB01D4055}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -12550,7 +12704,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package.EventHandlers[OnPostExecute]\Execute SQL Task_ETL_Log"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{AE6DB72A-0EDA-4CB8-8815-BFB1C81A2A7A}"
+          DTS:DTSID="{FF91C78E-7AFF-4CF3-90CF-688B203FB885}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_ETL_Log"
@@ -12564,7 +12718,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="System::PackageID"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="131"
+                SQLTask:DataType="72"
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="1"
@@ -12598,7 +12752,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                 SQLTask:ParameterSize="-1" />
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="6"
-                SQLTask:DtsVariableName="System::StartTime"
+                SQLTask:DtsVariableName="User::varMaxDate"
                 SQLTask:ParameterDirection="Input"
                 SQLTask:DataType="7"
                 SQLTask:ParameterSize="-1" />
@@ -12610,7 +12764,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
           DTS:Disabled="True"
-          DTS:DTSID="{AF5CA9C8-4078-46DD-8228-C002D984DA8E}"
+          DTS:DTSID="{BFADD958-2B0B-4F08-8674-3C49F7F35E39}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task">
@@ -13179,6 +13333,138 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </DTS:Executable>
       </DTS:Executables>
     </DTS:EventHandler>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnPreExecute]"
+      DTS:CreationName="OnPreExecute"
+      DTS:DTSID="{B1001BD5-CD55-42D2-8B02-6D3C8E04518B}"
+      DTS:EventID="0"
+      DTS:EventName="OnPreExecute"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{04239AF1-9F2D-47B4-9296-8DC2378C461A}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnPreExecute]\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{12a89b7b-ea0f-405f-9bb9-511c67047f4c}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:EventHandlers>
+            <DTS:EventHandler
+              DTS:refId="Package.EventHandlers[OnPreExecute]\Execute SQL Task.EventHandlers[OnPostExecute]"
+              DTS:CreationName="OnPostExecute"
+              DTS:DTSID="{c54f1377-06e4-438e-a4bd-192feab04048}"
+              DTS:EventID="1074890460"
+              DTS:EventName="OnPostExecute"
+              DTS:LocaleID="-1">
+              <DTS:Variables>
+                <DTS:Variable
+                  DTS:CreationName=""
+                  DTS:Description="The propagate property of the event"
+                  DTS:DTSID="{c574f468-7615-4269-b60f-3b09ec349edc}"
+                  DTS:IncludeInDebugDump="6789"
+                  DTS:Namespace="System"
+                  DTS:ObjectName="Propagate">
+                  <DTS:VariableValue
+                    DTS:DataType="11">-1</DTS:VariableValue>
+                </DTS:Variable>
+              </DTS:Variables>
+              <DTS:Executables />
+            </DTS:EventHandler>
+          </DTS:EventHandlers>
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{9CE431AF-7648-4E2D-83C5-6F3C69C6013A}"
+              SQLTask:SqlStatementSource=" select MAX(LastmodifiedDAte) as MaxDate from [dbo].[Stg_Brook_Nigatu_QL]&#xA;  where SourceName=?"
+              SQLTask:ResultType="ResultSetType_SingleRow"
+              SQLTask:TypeConversionMode="None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="MaxDate"
+                SQLTask:DtsVariableName="User::varMaxDate" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::varSourceName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnPreExecute]\Execute SQL Task 1"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{B604A265-B67C-4AC8-B8B8-12C1A9A45C6D}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task 1"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{F1DBF2E0-D29E-4D3C-9E2B-6F213AC8BEFA}"
+              SQLTask:SqlStatementSource="insert into dbo.MaxDate&#xA;values(?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::varMaxDate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnPreExecute]\Script Task"
+          DTS:CreationName="Microsoft.ScriptTask"
+          DTS:Description="Script Task"
+          DTS:Disabled="True"
+          DTS:DTSID="{02E83B86-9ED0-44A9-951A-BF05D1A2DBB9}"
+          DTS:ExecutableType="Microsoft.ScriptTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Script Task">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ScriptProject
+              Name="ST_b18029459c7c40339e213aae0807e877"
+              VSTAMajorVersion="15"
+              VSTAMinorVersion="0"
+              Language="CSharp" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{0B21FDE7-CE93-42A6-8548-FED9892256B8}"
+          DTS:From="Package.EventHandlers[OnPreExecute]\Execute SQL Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package.EventHandlers[OnPreExecute]\Execute SQL Task 1" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{CFD0E279-5439-45B2-BF1A-AFAC40AF8C01}"
+          DTS:From="Package.EventHandlers[OnPreExecute]\Execute SQL Task 1"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package.EventHandlers[OnPreExecute]\Script Task" />
+      </DTS:PrecedenceConstraints>
+    </DTS:EventHandler>
   </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -13191,41 +13477,79 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="196,42.6666666666667"
           Id="Package\DataFlowTaskSharePoint"
-          TopLeft="161.249997597188,176.79999683857" />
+          TopLeft="130.624998053536,128.049997710288" />
         <NodeLayout
           Size="241.333333333334,42.6666666666667"
           Id="Package\Execute SQLTaskDeleteLendingQB"
           TopLeft="67.4999989941716,41.5999992561341" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
+          Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="188.166665660838,84.2666659228008">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="71.0833319363497,92.5333309157692"
+              EndConnector="40.4583323926977,43.7833317874872"
               Start="0,0"
-              End="71.0833319363497,85.0333309157692">
+              End="40.4583323926977,36.2833317874872">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.2666654578846" />
+                    End="0,17.8916658937436" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,42.2666654578846"
-                    Point2="0,46.2666654578846"
-                    Point3="4,46.2666654578846" />
+                    Point1="0,17.8916658937436"
+                    Point2="0,21.8916658937436"
+                    Point3="4,21.8916658937436" />
                   <mssgle:LineSegment
-                    End="67.0833319363497,46.2666654578846" />
+                    End="36.4583323926977,21.8916658937436" />
                   <mssgle:CubicBezierSegment
-                    Point1="67.0833319363497,46.2666654578846"
-                    Point2="71.0833319363497,46.2666654578846"
-                    Point3="71.0833319363497,50.2666654578846" />
+                    Point1="36.4583323926977,21.8916658937436"
+                    Point2="40.4583323926977,21.8916658937436"
+                    Point3="40.4583323926977,25.8916658937436" />
                   <mssgle:LineSegment
-                    End="71.0833319363497,85.0333309157692" />
+                    End="40.4583323926977,36.2833317874872" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\Execute SQL Task"
+          TopLeft="225.781246635597,226.687495946512" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="228.624998053536,170.716664376955">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="79.1562485820612,55.970831569557"
+              Start="0,0"
+              End="79.1562485820612,48.470831569557">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.9854157847785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.9854157847785"
+                    Point2="0,27.9854157847785"
+                    Point3="4,27.9854157847785" />
+                  <mssgle:LineSegment
+                    End="75.1562485820612,27.9854157847785" />
+                  <mssgle:CubicBezierSegment
+                    Point1="75.1562485820612,27.9854157847785"
+                    Point2="79.1562485820612,27.9854157847785"
+                    Point3="79.1562485820612,31.9854157847785" />
+                  <mssgle:LineSegment
+                    End="79.1562485820612,48.470831569557" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13241,7 +13565,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package.EventHandlers[OnError]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package.EventHandlers[OnError]\Execute SQL Task"
@@ -13269,7 +13593,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -13283,7 +13609,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="210.666666666667,42.6666666666667"
           Id="Package.EventHandlers[OnPostExecute]\Execute SQL Task_ETL_Log"
-          TopLeft="60,60" />
+          TopLeft="56,30" />
         <NodeLayout
           Size="132,42.6666666666667"
           Id="Package.EventHandlers[OnPostExecute]\Script Task"
@@ -13291,57 +13617,291 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package.EventHandlers[OnPreExecute]\Execute SQL Task"
+          TopLeft="60,60" />
+        <NodeLayout
+          Size="173.333333333334,42.6666666666667"
+          Id="Package.EventHandlers[OnPreExecute]\Execute SQL Task 1"
+          TopLeft="339,54" />
+        <NodeLayout
+          Size="132,42.6666666666667"
+          Id="Package.EventHandlers[OnPreExecute]\Script Task"
+          TopLeft="398.5,176.5" />
+        <EdgeLayout
+          Id="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint]"
+          TopLeft="224,78.3333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115,0"
+              Start="0,0"
+              End="107.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="107.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 1]"
+          TopLeft="425.666666666667,96.6666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.8333333333333,79.8333333333333"
+              Start="0,0"
+              End="38.8333333333333,72.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.9166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.9166666666667"
+                    Point2="0,39.9166666666667"
+                    Point3="4,39.9166666666667" />
+                  <mssgle:LineSegment
+                    End="34.8333333333333,39.9166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.8333333333333,39.9166666666667"
+                    Point2="38.8333333333333,39.9166666666667"
+                    Point3="38.8333333333333,43.9166666666667" />
+                  <mssgle:LineSegment
+                    End="38.8333333333333,72.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <TaskHost
     design-time-name="Package\DataFlowTaskSharePoint">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="182.666666666667,42.6666666666667"
           Id="Package\DataFlowTaskSharePoint\CondSplitRemoveTest"
           TopLeft="11.4062498300337,226.412496452107" />
         <NodeLayout
-          Size="131.333333333334,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\Row Count"
-          TopLeft="633.258919135136,20.6023810846606" />
+          Size="177.333333333334,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\MarketSourceLookup"
+          TopLeft="299.895828864537,26.5916666918493" />
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\Derived Column"
+          TopLeft="565.178563006755,124.428569203615" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\OLE DB Destination"
+          TopLeft="816.406237834599,62.399998884201" />
+        <NodeLayout
+          Size="144,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\Fuzzy Lookup"
+          TopLeft="386.041660914198,231.183329199453" />
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\Derived Column 1"
+          TopLeft="223.489580003079,122.958331134667" />
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\Conditional Split"
+          TopLeft="12.4999998137355,118.083331221839" />
         <NodeLayout
           Size="144,42.6666666666667"
           Id="Package\DataFlowTaskSharePoint\OData Source"
           TopLeft="56.874999152497,42.6249997384846" />
         <NodeLayout
-          Size="177.333333333334,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\MarketSourceLookup"
-          TopLeft="299.895828864537,26.5916666918493" />
-        <NodeLayout
-          Size="205.333333333334,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\DerivedColumnReplaceNull"
-          TopLeft="491.458326010033,101.616664849619" />
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\Row Count"
+          TopLeft="633.258919135136,20.6023810846606" />
+        <EdgeLayout
+          Id="Package\DataFlowTaskSharePoint.Paths[Row Count Output 1]"
+          TopLeft="764.592252468469,41.9357144179939">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="51.8139853661294,41.7976177995404"
+              Start="0,0"
+              End="44.3139853661294,41.7976177995404">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="21.9069926830647,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.9069926830647,0"
+                    Point2="25.9069926830647,0"
+                    Point3="25.9069926830647,4" />
+                  <mssgle:LineSegment
+                    End="25.9069926830647,37.7976177995404" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.9069926830647,37.7976177995404"
+                    Point2="25.9069926830647,41.7976177995404"
+                    Point3="29.9069926830647,41.7976177995404" />
+                  <mssgle:LineSegment
+                    End="44.3139853661294,41.7976177995404" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DataFlowTaskSharePoint.Paths[Output]"
           TopLeft="128.874999152497,85.2916664051513">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-26.13541598913,141.120830046956"
+              EndConnector="-38.3749993387615,32.7916648166875"
               Start="0,0"
-              End="-26.13541598913,133.620830046956">
+              End="-38.3749993387615,25.2916648166875">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,66.5604150234781" />
+                    End="0,12.3958324083438" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,66.5604150234781"
-                    Point2="0,70.5604150234781"
-                    Point3="-4,70.5604150234781" />
+                    Point1="0,12.3958324083438"
+                    Point2="0,16.3958324083438"
+                    Point3="-4,16.3958324083438" />
                   <mssgle:LineSegment
-                    End="-22.13541598913,70.5604150234781" />
+                    End="-34.3749993387615,16.3958324083438" />
                   <mssgle:CubicBezierSegment
-                    Point1="-22.13541598913,70.5604150234781"
-                    Point2="-26.13541598913,70.5604150234781"
-                    Point3="-26.13541598913,74.5604150234781" />
+                    Point1="-34.3749993387615,16.3958324083438"
+                    Point2="-38.3749993387615,16.3958324083438"
+                    Point3="-38.3749993387615,20.3958324083438" />
                   <mssgle:LineSegment
-                    End="-26.13541598913,133.620830046956" />
+                    End="-38.3749993387615,25.2916648166875" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DataFlowTaskSharePoint.Paths[Lookup Match Output]"
+          TopLeft="416.784717753426,69.258333358516">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18.5902764941054,161.924995840937"
+              Start="0,0"
+              End="18.5902764941054,154.424995840937">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.7563185939928" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,76.7563185939928"
+                    Point2="0,80.7563185939928"
+                    Point3="4,80.7563185939928" />
+                  <mssgle:LineSegment
+                    End="14.5902764941054,80.7563185939928" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.5902764941054,80.7563185939928"
+                    Point2="18.5902764941054,80.7563185939928"
+                    Point3="18.5902764941054,84.7563185939928" />
+                  <mssgle:LineSegment
+                    End="18.5902764941054,154.424995840937" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-38.8962484716973,85.7563185939928,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DataFlowTaskSharePoint.Paths[Fuzzy Lookup Output]"
+          TopLeft="480.708327580865,231.183329199453">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="161.803568759223,-64.0880933291711"
+              Start="0,0"
+              End="161.803568759223,-56.5880933291711">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-22.0577961887839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-22.0577961887839"
+                    Point2="0,-26.0577961887839"
+                    Point3="4,-26.0577961887839" />
+                  <mssgle:LineSegment
+                    End="157.803568759223,-26.0577961887839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="157.803568759223,-26.0577961887839"
+                    Point2="161.803568759223,-26.0577961887839"
+                    Point3="161.803568759223,-30.0577961887839" />
+                  <mssgle:LineSegment
+                    End="161.803568759223,-56.5880933291711" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DataFlowTaskSharePoint.Paths[Derived Column Output1]"
+          TopLeft="642.511896340088,124.428569203615">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="56.4136894617146,-61.159521452288"
+              Start="0,0"
+              End="56.4136894617146,-53.659521452288">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-26.579760726144" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-26.579760726144"
+                    Point2="0,-30.579760726144"
+                    Point3="4,-30.579760726144" />
+                  <mssgle:LineSegment
+                    End="52.4136894617146,-30.579760726144" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52.4136894617146,-30.579760726144"
+                    Point2="56.4136894617146,-30.579760726144"
+                    Point3="56.4136894617146,-34.579760726144" />
+                  <mssgle:LineSegment
+                    End="56.4136894617146,-53.659521452288" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13352,30 +13912,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DataFlowTaskSharePoint.Paths[Derived Column Output]"
-          TopLeft="594.124992676699,101.616664849619">
+          TopLeft="305.489580003079,122.958331134667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="104.800593125103,-38.3476170982921"
+              EndConnector="54.850693305903,-53.699997776151"
               Start="0,0"
-              End="104.800593125103,-30.8476170982921">
+              End="54.850693305903,-46.199997776151">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-15.1738085491461" />
+                    End="0,-27.9318913750883" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-15.1738085491461"
-                    Point2="0,-19.1738085491461"
-                    Point3="4,-19.1738085491461" />
+                    Point1="0,-27.9318913750883"
+                    Point2="0,-31.9318913750883"
+                    Point3="4,-31.9318913750883" />
                   <mssgle:LineSegment
-                    End="100.800593125103,-19.1738085491461" />
+                    End="50.850693305903,-31.9318913750883" />
                   <mssgle:CubicBezierSegment
-                    Point1="100.800593125103,-19.1738085491461"
-                    Point2="104.800593125103,-19.1738085491461"
-                    Point3="104.800593125103,-23.1738085491461" />
+                    Point1="50.850693305903,-31.9318913750883"
+                    Point2="54.850693305903,-31.9318913750883"
+                    Point3="54.850693305903,-35.9318913750883" />
                   <mssgle:LineSegment
-                    End="104.800593125103,-30.8476170982921" />
+                    End="54.850693305903,-46.199997776151" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13384,178 +13944,76 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\Derived Column 1"
-          TopLeft="177.656247352715,141.374997472018" />
         <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[Case 1]"
+          Id="Package\DataFlowTaskSharePoint.Paths[Case 11]"
           TopLeft="131.850694274478,226.412496452107">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="127.805553078237,-42.3708323134227"
+              EndConnector="173.6388857286,-60.7874986507733"
               Start="0,0"
-              End="127.805553078237,-34.8708323134227">
+              End="173.6388857286,-53.2874986507733">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-13.169078216727" />
+                    End="0,-20.6316926515435" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-13.169078216727"
-                    Point2="0,-17.169078216727"
-                    Point3="4,-17.169078216727" />
+                    Point1="0,-20.6316926515435"
+                    Point2="0,-24.6316926515435"
+                    Point3="4,-24.6316926515435" />
                   <mssgle:LineSegment
-                    End="123.805553078237,-17.169078216727" />
+                    End="169.6388857286,-24.6316926515435" />
                   <mssgle:CubicBezierSegment
-                    Point1="123.805553078237,-17.169078216727"
-                    Point2="127.805553078237,-17.169078216727"
-                    Point3="127.805553078237,-21.169078216727" />
+                    Point1="169.6388857286,-24.6316926515435"
+                    Point2="173.6388857286,-24.6316926515435"
+                    Point3="173.6388857286,-28.6316926515435" />
                   <mssgle:LineSegment
-                    End="127.805553078237,-34.8708323134227" />
+                    End="173.6388857286,-53.2874986507733" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="48.6846906016186,-12.169078216727,30.436171875,9.5537109375"
+              BoundingBox="71.6013569268,-19.6316926515435,30.436171875,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[Derived Column Output1]"
-          TopLeft="259.656247352715,141.374997472018">
+          Id="Package\DataFlowTaskSharePoint.Paths[Case 1]"
+          TopLeft="90.4999998137355,160.749997888505">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="100.684025956266,-72.116664113502"
+              EndConnector="12.2395833496315,65.6624985636015"
               Start="0,0"
-              End="100.684025956266,-64.616664113502">
+              End="12.2395833496315,58.1624985636015">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-38.8830834296383" />
+                    End="0,28.8312492818008" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-38.8830834296383"
-                    Point2="0,-42.8830834296383"
-                    Point3="4,-42.8830834296383" />
+                    Point1="0,28.8312492818008"
+                    Point2="0,32.8312492818008"
+                    Point3="4,32.8312492818008" />
                   <mssgle:LineSegment
-                    End="96.6840259562659,-42.8830834296383" />
+                    End="8.23958334963152,32.8312492818008" />
                   <mssgle:CubicBezierSegment
-                    Point1="96.6840259562659,-42.8830834296383"
-                    Point2="100.684025956266,-42.8830834296383"
-                    Point3="100.684025956266,-46.8830834296383" />
+                    Point1="8.23958334963152,32.8312492818008"
+                    Point2="12.2395833496315,32.8312492818008"
+                    Point3="12.2395833496315,36.8312492818008" />
                   <mssgle:LineSegment
-                    End="100.684025956266,-64.616664113502" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="144,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\Fuzzy Lookup"
-          TopLeft="361.041661286727,199.76666309456" />
-        <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[Lookup Match Output]"
-          TopLeft="413.579856186743,69.258333358516">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,130.508329736044"
-              Start="0,0"
-              End="0,123.008329736044">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,123.008329736044" />
+                    End="12.2395833496315,58.1624985636015" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,55.6994773680222,96.3827734375,11.609375"
+              BoundingBox="-9.09829426268424,37.8312492818008,30.436171875,9.5537109375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[Fuzzy Lookup Output]"
-          TopLeft="455.708327953393,199.76666309456">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="138.416664723306,-55.4833315782743"
-              Start="0,0"
-              End="138.416664723306,-47.9833315782743">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-18.5591567955621" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-18.5591567955621"
-                    Point2="0,-22.5591567955621"
-                    Point3="4,-22.5591567955621" />
-                  <mssgle:LineSegment
-                    End="134.416664723306,-22.5591567955621" />
-                  <mssgle:CubicBezierSegment
-                    Point1="134.416664723306,-22.5591567955621"
-                    Point2="138.416664723306,-22.5591567955621"
-                    Point3="138.416664723306,-26.5591567955621" />
-                  <mssgle:LineSegment
-                    End="138.416664723306,-47.9833315782743" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="172,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\OLE DB Destination"
-          TopLeft="841.666654124856,41.8166659189264" />
-        <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[Row Count Output 1]"
-          TopLeft="764.59225246847,41.9357144179939">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="77.0744016563865,21.2142848342658"
-              Start="0,0"
-              End="69.5744016563865,21.2142848342658">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="34.5372008281932,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="34.5372008281932,0"
-                    Point2="38.5372008281932,0"
-                    Point3="38.5372008281932,4" />
-                  <mssgle:LineSegment
-                    End="38.5372008281932,17.2142848342658" />
-                  <mssgle:CubicBezierSegment
-                    Point1="38.5372008281932,17.2142848342658"
-                    Point2="38.5372008281932,21.2142848342658"
-                    Point3="42.5372008281932,21.2142848342658" />
-                  <mssgle:LineSegment
-                    End="69.5744016563865,21.2142848342658" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -13599,7 +14057,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -13609,7 +14067,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13617,7 +14075,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DataFlowTaskSharePoint\Fuzzy Lookup">
+    design-time-name="Package\DataFlowTaskSharePoint\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -13630,7 +14088,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DataFlowTaskSharePoint\OLE DB Destination">
+    design-time-name="Package\DataFlowTaskSharePoint\Fuzzy Lookup">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

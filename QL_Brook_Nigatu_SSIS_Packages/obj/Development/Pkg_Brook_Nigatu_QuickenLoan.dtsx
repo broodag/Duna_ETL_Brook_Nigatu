@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Brook_Nigatu_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="163"
-  DTS:VersionGUID="{F1BCB592-08FB-47E2-9A8F-0556BFD1727F}">
+  DTS:VersionBuild="170"
+  DTS:VersionGUID="{DB262F4C-55FE-4F04-A301-0705D68B5357}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -173,7 +173,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varSourceName">
       <DTS:VariableValue
-        DTS:DataType="8">SalesForce</DTS:VariableValue>
+        DTS:DataType="8">QuickenLoan</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -182,7 +182,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varSubject">
       <DTS:VariableValue
-        DTS:DataType="8">Quicken Loan ETL Error</DTS:VariableValue>
+        DTS:DataType="8">Quicken Loan ETL Error for QuickenLoan</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -202,7 +202,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/16/2020 9:39:39 AM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 5:51:59 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1795,90 +1795,6 @@
                       refId="Package\DataFlowTaskQuickenLoan\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\DataFlowTaskQuickenLoan\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="DerivedColumnReplaceNull"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Inputs[Derived Column Input].Columns[Insurance_Company]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Insurance_Company"
-                      lineageId="Package\DataFlowTaskQuickenLoan\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Output].Columns[InsuranceCO]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="128"
-                      lineageId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Output].Columns[InsuranceCO]"
-                      name="InsuranceCO"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)([ISNULL](#{Package\DataFlowTaskQuickenLoan\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]}) ? "Dunatek" : #{Package\DataFlowTaskQuickenLoan\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]})</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,128,1252)(ISNULL(Insurance_Company) ? "Dunatek" : Insurance_Company)</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -11037,13 +10953,13 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\DataFlowTaskQuickenLoan\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
                       lineageId="Package\DataFlowTaskQuickenLoan\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_MortgageInsuranceCompany]" />
                     <inputColumn
-                      refId="Package\DataFlowTaskQuickenLoan\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[InsuranceCO]"
+                      refId="Package\DataFlowTaskQuickenLoan\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Insurance_Company]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
-                      cachedName="InsuranceCO"
+                      cachedName="Insurance_Company"
                       externalMetadataColumnId="Package\DataFlowTaskQuickenLoan\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
-                      lineageId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Output].Columns[InsuranceCO]" />
+                      lineageId="Package\DataFlowTaskQuickenLoan\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -13183,17 +13099,12 @@ where [refTable].[MarketSourceCode] = ?</property>
               startId="Package\DataFlowTaskQuickenLoan\CondSplitRemoveTest.Outputs[Case 1]" />
             <path
               refId="Package\DataFlowTaskQuickenLoan.Paths[Derived Column Output]"
-              endId="Package\DataFlowTaskQuickenLoan\Row Count.Inputs[Row Count Input 1]"
-              name="Derived Column Output"
-              startId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\DataFlowTaskQuickenLoan.Paths[Derived Column Output1]"
               endId="Package\DataFlowTaskQuickenLoan\MarketSourceLookup.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\DataFlowTaskQuickenLoan\Derived Column 1.Outputs[Derived Column Output]" />
             <path
               refId="Package\DataFlowTaskQuickenLoan.Paths[Fuzzy Lookup Output]"
-              endId="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull.Inputs[Derived Column Input]"
+              endId="Package\DataFlowTaskQuickenLoan\Row Count.Inputs[Row Count Input 1]"
               name="Fuzzy Lookup Output"
               startId="Package\DataFlowTaskQuickenLoan\Fuzzy Lookup.Outputs[Fuzzy Lookup Output]" />
             <path
@@ -13216,9 +13127,27 @@ where [refTable].[MarketSourceCode] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{46AB28CB-348D-494B-B237-18F6788E3221}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{9CE431AF-7648-4E2D-83C5-6F3C69C6013A}"
+          SQLTask:SqlStatementSource="if exists&#xA;(select 1&#xA;from [dbo].[Stg_Brook_Nigatu_QL]&#xA;where InsuranceCompany is null&#xA;)&#xA;Begin&#xA;Insert into [Practice].[dbo].[CrossWalk]([MortgageInsuranceCompany],[Insurance_Company])&#xA;select Distinct [MortgageInsuranceCompany],&#xA;  [MortgageInsuranceCompany] as [InsuranceCompany]&#xA;  from [dbo].[Stg_Brook_Nigatu_QL]&#xA;  where InsuranceCompany is null&#xA;  End" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Execute SQLTaskDeleteLendingQB"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{E4794375-51EE-4594-89D1-3DE09BEC98D5}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -13242,6 +13171,14 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\DataFlowTaskQuickenLoan" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{1F12393C-FFB3-4B6C-960F-F1224E959BD6}"
+      DTS:From="Package\DataFlowTaskQuickenLoan"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Execute SQL Task" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
@@ -13339,15 +13276,6 @@ where [refTable].[MarketSourceCode] = ?</property>
               VSTAMinorVersion="0"
               Language="CSharp"
               ReadOnlyVariables="System::ErrorCode,System::ErrorDescription,System::PackageName,System::StartTime,User::varFromEmail,User::varPassword,User::varSmtpClient,User::varSubject,User::varToEmail">
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -13467,6 +13395,35 @@ where [refTable].[MarketSourceCode] = ?</property>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Settings.get_Default():ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Sett" +
+    "ings")]
+
+namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -13736,35 +13693,6 @@ namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Settings.get_Default():ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Sett" +
-    "ings")]
-
-namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
                 Name="Properties\AssemblyInfo.cs"
                 Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -13794,6 +13722,15 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -14678,11 +14615,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="205.333333333334,42.6666666666667"
           Id="Package\DataFlowTaskQuickenLoan"
-          TopLeft="161.249997597188,176.79999683857" />
+          TopLeft="61.0937490896324,120.89999783814" />
         <NodeLayout
           Size="241.333333333334,42.6666666666667"
           Id="Package\Execute SQLTaskDeleteLendingQB"
@@ -14693,26 +14630,64 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="75.7499986030164,92.5333309157692"
+              EndConnector="-24.4062499045392,36.6333319153391"
               Start="0,0"
-              End="75.7499986030164,85.0333309157692">
+              End="-24.4062499045392,29.1333319153391">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.2666654578846" />
+                    End="0,14.3166659576695" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,42.2666654578846"
-                    Point2="0,46.2666654578846"
-                    Point3="4,46.2666654578846" />
+                    Point1="0,14.3166659576695"
+                    Point2="0,18.3166659576695"
+                    Point3="-4,18.3166659576695" />
                   <mssgle:LineSegment
-                    End="71.7499986030164,46.2666654578846" />
+                    End="-20.4062499045392,18.3166659576695" />
                   <mssgle:CubicBezierSegment
-                    Point1="71.7499986030164,46.2666654578846"
-                    Point2="75.7499986030164,46.2666654578846"
-                    Point3="75.7499986030164,50.2666654578846" />
+                    Point1="-20.4062499045392,18.3166659576695"
+                    Point2="-24.4062499045392,18.3166659576695"
+                    Point3="-24.4062499045392,22.3166659576695" />
                   <mssgle:LineSegment
-                    End="75.7499986030164,85.0333309157692" />
+                    End="-24.4062499045392,29.1333319153391" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\Execute SQL Task"
+          TopLeft="356.718744684477,167.374997007102" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="266.427082422966,142.233331171473">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="90.2916622615108,46.4749991689619"
+              Start="0,0"
+              End="82.7916622615108,46.4749991689619">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="41.1458311307554,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.1458311307554,0"
+                    Point2="45.1458311307554,0"
+                    Point3="45.1458311307554,4" />
+                  <mssgle:LineSegment
+                    End="45.1458311307554,42.4749991689619" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45.1458311307554,42.4749991689619"
+                    Point2="45.1458311307554,46.4749991689619"
+                    Point3="49.1458311307554,46.4749991689619" />
+                  <mssgle:LineSegment
+                    End="82.7916622615108,46.4749991689619" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14790,13 +14765,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\DataFlowTaskQuickenLoan\Derived Column 1"
           TopLeft="177.656247352715,141.374997472018" />
         <NodeLayout
-          Size="177.333333333334,42.6666666666667"
-          Id="Package\DataFlowTaskQuickenLoan\MarketSourceLookup"
-          TopLeft="299.895828864537,26.5916666918493" />
-        <NodeLayout
           Size="162.666666666667,42.6666666666667"
           Id="Package\DataFlowTaskQuickenLoan\Salesforce Source"
           TopLeft="16.3333331098159,70.1999987447262" />
+        <NodeLayout
+          Size="177.333333333334,42.6666666666667"
+          Id="Package\DataFlowTaskQuickenLoan\MarketSourceLookup"
+          TopLeft="299.895828864537,26.5916666918493" />
         <NodeLayout
           Size="144,42.6666666666667"
           Id="Package\DataFlowTaskQuickenLoan\Fuzzy Lookup"
@@ -14813,10 +14788,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Size="172,42.6666666666667"
           Id="Package\DataFlowTaskQuickenLoan\OLE DB Destination"
           TopLeft="635.156240535434,218.562496091798" />
-        <NodeLayout
-          Size="205.333333333334,42.6666666666667"
-          Id="Package\DataFlowTaskQuickenLoan\DerivedColumnReplaceNull"
-          TopLeft="491.458326010033,101.616664849619" />
         <EdgeLayout
           Id="Package\DataFlowTaskQuickenLoan.Paths[Salesforce Source Output]"
           TopLeft="97.6666664431492,112.866665411393">
@@ -14898,41 +14869,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DataFlowTaskQuickenLoan.Paths[Fuzzy Lookup Output]"
-          TopLeft="455.708327953393,199.76666309456">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="138.416664723306,-55.4833315782743"
-              Start="0,0"
-              End="138.416664723306,-47.9833315782743">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-18.5591567955621" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-18.5591567955621"
-                    Point2="0,-22.5591567955621"
-                    Point3="4,-22.5591567955621" />
-                  <mssgle:LineSegment
-                    End="134.416664723306,-22.5591567955621" />
-                  <mssgle:CubicBezierSegment
-                    Point1="134.416664723306,-22.5591567955621"
-                    Point2="138.416664723306,-22.5591567955621"
-                    Point3="138.416664723306,-26.5591567955621" />
-                  <mssgle:LineSegment
-                    End="138.416664723306,-47.9833315782743" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DataFlowTaskQuickenLoan.Paths[Derived Column Output1]"
+          Id="Package\DataFlowTaskQuickenLoan.Paths[Derived Column Output]"
           TopLeft="259.656247352715,141.374997472018">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -14957,40 +14894,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                     Point3="100.684025956266,-46.8830834296383" />
                   <mssgle:LineSegment
                     End="100.684025956266,-64.616664113502" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DataFlowTaskQuickenLoan.Paths[Derived Column Output]"
-          TopLeft="594.124992676699,101.616664849619">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="104.800593125103,-38.3476170982921"
-              Start="0,0"
-              End="104.800593125103,-30.8476170982921">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-15.1738085491461" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-15.1738085491461"
-                    Point2="0,-19.1738085491461"
-                    Point3="4,-19.1738085491461" />
-                  <mssgle:LineSegment
-                    End="100.800593125103,-19.1738085491461" />
-                  <mssgle:CubicBezierSegment
-                    Point1="100.800593125103,-19.1738085491461"
-                    Point2="104.800593125103,-19.1738085491461"
-                    Point3="104.800593125103,-23.1738085491461" />
-                  <mssgle:LineSegment
-                    End="104.800593125103,-30.8476170982921" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15031,8 +14934,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="41.6534407063923,-29.6184266746069,30.436171875,9.5537109375"
+              BoundingBox="41.6534407063925,-29.6184266746069,30.436171875,9.5537109375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DataFlowTaskQuickenLoan.Paths[Fuzzy Lookup Output]"
+          TopLeft="455.708327953394,199.76666309456">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="222.661702292853,-136.497615343233"
+              Start="0,0"
+              End="222.661702292853,-128.997615343233">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-64.1599724763186" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-64.1599724763186"
+                    Point2="0,-68.1599724763186"
+                    Point3="4,-68.1599724763186" />
+                  <mssgle:LineSegment
+                    End="218.661702292853,-68.1599724763186" />
+                  <mssgle:CubicBezierSegment
+                    Point1="218.661702292853,-68.1599724763186"
+                    Point2="222.661702292853,-68.1599724763186"
+                    Point3="222.661702292853,-72.1599724763186" />
+                  <mssgle:LineSegment
+                    End="222.661702292853,-128.997615343233" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
