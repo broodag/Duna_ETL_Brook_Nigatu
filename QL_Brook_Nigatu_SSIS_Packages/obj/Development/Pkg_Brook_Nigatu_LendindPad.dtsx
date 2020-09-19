@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Brook_Nigatu_LendindPad"
   DTS:PackageType="5"
-  DTS:VersionBuild="244"
-  DTS:VersionGUID="{E9250334-ED30-493B-B8C5-B7E58A7C4866}">
+  DTS:VersionBuild="245"
+  DTS:VersionGUID="{4573FBDB-42EF-4001-993C-69BC17B64F9E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -271,7 +271,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/19/2020 1:21:30 PM</DTS:VariableValue>
+        DTS:DataType="7">9/19/2020 1:32:31 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
