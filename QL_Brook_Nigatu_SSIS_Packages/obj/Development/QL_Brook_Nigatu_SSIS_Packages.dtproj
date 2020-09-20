@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-K7PS7F9</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAAD5gaM9En9DeZfBqSCLNhffNEpxDh8KN6lrDw8EgTmoBwAAAAAOgAAAAAIAACAAAAD5dxGmDR/p4MoqXLsIClpCQy6ecSCds4VRhFGVw0gDfJAAAACQUPtyT8DzK595SVjhmqV0G0j1SX5n1Lpirre3P/LwDWblaerxTHo3W7+7S2CV1EcvcXSeqwTpCibzGJHkzWIT020AuXaVKjUKflmNyW5W58tsaIJ/ta1f3wJH4eUOINpVI5aNYa/RCM4zRezy9Ccb4f/Okr9F/vm7TVOOyjjp47t8qttlFSRvFbjQ28AAvRRAAAAAmMFcB3X0tx1w4zw1K2MZwafDd7nBwC5mw+FRx5GCihAgxrHZKDqQt6y0t8UlFBIjlpBgOzkT7nvH/s5gPwNHLg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAACElB0dsAs++54Pzxu3xJjEk52PPMAvrPHiDvjH40xALQAAAAAOgAAAAAIAACAAAAC7MDX4Vfe0tXg7eOj9yQa9v0d/K3NZmC0A910svSSjUJAAAADN9L94BBkVnU/KfnaAaIkAWbW5sfGC9VdMogcl1DJvMtk+oHjT4hYcFhvKOKcr0gVNKYuOOTYNtJMO4GQVJS12yW5be/BG1VWA6Z6Vxflbi+MFQCkZXdrtHxh4uCB1MwarpCG8WGlYwMrONF8daN0lsnjSKu9lbuwlSf6JvxLRgK3mXAlYf9uTjASG1f2kxKtAAAAAGMhqL3PFJJfDUeRTre3ZPdxPp8OTPsAzq1Xmx6rvTpDsKZYgt7mKxdZHiBE677xmoxX2OJnzKBK2QWxepYzMKw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -2104,10 +2104,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_LendindPad</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">245</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">247</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{4573FBDB-42EF-4001-993C-69BC17B64F9E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{DD3C7DDA-3476-4A41-A7B8-DFC2B5BF1A12}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2323,6 +2323,36 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.LendingPad.json.ConnectByProxy">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.LendingPad.json.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\brood\Documents\ProjectBI\LendingPad\LendingPad.json</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.LendingPad.zip.ConnectByProxy">

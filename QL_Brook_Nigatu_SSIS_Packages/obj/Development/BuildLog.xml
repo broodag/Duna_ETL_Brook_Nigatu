@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Brook_Nigatu_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-19T06:12:04.5998101Z</LastWriteTime>
+    <LastWriteTime>2020-09-20T18:38:15.5175318Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -23,7 +23,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Brook_Nigatu_LendindPad.dtsx</Name>
-      <LastWriteTime>2020-09-19T17:32:25.4175233Z</LastWriteTime>
+      <LastWriteTime>2020-09-20T18:55:48.3220537Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

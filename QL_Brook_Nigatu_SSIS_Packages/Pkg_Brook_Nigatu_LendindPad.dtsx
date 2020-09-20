@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Brook_Nigatu_LendindPad"
   DTS:PackageType="5"
-  DTS:VersionBuild="245"
-  DTS:VersionGUID="{4573FBDB-42EF-4001-993C-69BC17B64F9E}">
+  DTS:VersionBuild="247"
+  DTS:VersionGUID="{DD3C7DDA-3476-4A41-A7B8-DFC2B5BF1A12}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -61,6 +61,16 @@
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LendingPad.json]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{5E0ECFF5-2FC0-4AA5-9887-1D29A100F50A}"
+      DTS:ObjectName="LendingPad.json">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\brood\Documents\ProjectBI\LendingPad\LendingPad.json" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -271,7 +281,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/19/2020 1:32:25 PM</DTS:VariableValue>
+        DTS:DataType="7">9/20/2020 2:55:46 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -12392,7 +12402,6 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{8308FA6F-401B-4A5A-85F2-22A44BD07E91}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -12421,6 +12430,23 @@ where [refTable].[MarketSourceCode] = ?</property>
         <ExecuteProcessData
           Executable="C:\Program Files\7-Zip\7z.exe"
           Arguments="X C:\Users\brood\Documents\ProjectBI\LendingPad.zip -oC:\Users\brood\Documents\ProjectBI\LendingPad" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\File System Task"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="File System Task"
+      DTS:DTSID="{29F442CB-0819-46C7-AF7C-57A5FE8C145A}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="File System Task"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="DeleteFile"
+          TaskSourcePath="{5E0ECFF5-2FC0-4AA5-9887-1D29A100F50A}" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -12495,6 +12521,14 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\DataFlowTaskSharePoint" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{527DB70A-F718-4B55-ABC5-AB7CBFD1DDF5}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\File System Task" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
@@ -12521,7 +12555,6 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:Disabled="True"
           DTS:DTSID="{F0A77B3A-6E7F-4ADB-A85B-C2D37CB56015}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
@@ -12581,7 +12614,6 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Script Task"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:Disabled="True"
           DTS:DTSID="{33D2F3ED-8973-45A0-AAFE-D979ECAC7951}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
@@ -12594,6 +12626,15 @@ where [refTable].[MarketSourceCode] = ?</property>
               VSTAMinorVersion="0"
               Language="CSharp"
               ReadOnlyVariables="System::ErrorCode,System::ErrorDescription,System::PackageName,System::StartTime,User::varFromEmail,User::varPassword,User::varSmtpClient,User::varSubject,User::varToEmail">
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -12713,35 +12754,6 @@ where [refTable].[MarketSourceCode] = ?</property>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Settings.get_Default():ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Sett" +
-    "ings")]
-
-namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -12905,133 +12917,6 @@ namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c
 	}
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Resources.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
-    "rceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
-    "fo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
-    "):Void")]
-
-namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
-    
-    
-    /// <summary>
-    ///   A strongly-typed resource class, for looking up localized strings, etc.
-    /// </summary>
-    // This class was auto-generated by the StronglyTypedResourceBuilder
-    // class via a tool like ResGen or Visual Studio.
-    // To add or remove a member, edit your .ResX file then rerun ResGen
-    // with the /str option, or rebuild your VS project.
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class Resources {
-        
-        private static global::System.Resources.ResourceManager resourceMan;
-        
-        private static global::System.Globalization.CultureInfo resourceCulture;
-        
-        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
-        }
-        
-        /// <summary>
-        ///   Returns the cached ResourceManager instance used by this class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if ((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
-                }
-                return resourceMan;
-            }
-        }
-        
-        /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for all
-        ///   resource lookups using this strongly typed resource class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
-                return resourceCulture;
-            }
-            set {
-                resourceCulture = value;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Project"
-                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_690883fe98234b0ca18b1add997af606</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_690883fe98234b0ca18b1add997af606</msb:DisplayName>
-    <msb:ProjectId>{7D2717A0-DC38-49B9-902D-3BC02564C5E3}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_690883fe98234b0ca18b1add997af606.csproj" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-    <msb:File Include="ScriptMain.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
-              <ProjectItem
                 Name="ST_690883fe98234b0ca18b1add997af606.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13117,6 +13002,153 @@ using System.Runtime.CompilerServices;
     </VisualStudio>
   </ProjectExtensions>
 </Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_690883fe98234b0ca18b1add997af606</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_690883fe98234b0ca18b1add997af606</msb:DisplayName>
+    <msb:ProjectId>{7D2717A0-DC38-49B9-902D-3BC02564C5E3}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_690883fe98234b0ca18b1add997af606.csproj" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ScriptMain.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Settings.get_Default():ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Sett" +
+    "ings")]
+
+namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Resources.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
               <BinaryItem
                 Name="ST_690883fe98234b0ca18b1add997af606.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
@@ -13292,7 +13324,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package.EventHandlers[OnPostExecute]\Execute SQL Task_ETL_Log"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:Disabled="True"
           DTS:DTSID="{AA553FD3-4A45-4929-80EA-3E8E70C4B256}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
@@ -13366,14 +13397,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
               Language="CSharp"
               ReadOnlyVariables="User::varBody,User::varFromEmail,User::varPassword,User::varSmtpClint,User::varSmtpServerPort,User::varSubject,User::varToEmail">
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -13494,34 +13546,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
   </resheader>
 </root>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Settings.get_Default():ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Sett" +
-    "ings")]
-
-namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+                Name="ST_85826c751106499891105e0faad3f2bf.csproj"
+                Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{6b450b1d-8d9d-4756-8518-8369cd4e2a96}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>ST_2f0a706c6b8f4d1aa30853a4af64ff1c</RootNamespace><AssemblyName>ST_85826c751106499891105e0faad3f2bf</AssemblyName><TargetFrameworkVersion>v4.7</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch><TargetFrameworkProfile></TargetFrameworkProfile></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ScriptMain.cs"><SubType>Code</SubType></Compile></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" /><Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host><ProjectClient><HostIdentifier>SSIS_ST150</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -13690,38 +13716,43 @@ namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_2f0a706c6b8f4d1aa30853a4af64ff1c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Settings.get_Default():ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_2f0a706c6b8f4d1aa30853a4af64ff1c.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
-                Name="ST_85826c751106499891105e0faad3f2bf.csproj"
-                Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{6b450b1d-8d9d-4756-8518-8369cd4e2a96}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>ST_2f0a706c6b8f4d1aa30853a4af64ff1c</RootNamespace><AssemblyName>ST_85826c751106499891105e0faad3f2bf</AssemblyName><TargetFrameworkVersion>v4.7</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch><TargetFrameworkProfile></TargetFrameworkProfile></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ScriptMain.cs"><SubType>Code</SubType></Compile></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" /><Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host><ProjectClient><HostIdentifier>SSIS_ST150</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -13946,7 +13977,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           DTS:refId="Package.EventHandlers[OnPreExecute]\Execute SQL Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:Disabled="True"
           DTS:DTSID="{757C905C-C183-4441-B37D-8C7ACF518E03}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
@@ -14076,7 +14106,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package\Execute SQL Task"
-          TopLeft="453.430052767175,213.945432682295" />
+          TopLeft="350.305054303858,201.59543290313" />
         <NodeLayout
           Size="200.666666666667,42"
           Id="Package\ExecuteProcessTaskUnzip"
@@ -14095,26 +14125,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="86.3248988019886,77.3692438853373"
+              EndConnector="-16.8000996613288,65.0192441061726"
               Start="0,0"
-              End="86.3248988019886,69.8692438853373">
+              End="-16.8000996613288,57.5192441061726">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.3235805203795" />
+                    End="0,22.3235806097865" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,27.3235805203795"
-                    Point2="0,31.3235805203795"
-                    Point3="4,31.3235805203795" />
+                    Point1="0,22.3235806097865"
+                    Point2="0,26.3235806097865"
+                    Point3="-4,26.3235806097865" />
                   <mssgle:LineSegment
-                    End="82.3248988019886,31.3235805203795" />
+                    End="-12.8000996613288,26.3235806097865" />
                   <mssgle:CubicBezierSegment
-                    Point1="82.3248988019886,31.3235805203795"
-                    Point2="86.3248988019886,31.3235805203795"
-                    Point3="86.3248988019886,35.3235805203795" />
+                    Point1="-12.8000996613288,26.3235806097865"
+                    Point2="-16.8000996613288,26.3235806097865"
+                    Point3="-16.8000996613288,30.3235806097865" />
                   <mssgle:LineSegment
-                    End="86.3248988019886,69.8692438853373" />
+                    End="-16.8000996613288,57.5192441061726" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14225,6 +14255,44 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\File System Task"
+          TopLeft="344.374994868413,290.549994804561" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="432.305054303858,244.262099569797">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.59672610211152,46.2878952347643"
+              Start="0,0"
+              End="-8.59672610211152,38.7878952347643">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.1439476173822" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.1439476173822"
+                    Point2="0,23.1439476173822"
+                    Point3="-4,23.1439476173822" />
+                  <mssgle:LineSegment
+                    End="-4.59672610211152,23.1439476173822" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.59672610211152,23.1439476173822"
+                    Point2="-8.59672610211152,23.1439476173822"
+                    Point3="-8.59672610211152,27.1439476173822" />
+                  <mssgle:LineSegment
+                    End="-8.59672610211152,38.7878952347643" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -14232,7 +14300,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package.EventHandlers[OnError]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package.EventHandlers[OnError]\Execute SQL Task"
@@ -14260,9 +14328,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -14280,7 +14346,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="132,42.6666666666667"
           Id="Package.EventHandlers[OnPostExecute]\Script Task"
-          TopLeft="542,191" />
+          TopLeft="304,34" />
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
@@ -14288,7 +14354,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package.EventHandlers[OnPreExecute]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package.EventHandlers[OnPreExecute]\Execute SQL Task"
@@ -14320,9 +14386,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14356,9 +14420,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -14370,17 +14432,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="177.333333333334,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\MarketSourceLookup"
-          TopLeft="299.895828864537,46.9874997200814" />
-        <NodeLayout
           Size="182.666666666667,42.6666666666667"
           Id="Package\DataFlowTaskSharePoint\CondSplitRemoveTest"
           TopLeft="11.4062498300337,246.808329480339" />
         <NodeLayout
-          Size="228,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\JSON Source (REST API or File)"
-          TopLeft="9.27083319518748,21.9708329255632" />
+          Size="172,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\OLE DB Destination"
+          TopLeft="753.124988777563,142.999997442961" />
+        <NodeLayout
+          Size="177.333333333334,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\MarketSourceLookup"
+          TopLeft="299.895828864537,46.9874997200814" />
         <NodeLayout
           Size="154.666666666667,42.6666666666667"
           Id="Package\DataFlowTaskSharePoint\Derived Column"
@@ -14390,43 +14452,81 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\DataFlowTaskSharePoint\Row Count"
           TopLeft="633.258919135136,40.9982141128927" />
         <NodeLayout
+          Size="144,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\Fuzzy Lookup"
+          TopLeft="403.906243981328,199.874996425956" />
+        <NodeLayout
+          Size="228,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\JSON Source (REST API or File)"
+          TopLeft="9.27083319518748,21.9708329255632" />
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\DataFlowTaskSharePoint\Derived Column 2"
+          TopLeft="210.937496856786,125.937497748062" />
+        <NodeLayout
           Size="156,42.6666666666667"
           Id="Package\DataFlowTaskSharePoint\Conditional Split"
           TopLeft="12.4999998137355,138.479164250071" />
         <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[Case 1]"
-          TopLeft="90.4999998137355,181.145830916737">
+          Id="Package\DataFlowTaskSharePoint.Paths[Fuzzy Lookup Output]"
+          TopLeft="498.572910647995,199.874996425956">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="12.2395833496315,65.6624985636015"
+              EndConnector="66.6056523587604,-33.7172608607761"
               Start="0,0"
-              End="12.2395833496315,58.1624985636015">
+              End="59.1056523587604,-33.7172608607761">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.8312492818008" />
+                    End="0,-29.7172608607761" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.8312492818008"
-                    Point2="0,32.8312492818008"
-                    Point3="4,32.8312492818008" />
+                    Point1="0,-29.7172608607761"
+                    Point2="0,-33.7172608607761"
+                    Point3="4,-33.7172608607761" />
                   <mssgle:LineSegment
-                    End="8.23958334963152,32.8312492818008" />
-                  <mssgle:CubicBezierSegment
-                    Point1="8.23958334963152,32.8312492818008"
-                    Point2="12.2395833496315,32.8312492818008"
-                    Point3="12.2395833496315,36.8312492818008" />
-                  <mssgle:LineSegment
-                    End="12.2395833496315,58.1624985636015" />
+                    End="59.1056523587604,-33.7172608607761" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-9.09829426268424,37.8312492818008,30.436171875,9.5537109375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DataFlowTaskSharePoint.Paths[Derived Column Output1]"
+          TopLeft="292.937496856786,125.937497748062">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67.4027764521952,-36.283331361314"
+              Start="0,0"
+              End="67.4027764521952,-28.783331361314">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-17.5753341477858" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-17.5753341477858"
+                    Point2="0,-21.5753341477858"
+                    Point3="4,-21.5753341477858" />
+                  <mssgle:LineSegment
+                    End="63.4027764521952,-21.5753341477858" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63.4027764521952,-21.5753341477858"
+                    Point2="67.4027764521952,-21.5753341477858"
+                    Point3="67.4027764521952,-25.5753341477858" />
+                  <mssgle:LineSegment
+                    End="67.4027764521952,-28.783331361314" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14464,44 +14564,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[JsonSourceOutput]"
-          TopLeft="123.270833195187,64.6374995922298">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-32.770833381452,73.8416646578412"
-              Start="0,0"
-              End="-32.770833381452,66.3416646578412">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.9208323289206" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.9208323289206"
-                    Point2="0,36.9208323289206"
-                    Point3="-4,36.9208323289206" />
-                  <mssgle:LineSegment
-                    End="-28.770833381452,36.9208323289206" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-28.770833381452,36.9208323289206"
-                    Point2="-32.770833381452,36.9208323289206"
-                    Point3="-32.770833381452,40.9208323289206" />
-                  <mssgle:LineSegment
-                    End="-32.770833381452,66.3416646578412" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\Derived Column 2"
-          TopLeft="210.937496856786,125.937497748062" />
-        <EdgeLayout
           Id="Package\DataFlowTaskSharePoint.Paths[Case 11]"
           TopLeft="131.850694274478,246.808329480339">
           <EdgeLayout.Curve>
@@ -14533,36 +14595,72 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="65.3253153536541,-26.6890972769477,30.436171875,9.5537109375"
+              BoundingBox="65.325315353654,-26.6890972769477,30.436171875,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[Derived Column Output1]"
-          TopLeft="292.937496856786,125.937497748062">
+          Id="Package\DataFlowTaskSharePoint.Paths[Case 1]"
+          TopLeft="90.4999998137355,181.145830916737">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="67.4027764521952,-36.283331361314"
+              EndConnector="12.2395833496315,65.6624985636015"
               Start="0,0"
-              End="67.4027764521952,-28.783331361314">
+              End="12.2395833496315,58.1624985636015">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-17.5753341477858" />
+                    End="0,28.8312492818008" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-17.5753341477858"
-                    Point2="0,-21.5753341477858"
-                    Point3="4,-21.5753341477858" />
+                    Point1="0,28.8312492818008"
+                    Point2="0,32.8312492818008"
+                    Point3="4,32.8312492818008" />
                   <mssgle:LineSegment
-                    End="63.4027764521952,-21.5753341477858" />
+                    End="8.23958334963152,32.8312492818008" />
                   <mssgle:CubicBezierSegment
-                    Point1="63.4027764521952,-21.5753341477858"
-                    Point2="67.4027764521952,-21.5753341477858"
-                    Point3="67.4027764521952,-25.5753341477858" />
+                    Point1="8.23958334963152,32.8312492818008"
+                    Point2="12.2395833496315,32.8312492818008"
+                    Point3="12.2395833496315,36.8312492818008" />
                   <mssgle:LineSegment
-                    End="67.4027764521952,-28.783331361314" />
+                    End="12.2395833496315,58.1624985636015" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-9.09829426268424,37.8312492818008,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DataFlowTaskSharePoint.Paths[Row Count Output 1]"
+          TopLeft="719.481141357358,83.6648807795594">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="119.643847420205,59.3351166634014"
+              Start="0,0"
+              End="119.643847420205,51.8351166634014">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.162545000342" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.162545000342"
+                    Point2="0,24.162545000342"
+                    Point3="4,24.162545000342" />
+                  <mssgle:LineSegment
+                    End="115.643847420205,24.162545000342" />
+                  <mssgle:CubicBezierSegment
+                    Point1="115.643847420205,24.162545000342"
+                    Point2="119.643847420205,24.162545000342"
+                    Point3="119.643847420205,28.162545000342" />
+                  <mssgle:LineSegment
+                    End="119.643847420205,51.8351166634014" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14571,10 +14669,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="144,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\Fuzzy Lookup"
-          TopLeft="403.906243981328,199.874996425956" />
         <EdgeLayout
           Id="Package\DataFlowTaskSharePoint.Paths[Lookup Match Output]"
           TopLeft="416.784717753426,89.654166386748">
@@ -14612,63 +14706,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[Fuzzy Lookup Output]"
-          TopLeft="498.572910647995,199.874996425956">
+          Id="Package\DataFlowTaskSharePoint.Paths[JsonSourceOutput]"
+          TopLeft="123.270833195187,64.6374995922298">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="66.6056523587604,-33.7172608607761"
+              EndConnector="-32.770833381452,73.8416646578412"
               Start="0,0"
-              End="59.1056523587604,-33.7172608607761">
+              End="-32.770833381452,66.3416646578412">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-29.7172608607761" />
+                    End="0,32.9208323289206" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-29.7172608607761"
-                    Point2="0,-33.7172608607761"
-                    Point3="4,-33.7172608607761" />
+                    Point1="0,32.9208323289206"
+                    Point2="0,36.9208323289206"
+                    Point3="-4,36.9208323289206" />
                   <mssgle:LineSegment
-                    End="59.1056523587604,-33.7172608607761" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="172,42.6666666666667"
-          Id="Package\DataFlowTaskSharePoint\OLE DB Destination"
-          TopLeft="753.124988777563,142.999997442961" />
-        <EdgeLayout
-          Id="Package\DataFlowTaskSharePoint.Paths[Row Count Output 1]"
-          TopLeft="719.481141357358,83.6648807795594">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="119.643847420205,59.3351166634014"
-              Start="0,0"
-              End="119.643847420205,51.8351166634014">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.162545000342" />
+                    End="-28.770833381452,36.9208323289206" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.162545000342"
-                    Point2="0,24.162545000342"
-                    Point3="4,24.162545000342" />
+                    Point1="-28.770833381452,36.9208323289206"
+                    Point2="-32.770833381452,36.9208323289206"
+                    Point3="-32.770833381452,40.9208323289206" />
                   <mssgle:LineSegment
-                    End="115.643847420205,24.162545000342" />
-                  <mssgle:CubicBezierSegment
-                    Point1="115.643847420205,24.162545000342"
-                    Point2="119.643847420205,24.162545000342"
-                    Point3="119.643847420205,28.162545000342" />
-                  <mssgle:LineSegment
-                    End="119.643847420205,51.8351166634014" />
+                    End="-32.770833381452,66.3416646578412" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14713,30 +14775,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </LayoutInfo>
   </DtsEventHandler>
   <PipelineComponentMetadata
-    design-time-name="Package\DataFlowTaskSharePoint\MarketSourceLookup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[MarketSourceLookup]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DataFlowTaskSharePoint\Fuzzy Lookup">
+    design-time-name="Package\DataFlowTaskSharePoint\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -14749,7 +14788,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DataFlowTaskSharePoint\OLE DB Destination">
+    design-time-name="Package\DataFlowTaskSharePoint\MarketSourceLookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[MarketSourceLookup]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DataFlowTaskSharePoint\Fuzzy Lookup">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
