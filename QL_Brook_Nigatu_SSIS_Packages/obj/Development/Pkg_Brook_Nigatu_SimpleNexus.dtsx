@@ -332,7 +332,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/22/2020 1:25:35 PM</DTS:VariableValue>
+        DTS:DataType="7">9/22/2020 2:22:42 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -7384,7 +7384,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Sequence Container\DataFlowTaskSimpleNexus\1984:invalid};</property>
+                      name="ParameterMap">#{Package\Sequence Container\DataFlowTaskSimpleNexus\1985:invalid};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
