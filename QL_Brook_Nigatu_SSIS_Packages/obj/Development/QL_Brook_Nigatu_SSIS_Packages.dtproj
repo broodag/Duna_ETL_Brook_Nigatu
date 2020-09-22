@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-K7PS7F9</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAABSosb//QBQ3dJ5z4OsS9L4JHTnoIxLdXOmSeEw0ds/pQAAAAAOgAAAAAIAACAAAAC/v6JQgib0EQuKmN2dGkyvPML8F5JcTB9RfU82O7B+opAAAACh2RwlIJvCRyliL61kV3ht4LyETKAdu3Iqvu24h1g+iWR6H4DMvgj0WM6AL0pNsqfa1s1wM//W6+tyOsQ912xMFBYm+WYWITA4JTX1xcOy3rGUz2GkYwzrKZXYCL5PziuBPr+gwnrWM2EytZ/kCPI5DkAXT2otHO5Z5mEevXmrX0RNB5n5uqKobpfPWhSJpctAAAAAzBO76cfPmXT0L38hfQHvwVqSOsbxZIYyYTDptPQNWIR8rOlHROmBYMvR+Mswl0/iOoSwfs96ZqwVzPBAdoX41w==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAADYU9b4kJjIQf94Fe+YAN8z0k1bMoPDUh1ngWHKmTSquwAAAAAOgAAAAAIAACAAAACsZ6w2LR+JtA8qwFDbPWJMyESQuGOB3MKUoXzK78yncpAAAAAo1x+wN8RRwieHbmnipiDlD7cGrgGr6kuUQ3J3U+5B45DsiLIJ0jM2Qds0/eYlhnxD4MqQ5tpMxjOFWVOZNCojHnGQZx+C25OyZhtlYoEnepuAmsVkvqS6fTookKzEHuAx+nfFMj9IOmC7Duo3l1H6p5cPZMYvb/WMFdQ3DyDHghdl9cqxYQUb1MsxevR4DQ9AAAAAPeeOFQvRTxC25u1+VWNF+YJh8mSzOvOutYTB5RtO7q+EOOrJRT7oUH/8IsEpjzRTCr/GXRbzbhO7AB/Ds82cng==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -2105,10 +2105,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_LendindPad</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">246</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">248</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{4893097C-655E-4D9E-A84E-72824BA877DF}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A99FBE3D-46D2-4A71-A444-DCE692C1AAB7}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2599,10 +2599,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_SimpleNexus</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">292</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">302</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{534CF6F4-E027-4180-BDA7-B0B8B8530A96}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{0D3B54BD-B0A6-46CF-9D5D-096127D24612}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
