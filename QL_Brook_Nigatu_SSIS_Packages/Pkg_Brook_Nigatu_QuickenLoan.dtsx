@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Brook_Nigatu_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="180"
-  DTS:VersionGUID="{BC4F6B6B-5E61-4CC0-9F27-9A7E22A838BE}">
+  DTS:VersionBuild="181"
+  DTS:VersionGUID="{40AE3D9B-F6BA-4FEE-946C-B9C617BCE341}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -211,7 +211,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 12:38:27 PM</DTS:VariableValue>
+        DTS:DataType="7">9/23/2020 12:42:14 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -13282,7 +13282,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{AFD7A654-F971-473D-ABEE-057C44809E47}"
+          SQLTask:Connection="{9CE431AF-7648-4E2D-83C5-6F3C69C6013A}"
           SQLTask:SqlStatementSource="DELETE FROM [dbo].[Stg_Brook_Nigatu_QL] where SourceName =?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"

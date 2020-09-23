@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Brook_Nigatu_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="178"
-  DTS:VersionGUID="{57941721-654C-4414-B998-8798D80D311F}">
+  DTS:VersionBuild="181"
+  DTS:VersionGUID="{40AE3D9B-F6BA-4FEE-946C-B9C617BCE341}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -211,7 +211,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 12:35:34 PM</DTS:VariableValue>
+        DTS:DataType="7">9/23/2020 12:42:17 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -13253,13 +13253,13 @@ where [refTable].[MarketSourceCode] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute SQL Task"
+      DTS:refId="Package\ESQLT UpdateCrosswalk"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{46AB28CB-348D-494B-B237-18F6788E3221}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task"
+      DTS:ObjectName="ESQLT UpdateCrosswalk"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
@@ -13282,7 +13282,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{AFD7A654-F971-473D-ABEE-057C44809E47}"
+          SQLTask:Connection="{9CE431AF-7648-4E2D-83C5-6F3C69C6013A}"
           SQLTask:SqlStatementSource="DELETE FROM [dbo].[Stg_Brook_Nigatu_QL] where SourceName =?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -13310,7 +13310,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:From="Package\DataFlowTaskQuickenLoan"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
-      DTS:To="Package\Execute SQL Task" />
+      DTS:To="Package\ESQLT UpdateCrosswalk" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
@@ -14189,8 +14189,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\DataFlowTaskQuickenLoan"
           TopLeft="62.343749071006,182.649996733964" />
         <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\Execute SQL Task"
+          Size="194.666666666667,42.6666666666667"
+          Id="Package\ESQLT UpdateCrosswalk"
           TopLeft="356.718744684477,167.374997007102" />
         <NodeLayout
           Size="241.333333333334,42.6666666666667"
