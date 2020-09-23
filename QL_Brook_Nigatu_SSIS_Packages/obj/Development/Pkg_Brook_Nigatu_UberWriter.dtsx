@@ -7,7 +7,7 @@
   DTS:CreatorName="DESKTOP-K7PS7F9\brood"
   DTS:DTSID="{2985985C-9816-4867-919F-88C3FCA572BD}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.128"
+  DTS:LastModifiedProductVersion="15.0.2000.132"
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Brook_Nigatu_UberWriter"
   DTS:PackageType="5"
@@ -211,7 +211,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 12:56:16 AM</DTS:VariableValue>
+        DTS:DataType="7">9/23/2020 12:24:11 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
