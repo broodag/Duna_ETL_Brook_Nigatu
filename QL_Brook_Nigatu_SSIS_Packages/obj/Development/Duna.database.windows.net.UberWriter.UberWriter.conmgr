@@ -10,7 +10,7 @@
       DTS:ConnectionString="Data Source=Duna.database.windows.net;User ID=UberWriter;Initial Catalog=UberWriter;Persist Security Info=True;Application Name=SSIS-Pkg_Brook_Nigatu_UberWriter-{E96D7386-283D-4CA8-982C-E6D7DB0009EF}Duna.database.windows.net.UberWriter.UberWriter;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAACGvd/J0lw8oQBC25vw6zeyQLzAge2zx1Jw2OFLDVdTSQAAAAAOgAAAAAIAACAAAADySJ3uNVj7ZZpneWu8FaxwZKiejZhLu1IyVowT9Nc2QoAAAADfy+Ee/nE76G692V0m6ZUj+ILWjwtp196gi8OCQB47K9e/t3DTVPpDumW/sssIkwAxXqIVEVRlBhpJodyeUSSwKp6iWOzI3L03d6EUAMGCZAYpydUZZNUzEsE897BiJEdvZNyj29njHdbZJ1qGCixStjb+xdinYzsRlj5/baW7bkAAAABjMzeXsA/zIczZbcGEU90QYUUJKRHNSDVduLQJd1paWjS6vyZUWZ6JQzRZufHjx6lEEOBHbeVKF6z+SR/rnJmr</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAADtq4FIXxA4r4dtCNBArhVmvoKOSgTA5Koq5FWcyQ/CggAAAAAOgAAAAAIAACAAAACUbqoyqmL619tled9jWsqXXnLntCLG/LReS7fjdBTJvoAAAABDjdu94TMXp5iLk3NWDrpAva1uRNSgxAz4gqdIHnRCKJ+DDdbzFiZBS6pNJhK0BtbH8WsS76AXTJf6kcQmsJZ7drL77nSDhUjHU4nc+YMUuMT2m6ak/fauHIOMrpIxkZjwDPOhwZWvARXl3U3a/MHWbf0ASNeyWMVNFcyqNH+BgUAAAADrZDHHOrBmEdqdGIdWMQBTeQ+NZWrCR51PLnhqA03KtpEzJesFbjJv2gbmmAVQ1dwjPvzaNL4XDbNCRQ2YUKD3</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
