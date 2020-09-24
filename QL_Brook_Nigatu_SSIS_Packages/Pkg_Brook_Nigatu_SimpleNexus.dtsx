@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Brook_Nigatu_SimpleNexus"
   DTS:PackageType="5"
-  DTS:VersionBuild="320"
-  DTS:VersionGUID="{C6043DA2-4FC4-4F92-9242-6B6146A08107}">
+  DTS:VersionBuild="324"
+  DTS:VersionGUID="{39685ED7-9C6C-4AE8-B747-4EF00AA673D2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -169,7 +169,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varArchivedFileDestination">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\brood\Documents\ProjectBI\Backup\SimpleNexus_2020-09-23-23-57.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\brood\Documents\ProjectBI\Backup\SimpleNexus_2020-09-24-00-14.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -360,7 +360,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 11:57:38 PM</DTS:VariableValue>
+        DTS:DataType="7">9/24/2020 12:14:58 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -371,7 +371,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTodays">
       <DTS:VariableValue
-        DTS:DataType="8">2020-09-23 23:57</DTS:VariableValue>
+        DTS:DataType="8">2020-09-24 00:14</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1120,7 +1120,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="ScriptTaskSendEmailMissingFile"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -1860,95 +1860,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <pipeline
               version="1">
               <components>
-                <component
-                  refId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split"
-                  componentClassID="Microsoft.ConditionalSplit"
-                  contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-                  description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
-                  name="Conditional Split"
-                  usesDispositions="true">
-                  <inputs>
-                    <input
-                      refId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Inputs[Conditional Split Input]"
-                      description="Input to the Conditional Split Transformation"
-                      name="Conditional Split Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Inputs[Conditional Split Input].Columns[LastModifiedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LastModifiedDate"
-                          lineageId="Package\Sequence Container\DataFlowTaskSimpleNexus\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastModifiedDate]" />
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Outputs[Case 1]"
-                      description="Output 1 of the Conditional Split Transformation"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      exclusionGroup="1"
-                      name="Case 1"
-                      synchronousInputId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Inputs[Conditional Split Input]"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                          name="Expression">#{Package\Sequence Container\DataFlowTaskSimpleNexus\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastModifiedDate]} &gt; @[User::varMaxDate]</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Specifies the friendly version of the expression. This expression version uses column names."
-                          expressionType="Notify"
-                          name="FriendlyExpression">LastModifiedDate &gt; @[User::varMaxDate]</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
-                          name="EvaluationOrder">0</property>
-                      </properties>
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Outputs[Conditional Split Default Output]"
-                      description="Default Output of the Conditional Split Transformation"
-                      exclusionGroup="1"
-                      name="Conditional Split Default Output"
-                      synchronousInputId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Inputs[Conditional Split Input]">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          name="IsDefaultOut">true</property>
-                      </properties>
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Outputs[Conditional Split Error Output]"
-                      description="Error Output of the Conditional Split Transformation"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="Conditional Split Error Output"
-                      synchronousInputId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Inputs[Conditional Split Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
                 <component
                   refId="Package\Sequence Container\DataFlowTaskSimpleNexus\CondSplitRemoveTest"
                   componentClassID="Microsoft.ConditionalSplit"
@@ -12255,11 +12166,6 @@ where [refTable].[MarketSourceCode] = ?</property>
               <paths>
                 <path
                   refId="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[Case 1]"
-                  endId="Package\Sequence Container\DataFlowTaskSimpleNexus\CondSplitRemoveTest.Inputs[Conditional Split Input]"
-                  name="Case 1"
-                  startId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Outputs[Case 1]" />
-                <path
-                  refId="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[Case 11]"
                   endId="Package\Sequence Container\DataFlowTaskSimpleNexus\Derived Column 2.Inputs[Derived Column Input]"
                   name="Case 1"
                   startId="Package\Sequence Container\DataFlowTaskSimpleNexus\CondSplitRemoveTest.Outputs[Case 1]" />
@@ -12285,7 +12191,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                   startId="Package\Sequence Container\DataFlowTaskSimpleNexus\MarketSourceLookup.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[OLE DB Source Output]"
-                  endId="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split.Inputs[Conditional Split Input]"
+                  endId="Package\Sequence Container\DataFlowTaskSimpleNexus\CondSplitRemoveTest.Inputs[Conditional Split Input]"
                   name="OLE DB Source Output"
                   startId="Package\Sequence Container\DataFlowTaskSimpleNexus\OLE DB Source.Outputs[OLE DB Source Output]" />
                 <path
@@ -12298,13 +12204,13 @@ where [refTable].[MarketSourceCode] = ?</property>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Sequence Container\Execute SQL Task"
+          DTS:refId="Package\Sequence Container\ESQLT Delet SimpleNexus Source"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{064BD1A7-38A8-48F4-86AC-5A7CE4EF3458}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Execute SQL Task"
+          DTS:ObjectName="ESQLT Delet SimpleNexus Source"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
@@ -12313,10 +12219,10 @@ where [refTable].[MarketSourceCode] = ?</property>
               SQLTask:Connection="{9CE431AF-7648-4E2D-83C5-6F3C69C6013A}"
               SQLTask:SqlStatementSource="delete from [dbo].[Stg_Brook_Nigatu_QL]&#xA;where SourceName =?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
-                SQLTask:ParameterName="NewParameterName"
+                SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="User::varSourceName"
                 SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="3"
+                SQLTask:DataType="129"
                 SQLTask:ParameterSize="-1" />
             </SQLTask:SqlTaskData>
           </DTS:ObjectData>
@@ -12339,15 +12245,15 @@ where [refTable].[MarketSourceCode] = ?</property>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Sequence Container\File System Task"
+          DTS:refId="Package\Sequence Container\FST Rename and Move"
           DTS:CreationName="Microsoft.FileSystemTask"
           DTS:Description="File System Task"
           DTS:DTSID="{8E291F32-4B5B-4199-A406-A497FFA1D4A4}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
-          DTS:ObjectName="File System Task"
+          DTS:ObjectName="FST Rename and Move"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -12367,15 +12273,23 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:From="Package\Sequence Container\ExecuteSQLTaskRestore"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\Sequence Container\Execute SQL Task" />
+          DTS:To="Package\Sequence Container\ESQLT Delet SimpleNexus Source" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
           DTS:DTSID="{E7EE3276-08B5-4E97-8460-AB8B0210AEA7}"
-          DTS:From="Package\Sequence Container\Execute SQL Task"
+          DTS:From="Package\Sequence Container\ESQLT Delet SimpleNexus Source"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
           DTS:To="Package\Sequence Container\DataFlowTaskSimpleNexus" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{4185B8B1-4C9C-4F4B-82E7-D36879ED11E6}"
+          DTS:From="Package\Sequence Container\DataFlowTaskSimpleNexus"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Sequence Container\FST Rename and Move" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
@@ -13364,163 +13278,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </SQLTask:SqlTaskData>
           </DTS:ObjectData>
         </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package.EventHandlers[OnPreExecute]\Execute SQL Task 1"
-          DTS:CreationName="Microsoft.ExecuteSQLTask"
-          DTS:Description="Execute SQL Task"
-          DTS:Disabled="True"
-          DTS:DTSID="{b2c1b6d0-3c8f-4de6-8432-eb832a364e6c}"
-          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Execute SQL Task 1"
-          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <SQLTask:SqlTaskData
-              SQLTask:Connection="{75D59E6C-7590-41BB-BA06-408117357AAE}"
-              SQLTask:SqlStatementSource="exec RestoreSimpleNexus" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-          </DTS:ObjectData>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package.EventHandlers[OnPreExecute]\Execute SQL Task 2"
-          DTS:CreationName="Microsoft.ExecuteSQLTask"
-          DTS:Description="Execute SQL Task"
-          DTS:Disabled="True"
-          DTS:DTSID="{a170bf66-28ac-4c0d-ad18-ab33b2075f60}"
-          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Execute SQL Task 2"
-          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <SQLTask:SqlTaskData
-              SQLTask:Connection="{75D59E6C-7590-41BB-BA06-408117357AAE}"
-              SQLTask:SqlStatementSource="USE [master]&#xA;GO&#xA;drop database SimpleNexus&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-          </DTS:ObjectData>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package.EventHandlers[OnPreExecute]\ExecuteProcessTaskUnzip"
-          DTS:CreationName="Microsoft.ExecuteProcess"
-          DTS:Description="UnzipLendingpad"
-          DTS:Disabled="True"
-          DTS:DTSID="{d7270157-1422-4d79-bee4-a875d5e80ed2}"
-          DTS:ExecutableType="Microsoft.ExecuteProcess"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="ExecuteProcessTaskUnzip"
-          DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <ExecuteProcessData
-              Executable="C:\Program Files\7-Zip\7z.exe"
-              Arguments="X C:\Users\brood\Documents\ProjectBI\SimpleNexus.zip -oC:\BACKUP2" />
-          </DTS:ObjectData>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package.EventHandlers[OnPreExecute]\File System Task"
-          DTS:CreationName="Microsoft.FileSystemTask"
-          DTS:Description="File System Task"
-          DTS:Disabled="True"
-          DTS:DTSID="{97fff550-5578-46db-8833-f3d5fbf452a7}"
-          DTS:ExecutableType="Microsoft.FileSystemTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="File System Task"
-          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <FileSystemData
-              TaskOperationType="DeleteFile"
-              TaskSourcePath="{01D06AAD-FB88-4782-A5FF-0076290A2270}" />
-          </DTS:ObjectData>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package.EventHandlers[OnPreExecute]\FileSystemTaskRemoveZipFile"
-          DTS:CreationName="Microsoft.FileSystemTask"
-          DTS:Description="File System Task"
-          DTS:Disabled="True"
-          DTS:DTSID="{f8cd74f8-8297-4817-a983-042500afa15a}"
-          DTS:ExecutableType="Microsoft.FileSystemTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="FileSystemTaskRemoveZipFile"
-          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <FileSystemData
-              TaskOperationType="DeleteFile"
-              TaskSourcePath="{167B711C-9197-436F-B555-9E9066329196}" />
-          </DTS:ObjectData>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package.EventHandlers[OnPreExecute]\FTP Task"
-          DTS:CreationName="Microsoft.FtpTask"
-          DTS:Description="FTP Task"
-          DTS:Disabled="True"
-          DTS:DTSID="{52a54b14-7763-4b02-b3d2-7c1aa3b3cd1d}"
-          DTS:ExecutableType="Microsoft.FtpTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="FTP Task"
-          DTS:TaskContact="FTP Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <FtpData
-              ConnectionName="{3215106F-0975-4A58-AE39-AFE665238E4E}"
-              TaskOperationType="Receive"
-              TaskIsLocalPathVar="True"
-              TaskLocalPath="User::varLocalFolder"
-              TaskIsRemotePathVar="True"
-              TaskRemotePath="User::varRemotePath" />
-          </DTS:ObjectData>
-        </DTS:Executable>
       </DTS:Executables>
-      <DTS:PrecedenceConstraints>
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint]"
-          DTS:CreationName=""
-          DTS:DTSID="{0247D93D-BD3A-4FBC-8ACF-3FF12A9E8627}"
-          DTS:From="Package.EventHandlers[OnPreExecute]\Execute SQL Task"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint"
-          DTS:To="Package.EventHandlers[OnPreExecute]\FileSystemTaskRemoveZipFile" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 1]"
-          DTS:CreationName=""
-          DTS:DTSID="{0F3E3753-32E9-4E38-AFED-8FE53D102D1A}"
-          DTS:From="Package.EventHandlers[OnPreExecute]\FileSystemTaskRemoveZipFile"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 1"
-          DTS:To="Package.EventHandlers[OnPreExecute]\FTP Task" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 2]"
-          DTS:CreationName=""
-          DTS:DTSID="{78EE0395-115F-469D-991C-7379D03F0AF7}"
-          DTS:From="Package.EventHandlers[OnPreExecute]\FTP Task"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 2"
-          DTS:To="Package.EventHandlers[OnPreExecute]\File System Task" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 3]"
-          DTS:CreationName=""
-          DTS:DTSID="{283F021D-F870-4A93-8F4E-7384AE836EC9}"
-          DTS:From="Package.EventHandlers[OnPreExecute]\File System Task"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 3"
-          DTS:To="Package.EventHandlers[OnPreExecute]\ExecuteProcessTaskUnzip" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 4]"
-          DTS:CreationName=""
-          DTS:DTSID="{289FD9E9-3DF8-447B-BD3E-C9AEE25C3AC3}"
-          DTS:From="Package.EventHandlers[OnPreExecute]\ExecuteProcessTaskUnzip"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 4"
-          DTS:To="Package.EventHandlers[OnPreExecute]\Execute SQL Task 2" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 5]"
-          DTS:CreationName=""
-          DTS:DTSID="{5B2B95B8-B5FA-41B8-918F-9BEBAC3F43F5}"
-          DTS:From="Package.EventHandlers[OnPreExecute]\Execute SQL Task 2"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 5"
-          DTS:To="Package.EventHandlers[OnPreExecute]\Execute SQL Task 1" />
-      </DTS:PrecedenceConstraints>
     </DTS:EventHandler>
   </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
@@ -13538,7 +13296,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="190.666666666667,42.6666666666667"
           Id="Package\ESQLTUpdateCrosswalk"
-          TopLeft="688.266358791652,128.331148498912" />
+          TopLeft="821.808023468393,86.0811492544008" />
         <NodeLayout
           Size="200.666666666667,42.6666666666667"
           Id="Package\ExecuteProcessTaskUnzip"
@@ -13568,43 +13326,43 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus"
           TopLeft="33.998007419119,186.985707401634" />
         <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\Sequence Container\Execute SQL Task"
+          Size="237.333333333334,42.6666666666667"
+          Id="Package\Sequence Container\ESQLT Delet SimpleNexus Source"
           TopLeft="54.107136537454,112.238089094559" />
         <NodeLayout
           Size="193.333333333334,42.6666666666667"
           Id="Package\Sequence Container\ExecuteSQLTaskRestore"
           TopLeft="17.9404681944071,38.9583278802537" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
-          Id="Package\Sequence Container\File System Task"
-          TopLeft="87.1428503308979,250.595229477684" />
+          Size="188,42.6666666666667"
+          Id="Package\Sequence Container\FST Rename and Move"
+          TopLeft="87.1428503308979,272.26189575692" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
           TopLeft="114.607134861074,81.6249945469204">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="21.5000016763803,30.6130945476391"
+              EndConnector="58.1666683430469,30.6130945476387"
               Start="0,0"
-              End="21.5000016763803,23.1130945476391">
+              End="58.1666683430469,23.1130945476387">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.3065472738196" />
+                    End="0,11.3065472738193" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.3065472738196"
-                    Point2="0,15.3065472738196"
-                    Point3="4,15.3065472738196" />
+                    Point1="0,11.3065472738193"
+                    Point2="0,15.3065472738193"
+                    Point3="4,15.3065472738193" />
                   <mssgle:LineSegment
-                    End="17.5000016763803,15.3065472738196" />
+                    End="54.1666683430469,15.3065472738193" />
                   <mssgle:CubicBezierSegment
-                    Point1="17.5000016763803,15.3065472738196"
-                    Point2="21.5000016763803,15.3065472738196"
-                    Point3="21.5000016763803,19.3065472738196" />
+                    Point1="54.1666683430469,15.3065472738193"
+                    Point2="58.1666683430469,15.3065472738193"
+                    Point3="58.1666683430469,19.3065472738193" />
                   <mssgle:LineSegment
-                    End="21.5000016763803,23.1130945476391" />
+                    End="58.1666683430469,23.1130945476387" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13615,18 +13373,64 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="136.38590531162,154.904755761226">
+          TopLeft="172.773803204121,154.904755761226">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32.080951640408"
+              EndConnector="-36.109129118335,32.0809516404083"
               Start="0,0"
-              End="0,24.580951640408">
+              End="-36.109129118335,24.5809516404083">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.580951640408" />
+                    End="0,12.0404758202042" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.0404758202042"
+                    Point2="0,16.0404758202042"
+                    Point3="-4,16.0404758202042" />
+                  <mssgle:LineSegment
+                    End="-32.109129118335,16.0404758202042" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.109129118335,16.0404758202042"
+                    Point2="-36.109129118335,16.0404758202042"
+                    Point3="-36.109129118335,20.0404758202042" />
+                  <mssgle:LineSegment
+                    End="-36.109129118335,24.5809516404083" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="136.664674085786,229.652374068301">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44.4781762451122,42.6095216886197"
+              Start="0,0"
+              End="44.4781762451122,35.1095216886197">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.3047608443099" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.3047608443099"
+                    Point2="0,21.3047608443099"
+                    Point3="4,21.3047608443099" />
+                  <mssgle:LineSegment
+                    End="40.4781762451122,21.3047608443099" />
+                  <mssgle:CubicBezierSegment
+                    Point1="40.4781762451122,21.3047608443099"
+                    Point2="44.4781762451122,21.3047608443099"
+                    Point3="44.4781762451122,25.3047608443099" />
+                  <mssgle:LineSegment
+                    End="44.4781762451122,35.1095216886197" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13638,8 +13442,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="338.666666666667,348.666666666667"
-          Size="338.666666666667,391.333333333334"
+          PanelSize="470.666666666667,404"
+          Size="470.666666666667,447.333333333334"
           Id="Package\Sequence Container"
           TopLeft="370.104161151685,188.502774486558" />
         <EdgeLayout
@@ -13734,24 +13538,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="539.437494485018,188.502774486558">
+          TopLeft="605.437494485018,188.502774486558">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="148.828864306634,-38.8382926543126"
+              EndConnector="311.703862316708,-59.7549585654905"
               Start="0,0"
-              End="141.328864306634,-38.8382926543126">
+              End="311.703862316708,-52.2549585654905">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-34.8382926543126" />
+                    End="0,-25.8774792827452" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-34.8382926543126"
-                    Point2="0,-38.8382926543126"
-                    Point3="4,-38.8382926543126" />
+                    Point1="0,-25.8774792827452"
+                    Point2="0,-29.8774792827452"
+                    Point3="4,-29.8774792827452" />
                   <mssgle:LineSegment
-                    End="141.328864306634,-38.8382926543126" />
+                    End="307.703862316708,-29.8774792827452" />
+                  <mssgle:CubicBezierSegment
+                    Point1="307.703862316708,-29.8774792827452"
+                    Point2="311.703862316708,-29.8774792827452"
+                    Point3="311.703862316708,-33.8774792827452" />
+                  <mssgle:LineSegment
+                    End="311.703862316708,-52.2549585654905" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13762,30 +13572,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="248.095236534164,414.326181803843">
+          TopLeft="248.095236534164,413.247811478534">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="122.008924617521,-30.1567406506187"
+              EndConnector="122.008924617521,0"
               Start="0,0"
-              End="114.508924617521,-30.1567406506187">
+              End="114.508924617521,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="57.0044623087603,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="57.0044623087603,0"
-                    Point2="61.0044623087603,0"
-                    Point3="61.0044623087603,-4" />
-                  <mssgle:LineSegment
-                    End="61.0044623087603,-26.1567406506187" />
-                  <mssgle:CubicBezierSegment
-                    Point1="61.0044623087603,-26.1567406506187"
-                    Point2="61.0044623087603,-30.1567406506187"
-                    Point3="65.0044623087603,-30.1567406506187" />
-                  <mssgle:LineSegment
-                    End="114.508924617521,-30.1567406506187" />
+                    End="114.508924617521,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13873,7 +13671,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package.EventHandlers[OnError]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package.EventHandlers[OnError]\Execute SQL Task"
@@ -13901,9 +13699,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -13925,239 +13721,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package.EventHandlers[OnPreExecute]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package.EventHandlers[OnPreExecute]\Execute SQL Task"
           TopLeft="60,60" />
-        <NodeLayout
-          Size="173.333333333334,42.6666666666667"
-          Id="Package.EventHandlers[OnPreExecute]\Execute SQL Task 1"
-          TopLeft="720,283.333333333333" />
-        <NodeLayout
-          Size="173.333333333334,42.6666666666667"
-          Id="Package.EventHandlers[OnPreExecute]\Execute SQL Task 2"
-          TopLeft="408,347" />
-        <NodeLayout
-          Size="200.666666666667,42.6666666666667"
-          Id="Package.EventHandlers[OnPreExecute]\ExecuteProcessTaskUnzip"
-          TopLeft="399.148808478511,259.580948347251" />
-        <NodeLayout
-          Size="158.666666666667,42.6666666666667"
-          Id="Package.EventHandlers[OnPreExecute]\File System Task"
-          TopLeft="439.386903117012,187.771425821781" />
-        <NodeLayout
-          Size="220,42.6666666666667"
-          Id="Package.EventHandlers[OnPreExecute]\FileSystemTaskRemoveZipFile"
-          TopLeft="329,34" />
-        <NodeLayout
-          Size="122.666666666667,42.6666666666667"
-          Id="Package.EventHandlers[OnPreExecute]\FTP Task"
-          TopLeft="397.928570401456,118.221427065432" />
-        <EdgeLayout
-          Id="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint]"
-          TopLeft="224,81.3333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="105,-26"
-              Start="0,0"
-              End="97.5,-26">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="48.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="48.5,0"
-                    Point2="52.5,0"
-                    Point3="52.5,-4" />
-                  <mssgle:LineSegment
-                    End="52.5,-22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="52.5,-22"
-                    Point2="52.5,-26"
-                    Point3="56.5,-26" />
-                  <mssgle:LineSegment
-                    End="97.5,-26" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 1]"
-          TopLeft="439,76.6666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="20.261903734789,41.5547603987651"
-              Start="0,0"
-              End="20.261903734789,34.0547603987651">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.7773801993826" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.7773801993826"
-                    Point2="0,20.7773801993826"
-                    Point3="4,20.7773801993826" />
-                  <mssgle:LineSegment
-                    End="16.261903734789,20.7773801993826" />
-                  <mssgle:CubicBezierSegment
-                    Point1="16.261903734789,20.7773801993826"
-                    Point2="20.261903734789,20.7773801993826"
-                    Point3="20.261903734789,24.7773801993826" />
-                  <mssgle:LineSegment
-                    End="20.261903734789,34.0547603987651" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 2]"
-          TopLeft="459.261903734789,160.888093732098">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="59.4583327155564,26.8833320896825"
-              Start="0,0"
-              End="59.4583327155564,19.3833320896825">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,9.44166604484127" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,9.44166604484127"
-                    Point2="0,13.4416660448413"
-                    Point3="4,13.4416660448413" />
-                  <mssgle:LineSegment
-                    End="55.4583327155564,13.4416660448413" />
-                  <mssgle:CubicBezierSegment
-                    Point1="55.4583327155564,13.4416660448413"
-                    Point2="59.4583327155564,13.4416660448413"
-                    Point3="59.4583327155564,17.4416660448413" />
-                  <mssgle:LineSegment
-                    End="59.4583327155564,19.3833320896825" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 3]"
-          TopLeft="518.720236450345,230.438092488448">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-19.2380946385008,29.1428558588034"
-              Start="0,0"
-              End="-19.2380946385008,21.6428558588034">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,10.5714279294017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.5714279294017"
-                    Point2="0,14.5714279294017"
-                    Point3="-4,14.5714279294017" />
-                  <mssgle:LineSegment
-                    End="-15.2380946385008,14.5714279294017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-15.2380946385008,14.5714279294017"
-                    Point2="-19.2380946385008,14.5714279294017"
-                    Point3="-19.2380946385008,18.5714279294017" />
-                  <mssgle:LineSegment
-                    End="-19.2380946385008,21.6428558588034" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 4]"
-          TopLeft="497.074404239256,302.247615013918">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44.7523849860823"
-              Start="0,0"
-              End="0,37.2523849860823">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.2523849860823" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.EventHandlers[OnPreExecute].PrecedenceConstraints[Constraint 5]"
-          TopLeft="581.333333333333,368.333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="138.666666666667,-63.6666666666667"
-              Start="0,0"
-              End="131.166666666667,-63.6666666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="65.3333333333333,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="65.3333333333333,0"
-                    Point2="69.3333333333333,0"
-                    Point3="69.3333333333333,-4" />
-                  <mssgle:LineSegment
-                    End="69.3333333333333,-59.6666666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="69.3333333333333,-59.6666666666667"
-                    Point2="69.3333333333333,-63.6666666666667"
-                    Point3="73.3333333333333,-63.6666666666667" />
-                  <mssgle:LineSegment
-                    End="131.166666666667,-63.6666666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
@@ -14165,118 +13733,78 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\Sequence Container\DataFlowTaskSimpleNexus">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="182.666666666667,42.6666666666667"
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus\CondSplitRemoveTest"
-          TopLeft="11.4062498300337,246.808329480339" />
+          TopLeft="11.4062498300337,143.891664653966" />
         <NodeLayout
           Size="172,42.6666666666667"
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus\OLE DB Destination"
-          TopLeft="753.124988777563,142.999997442961" />
+          TopLeft="758.333322033286,142.999997442961" />
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus\Row Count"
-          TopLeft="633.258919135136,40.9982141128927" />
+          TopLeft="638.467252390859,40.9982141128927" />
         <NodeLayout
           Size="154.666666666667,42.6666666666667"
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus\Derived Column"
-          TopLeft="565.178563006755,144.824402231847" />
+          TopLeft="570.386896262478,144.824402231847" />
         <NodeLayout
           Size="144,42.6666666666667"
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus\Fuzzy Lookup"
-          TopLeft="403.906243981328,199.874996425956" />
+          TopLeft="409.114577237051,199.874996425956" />
         <NodeLayout
           Size="177.333333333334,42.6666666666667"
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus\MarketSourceLookup"
-          TopLeft="299.895828864537,46.9874997200814" />
+          TopLeft="305.10416212026,46.9874997200814" />
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus\Derived Column 2"
-          TopLeft="210.937496856786,125.937497748062" />
-        <NodeLayout
-          Size="156,42.6666666666667"
-          Id="Package\Sequence Container\DataFlowTaskSimpleNexus\Conditional Split"
-          TopLeft="12.4999998137355,138.479164250071" />
+          TopLeft="216.145830112509,125.937497748062" />
         <NodeLayout
           Size="150.666666666667,42.6666666666667"
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus\OLE DB Source"
-          TopLeft="26.2499996088446,12.9999997675419" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[Case 11]"
-          TopLeft="131.850694274478,246.808329480339">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="161.086802582308,-78.2041650656103"
-              Start="0,0"
-              End="161.086802582308,-70.7041650656103">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-27.6890972769477" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-27.6890972769477"
-                    Point2="0,-31.6890972769477"
-                    Point3="4,-31.6890972769477" />
-                  <mssgle:LineSegment
-                    End="157.086802582308,-31.6890972769477" />
-                  <mssgle:CubicBezierSegment
-                    Point1="157.086802582308,-31.6890972769477"
-                    Point2="161.086802582308,-31.6890972769477"
-                    Point3="161.086802582308,-35.6890972769477" />
-                  <mssgle:LineSegment
-                    End="161.086802582308,-70.7041650656103" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="65.325315353654,-26.6890972769477,30.436171875,9.5537109375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="31.4583328645677,12.9999997675419" />
         <EdgeLayout
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[Case 1]"
-          TopLeft="90.4999998137355,181.145830916737">
+          TopLeft="102.739583163367,186.558331320632">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="12.2395833496315,65.6624985636015"
+              EndConnector="195.406246949142,-17.9541669059036"
               Start="0,0"
-              End="12.2395833496315,58.1624985636015">
+              End="195.406246949142,-10.4541669059036">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.8312492818008" />
+                    End="0,18.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.8312492818008"
-                    Point2="0,32.8312492818008"
-                    Point3="4,32.8312492818008" />
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="4,22.5" />
                   <mssgle:LineSegment
-                    End="8.23958334963152,32.8312492818008" />
+                    End="191.406246949142,22.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="8.23958334963152,32.8312492818008"
-                    Point2="12.2395833496315,32.8312492818008"
-                    Point3="12.2395833496315,36.8312492818008" />
+                    Point1="191.406246949142,22.5"
+                    Point2="195.406246949142,22.5"
+                    Point3="195.406246949142,18.5" />
                   <mssgle:LineSegment
-                    End="12.2395833496315,58.1624985636015" />
+                    End="195.406246949142,-10.4541669059036" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-9.09829426268424,37.8312492818008,30.436171875,9.5537109375"
+              BoundingBox="82.4850375370711,27.5,30.436171875,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[Row Count Output 1]"
-          TopLeft="719.481141357358,83.6648807795594">
+          TopLeft="724.689474613081,83.6648807795594">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -14305,50 +13833,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[OLE DB Source Output]"
-          TopLeft="101.583332942178,55.6666664342086">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-11.0833331284424,82.8124978158624"
-              Start="0,0"
-              End="-11.0833331284424,75.3124978158624">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.4062489079312" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.4062489079312"
-                    Point2="0,41.4062489079312"
-                    Point3="-4,41.4062489079312" />
-                  <mssgle:LineSegment
-                    End="-7.08333312844243,41.4062489079312" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7.08333312844243,41.4062489079312"
-                    Point2="-11.0833331284424,41.4062489079312"
-                    Point3="-11.0833331284424,45.4062489079312" />
-                  <mssgle:LineSegment
-                    End="-11.0833331284424,75.3124978158624" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[Lookup Match Output]"
-          TopLeft="416.784717753426,89.654166386748">
+          TopLeft="421.993051009149,89.654166386748">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -14384,7 +13874,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[Fuzzy Lookup Output]"
-          TopLeft="498.572910647995,199.874996425956">
+          TopLeft="503.781243903718,199.874996425956">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -14407,14 +13897,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[Derived Column Output1]"
-          TopLeft="292.937496856786,125.937497748062">
+          TopLeft="298.145830112509,125.937497748062">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -14443,14 +13931,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[Derived Column Output]"
-          TopLeft="642.511896340088,144.824402231847">
+          TopLeft="647.720229595811,144.824402231847">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -14479,9 +13965,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DataFlowTaskSimpleNexus.Paths[OLE DB Source Output]"
+          TopLeft="104.765624680634,55.6666664342086">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,88.2249982197571"
+              Start="0,0"
+              End="0,80.7249982197571">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,80.7249982197571" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
