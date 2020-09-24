@@ -169,7 +169,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varArchivedFileDestination">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\brood\Documents\ProjectBI\Backup\SimpleNexus_2020-09-24-00-15.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\brood\Documents\ProjectBI\Backup\SimpleNexus_2020-09-24-15-06.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -360,7 +360,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/24/2020 12:15:10 AM</DTS:VariableValue>
+        DTS:DataType="7">9/24/2020 3:06:07 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -371,7 +371,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTodays">
       <DTS:VariableValue
-        DTS:DataType="8">2020-09-24 00:15</DTS:VariableValue>
+        DTS:DataType="8">2020-09-24 15:06</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -393,7 +393,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="ESQLTUpdateCrosswalk"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -410,7 +410,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="ExecuteProcessTaskUnzip"
       DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <ExecuteProcessData
@@ -427,7 +427,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="FileSystemTaskDelet_bacFile"
       DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
@@ -1120,7 +1120,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="ScriptTaskSendEmailMissingFile"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -8653,7 +8653,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Sequence Container\DataFlowTaskSimpleNexus\1711:invalid};</property>
+                      name="ParameterMap">#{Package\Sequence Container\DataFlowTaskSimpleNexus\1962:invalid};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -12212,7 +12212,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="ESQLT Delet SimpleNexus Source"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -12236,7 +12236,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="ExecuteSQLTaskRestore"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -12253,7 +12253,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="FST Rename and Move"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
