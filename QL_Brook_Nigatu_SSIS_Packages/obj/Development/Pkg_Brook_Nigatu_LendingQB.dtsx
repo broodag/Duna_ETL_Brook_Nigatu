@@ -234,7 +234,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 9:19:32 PM</DTS:VariableValue>
+        DTS:DataType="7">9/23/2020 9:22:18 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""

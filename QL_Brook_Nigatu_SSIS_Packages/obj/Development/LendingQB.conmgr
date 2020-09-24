@@ -14,7 +14,7 @@
       AuthType="MicrosoftOnlineService"
       ConnectByProxy="False">
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAABcOv2fZhSBLYiGIT1Rb3/Yi5jmSjsu63aFbDxCnQzQQQAAAAAOgAAAAAIAACAAAAAT4XkSR9XyBdq2BgR3Vy0d5XY5X4Xuv9el4RHPaiPgiEAAAABnXqe2WbRZxPwegJgj+9c+E6LVguzcT1KV4aRaHmGGYTlrWkMS+AzqAEp0JqlrlyXlJAIZTHW7MoF/Hx5yjV26QAAAAKKzWA1adBArDGLqwIavVu7z4Ha5TeEcJNOFwqkuu7+YO2fkUWsLvrf1P3gyZkZsCNuKz5EpoiXk4HMhnvBqp2w=</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAAC8Fk6i+/L9D/0oakyGrc1fxpE02NaesLJzRawKSvs7mQAAAAAOgAAAAAIAACAAAAC52gkgz+66CSTCnQKLsUsUL/xm19VaiTMfUsVp/QqlHkAAAABgHpu0/914y08BG1jYipGJA6T+pQzZgqvdwdHqWiV2eawcQw0IuOOqHdIxsK/r6wR4gmr5ctPgDGfMvPs8Y5TGQAAAAGXTllBodghuT0eiWe04g9DgkGlgPiK7ag378NP1PiX1KLgULq7P8Hwa8lnqPhr4Vl3IrFMdtARkekyalc9HlTk=</Password>
     </ODataConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
