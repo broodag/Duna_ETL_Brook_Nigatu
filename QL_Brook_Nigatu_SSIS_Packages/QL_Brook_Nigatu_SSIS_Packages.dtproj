@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-K7PS7F9</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAABBz6R+e1leVo7yGNjqV66u6mq1x/sciPqndpqa2LDOZQAAAAAOgAAAAAIAACAAAAAeS8wtEZ+YsqltiW2/FOrJRK/MWJ1AD4UiBv7xWKMcpZAAAADdxyi33cKB/7VPu0ksRm0k16M/rN8p2jrxefkoyF2yWWY0Uac8Uil8iqFfJe2xZbet4D0JFT8SczBOl3Ni0LX6a8MlVhYsxUANIZ4XBo23k0SWJ6YoP1VogWBkFX8SwKYIEg1GRLlnlSjXxS4O0xVUYZMp9ccmiJmPSFHefoSB4zidgHPeV7e8vuWTTNsnWKZAAAAAGZRgNsSqENTciOHuvc/BEbZpQhlt2QsEyrPZtkksRRrhcctSpwWiKssP2Vs2oZ5uvdXmbzBbpDh/XpKzlyfS/Q==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAAC6ZUB1vAzGjFjbNBeY/1YdzYvE1CCmOmBL2FlaR8nRrgAAAAAOgAAAAAIAACAAAACfF2SCWVMdZcX7Sy9mS67Q4ThhcEMChE+7F2syAEypHZAAAABf4W6bBNUzRnCXCLD0PxGIZKfJpqfFMrUSWyMlTe3B2gt60706ZQqJN6Pf4NK5es8Nz1I0C+EgHjhMt1aH9KiJCTAKflpesWESW8BUiFZI/SGxhBvJCViqHSYpU/702sMQY2EgLP8jtRgqQ7VXMggabEkGkyo5VQCsyVtd4xrleNk5gqFdveoIug1VOZfHcFxAAAAAFvzq/CjVuepicGBUMXbwHv3r9xqIbw5f9iAhAvJJ0636IyVgs1A+e58tccBuSAxbFadVFg+MDtOc2MsGRsBuLg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -35,6 +35,7 @@
           <SSIS:Package SSIS:Name="Pkg_Brook_Nigatu_UberWriter.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Brook_Nigatu_LendindPad.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Brook_Nigatu_SimpleNexus.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Pkg_Brook_Nigatu_Quiken_Loan_Master.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="LendingQB.conmgr" />
@@ -2799,8 +2800,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -3319,8 +3318,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -3355,6 +3352,23 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Pkg_Brook_Nigatu_Quiken_Loan_Master.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{9DE2AC58-051A-44A1-80D3-6D3662DF847F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_Quiken_Loan_Master</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{DBBCB1BA-AED5-4243-80A3-354F487C968E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
