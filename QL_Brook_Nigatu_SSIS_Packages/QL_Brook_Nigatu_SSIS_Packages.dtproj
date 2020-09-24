@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-K7PS7F9</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAAC6ZUB1vAzGjFjbNBeY/1YdzYvE1CCmOmBL2FlaR8nRrgAAAAAOgAAAAAIAACAAAACfF2SCWVMdZcX7Sy9mS67Q4ThhcEMChE+7F2syAEypHZAAAABf4W6bBNUzRnCXCLD0PxGIZKfJpqfFMrUSWyMlTe3B2gt60706ZQqJN6Pf4NK5es8Nz1I0C+EgHjhMt1aH9KiJCTAKflpesWESW8BUiFZI/SGxhBvJCViqHSYpU/702sMQY2EgLP8jtRgqQ7VXMggabEkGkyo5VQCsyVtd4xrleNk5gqFdveoIug1VOZfHcFxAAAAAFvzq/CjVuepicGBUMXbwHv3r9xqIbw5f9iAhAvJJ0636IyVgs1A+e58tccBuSAxbFadVFg+MDtOc2MsGRsBuLg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO31z00s3bkS1sHyCD2xsygAAAAACAAAAAAAQZgAAAAEAACAAAADGDPKRGXLy/4uQ5lcj3TnSfvOvpjv3LMshAaXeYCSG5AAAAAAOgAAAAAIAACAAAADLbUq5ZkIlYMQ8i9Ok0dU1Q+HNswwOicJuK3jkQtoQr5AAAACIZFdcJTS2JGzSQfodTsh++su+5f4G2afb0BtzkjV4PpMU2mwd01Hs2Wb6ZM99s3O/sGfQwmcOwnzplcQwFm/y2Oir6dnFz20aT63i0zZbgHeqetaUPoAWdgGsyvseOccP6fatsywOc4/QK1EKi9IZzdGptW50piY+0OX0mApq9/+rMbmBz7sLA3GEoyeronZAAAAAAVsJiwXr0Um21pvZYc6ltC4uowZrCdkwIegXnIDAofBSf6eZe8fPenSLJLb+xTdpTMkz8kLiu45KdIA36NInBQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -1006,14 +1006,14 @@
           <SSIS:PackageInfo>
             <SSIS:PackageMetaData SSIS:Name="Pkg_Brook_Nigatu_QuickenLoan.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{DE4D9D72-2791-45C8-9455-C0F286FAA0D7}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_LendingQB</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{58D0D136-54C4-472E-A7A7-23904639DE76}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_QuickenLoan</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">171</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">183</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{CF19D0E0-B4F3-4445-BF83-36680F7DD06C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{880A7E49-0454-4DE9-975C-7407B54E4DC1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1182,6 +1182,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1341,10 +1343,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_LendingQB</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">223</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">225</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{33FEAFB3-C6C9-4934-8BC8-ABC04A9238DA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{FE59EC43-FCFA-49F8-B3E9-691BC0C60CE0}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1527,6 +1529,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1734,6 +1738,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1775,10 +1781,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_UberWriter</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">173</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">185</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{8A0AF1B0-7709-49F3-8FAE-761253EC3F34}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D17D6F6A-93CD-4B05-9866-900CD180E056}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1947,6 +1953,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2106,10 +2114,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_LendindPad</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">246</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">260</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{4893097C-655E-4D9E-A84E-72824BA877DF}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{13D1B732-51F9-45CD-A58A-38459FE3943E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2292,6 +2300,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2559,6 +2569,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2600,10 +2612,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_SimpleNexus</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">315</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">326</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{72C3E056-C4F0-4E65-B106-827DCC17D09E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{8E2432C0-3321-4ECB-B929-1B7183B05AC5}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2800,6 +2812,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -3318,6 +3332,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -3359,10 +3375,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Brook_Nigatu_Quiken_Loan_Master</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{DBBCB1BA-AED5-4243-80A3-354F487C968E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{289A5E3A-CD25-498A-9E6E-A1851B72193E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
